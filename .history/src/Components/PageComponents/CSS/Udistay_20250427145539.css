@@ -1,0 +1,85 @@
+.Udistay-Container{
+  height: auto;
+  width: 100vw;
+
+ 
+}
+
+.Udistay-heading span{
+  color:orange;
+  font-size: 30px;
+
+}
+
+
+.Udistay-heading{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  gap: 10px;
+
+}
+
+.Mukhya-Udistay{
+
+display: flex;
+flex-direction: row;
+  margin-left: 140px;
+}
+
+
+.Mukhya-Udistay h3  {
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 40px;
+
+ 
+}
+
+
+.Mukhya-Udistay h6{
+  
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 100;
+  
+
+
+}
+
+
+.Udistay-data{
+
+
+  margin-left: 140px;
+  margin-bottom: 100px;
+
+}
+
+.data-cont{
+
+
+  margin-top: 10px;
+  margin-left: 48px;
+  border: 2px solid rgba(201, 200, 200, 0.594);
+  border-radius: 20px;
+  padding: 0px 10px; 
+  
+}
+
+.data-head{
+  font-size: 20px;
+  font-weight: 700;
+
+
+}
+
+.data-info span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.data-info{
+  font-size: 12px;
+  margin-left: 10px;
+}

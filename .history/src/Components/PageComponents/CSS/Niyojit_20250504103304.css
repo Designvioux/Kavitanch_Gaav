@@ -1,0 +1,243 @@
+.Niyonit-Container{
+  height: auto;
+  width: 100vw;
+  position: relative;
+  margin-top: 120px;
+}
+
+.Niyojit-head{
+  display: flex;
+justify-content: center;
+gap:10px;
+display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 500px;
+  margin: 0 auto; /* <-- This centers it horizontally */
+  
+
+  /* Heading/Niramit/Niramit */
+  font-family: Niramit;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-weight: bold;
+}
+
+.Niyojit-head span{
+  color: orange;
+}
+
+.Niyojit-card{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  gap: 20px;
+}
+
+.Niyojit-card h2 {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  color: var(--Background, #FFF);
+font-family: Niramit;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.Niyojit-card p {
+  margin-left: 180px;
+  width: 50%;
+  color: var(--Background, #FFF);
+
+/* Body/Niramit */
+font-family: Niramit;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 15px; /* 166.667% */
+  position: relative;
+  margin-top: 20px;
+}
+
+.Niyojit-card p::before {
+  content: "•"; /* This adds the dot */
+  position: absolute;
+  left: -20px; /* Adjust this value to place the dot where you want */
+  top: -5px;
+  font-size: 18px; /* Size of the dot, can be adjusted */
+  color: rgb(255, 255, 255); /* Color of the dot */
+}
+
+
+.Niyojit-Cards-1{
+width: 40vw;
+background-image: url("../Images/Card1.png");
+background-repeat: no-repeat;
+background-size:40vw 45vh;
+height: 45vh;
+color: white;
+
+
+
+}
+
+.Niyojit-Cards-2{
+
+  width: 40vw;
+  background: url("../Images/Card2.png");
+  background-repeat: no-repeat;
+  background-size:40vw 45vh;
+  height: 45vh;
+  color: white;
+  
+  
+}
+
+.Niyojit-Cards-3{
+
+  width: 40vw;
+  height: 40vh;
+  background: url("../Images/Card3.png");
+  background-repeat: no-repeat;
+  background-size:40vw 45vh;
+  height: 45vh;
+  color: white;
+  
+
+  
+}
+
+.Niyojit-Cards-4{
+
+  width: 40vw;
+  background: url("../Images/Card4.png");
+  background-repeat: no-repeat;
+  background-size:40vw 45vh;
+  height: 45vh;
+  color: white;
+  
+}
+
+@media (max-width: 321px) {
+  .Niyonit-Container {
+    width: 100%;
+    margin-top: 80px;
+    padding: 10px;
+    /* border: 2px solid black; */
+  }
+
+  .Niyojit-head {
+    flex-direction: row;
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    gap: 7px;
+  }
+
+  .Niyojit-card {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+   
+  }
+
+  .Niyojit-card h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .Niyojit-card p {
+    width: 80%;
+    font-size: 13px;
+    margin-left: 0px;
+    padding-left: 20px;
+    text-align: justify;
+  }
+
+  .Niyojit-card p::before {
+    left: 0;
+    top: 0;
+  }
+
+  .Niyojit-Cards-1,
+  .Niyojit-Cards-2,
+  .Niyojit-Cards-3,
+  .Niyojit-Cards-4 {
+    width: 90vw;
+    height: 200px;
+    background-size: 90vw 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Niyonit-Container {
+    width: 100%;
+    margin-top: 80px;
+    padding: 10px;
+    /* border: 2px solid black; */
+  }
+
+  .Niyojit-head {
+    flex-direction: row;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    gap: 6px;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+  }
+
+  .Niyojit-card {
+    display: flex;
+    flex-direction: column;
+    gap: -10px;
+    align-items: center;
+    padding: 10px;
+    width: 200px;
+    height: 100%;
+   
+  }
+
+  .Niyojit-card h2 {
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .Niyojit-card p {
+    width: 90%;
+    font-size: 10px;
+    margin-left: 0px;
+    padding-left: 15px;
+    text-align: justify;
+    position: relative;
+ 
+  }
+
+  .Niyojit-card p::before {
+    left: 0;
+    top: 0;
+  }
+
+  .Niyojit-Cards-1,
+  .Niyojit-Cards-2,
+  .Niyojit-Cards-3,
+  .Niyojit-Cards-4 {
+    width: 90vw;
+    height: 220px;
+    background-size: 120vw 320px;
+  }
+}

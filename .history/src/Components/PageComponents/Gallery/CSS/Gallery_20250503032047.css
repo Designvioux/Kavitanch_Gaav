@@ -1,0 +1,148 @@
+.gallery-container {
+  font-family: 'Niramit', sans-serif;
+  padding: 40px 20px;
+  background-color: #f7f8fa;
+  color: #333;
+}
+
+.gallery-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.row-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Make both containers take half width side-by-side */
+.row-wrapper .image-cont1,
+.row-wrapper .images-cont2 {
+  width: 48%;
+  max-width: none;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 5px solid orange;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Keep same image layout inside */
+.row-wrapper .image-cont1 img,
+.row-wrapper .images-cont2 img {
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.image-cont1, .images-cont2, .image-cont3, .image-cont4 {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;  
+  width: 90%;
+  max-width: 1000px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  border-left: 5px solid orange;
+}
+
+.image-cont1::before,
+.images-cont2::before,
+.image-cont3::before,
+.image-cont4::before {
+  content: attr(data-title);
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background-color: orange;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.image-cont1::before { content: "संमेलन"; }
+.images-cont2::before { content: "स्पर्धा"; }
+.image-cont3::before { content: "बातम्या"; }
+.image-cont4::before { content: "भिंतीवरील कविता"; }
+
+.right-img-cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.image-cont1 img,
+.images-cont2 img,
+.image-cont3 img,
+.image-cont4 img,
+.right-img-cont img {
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Individual image sizes */
+.img1, .img-11, .img111, .img1111 {
+  width: 42%;
+  height: auto;
+}
+
+.img2, .img3, .img-22, .img-33, .img222, .img333, .img2222, .img3333 {
+  width: calc(50% - 5px);
+  height: auto;
+}
+
+.img4, .img-44, .img444, .img4444 {
+  width: 100%;
+  height: auto;
+}
+
+.img2222, .img3333 {
+  width: 11vw;
+  height: 18vh;
+}
+
+/* View More Button */
+.View-More {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.view-more {
+  background: linear-gradient(to right, #f57c00, #ff9800);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.view-more:hover {
+  background: linear-gradient(to right, #fb8c00, #ffa726);
+  transform: scale(1.05);
+}

@@ -1,0 +1,60 @@
+.AboutUs-Container{
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.Aboutus-HeroSection{
+  display: flex;
+
+  background: url("../../Images/library.png") , no-repeat;
+ height: 30vw;
+ width: 100vw;
+ background-size: cover;
+ color: white;
+
+  
+}
+
+
+.Aboutus-HeroSection .bhasha{
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+
+.Aboutus-HeroSection .Likhit-img{
+  height: 20vw;
+  margin-top: 5vw;
+}
+
+
+.Aboutus-HeroSection .middle-cont{
+display: flex;
+flex-direction: column;
+
+gap: 0px;
+
+
+}
+
+
+.Aboutus-HeroSection .sahitya{
+  display: flex;
+
+  font-size: 1vw;
+
+  color: white;
+ 
+}
+
+
+
+.Aboutus-HeroSection .book-pages{
+
+
+  height: 30vw;
+  margin-bottom: 10vw;
+
+
+}

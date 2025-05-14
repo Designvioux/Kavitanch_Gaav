@@ -1,0 +1,65 @@
+
+/* :root{
+    --sahitya-main:3;
+    --aamcha-contentHeight:650px;
+    --aamcha-contentTopPadding:1.5rem;
+    --aamcha-contentMargin:100px;
+  
+  }
+  
+  .process-container{
+    width:90%;
+    margin: 0 auto;
+    
+  }
+  #aamcha-content{
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--sahitya-main),var(--aamcha-contentHeight));
+    gap: var(--aamcha-contentMargin);
+    padding-bottom: calc(var(--sahitya-main)* var(--aamcha-contentTopPadding));
+    margin-bottom: var(--aamcha-contentMargin);
+    
+  }
+  #E-book-1{
+    --index:1
+   
+  }
+  #E-book-1{
+    --index:2
+  }
+  #Masik-1{
+    --index:3
+  }
+  .aamcha-content{
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--index)*var(aamcha-contentTopPadding)); */
+    /* background-color: #0c0c0c; */
+    /* border: 2px solid rgb(44, 42, 42); */
+    /* max-width: 100%;
+    margin-left: 55px;
+  }
+  
+  .aamcha-content-body{
+    box-sizing: border-box;
+    /* padding: 30px; */
+    /* margin-top: 100px;
+    flex-direction: column;
+    max-width: 1200px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0);
+    height: var(--Mobile-boxHeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+ */ 

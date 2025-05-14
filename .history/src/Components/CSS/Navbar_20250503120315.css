@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+body{
+
+ 
+  padding: 0px;
+
+
+}
+
+.Navbar{
+ background-color: rgb(255, 255, 255);
+  display:flex;
+  flex-direction: row;
+  height: 150px;
+  width: 100%;
+}
+
+.logo{
+margin-left: 80px;
+margin-top: 26px;
+}
+
+.logo img{
+
+  width: 106px;
+  height: 105px
+}
+
+.Navbar-heading{
+  margin-left: 24px;
+}
+
+.Navbar-heading h2{
+
+  color: var(--Brand, #EA7F13);
+/* Heading/Niramit/Amita/Amita */
+font-family: Amita;
+font-size: 28px;
+font-style: bold;
+font-weight: 800;
+line-height: normal;
+width: 300px;
+margin-top: 30px;
+margin-bottom: -10px;
+margin-left: 13px;
+
+}
+.Home-a{
+  color: var(--Brand, #EA7F13);
+}
+
+.Contact-btn{
+  /* display: flex;
+  background-color: #EA7F13;
+  color: white;
+
+  max-width: 500px;
+
+  flex-direction: row;
+  height: 50px;
+  border-radius: 20px; */
+
+  display: flex;
+height: 62px;
+
+
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 10px;
+background: #EA7F13;
+margin-left: 40px;
+
+  
+}
+.cont-p{
+  width: 120px;
+  color: white;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 0px;
+}
+.Navbar-heading h4{
+  color: var(--Brand, #EA7F13);
+/* Heading/Niramit/Amita/Amita */
+font-family: Amita;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 400px;
+margin:0px;
+}
+.Navbar-links{
+  display: flex;
+  margin-left: 50px;
+ 
+}
+
+.Navbar-links ul{
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+.Navbar-links li{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  width: 100px;
+  font-family: 'Inter', sans-serif;
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+
+/* .Navbar-links li:hover{
+color:#EA7F13;
+} */
+
+.Navbar-links a{
+
+  text-decoration: none;
+  color: var(--Text, #000);
+  /* Button/B2 */
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+ 
+}
+
+.Navbar-links li a:hover{
+
+  color: var(--Brand, #EA7F13);
+  transition: 0.4s;
+
+  text-underline-offset: 10px;
+
+}
+
+
+.Navbar-links li a:active{
+  color: orange;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+
+@media screen and (max-width: 321px) {
+  .Navbar {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+justify-content: center;
+
+
+  }
+
+  .logo {
+
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .logo img {
+    margin-left:0px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .Navbar-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: -30px;
+  }
+
+  .Navbar-heading h2,
+  .Navbar-heading h4 {
+
+    font-size: 14px;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .hamburger-icon {
+    display: block;
+    
+    width: 30px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger-icon .bar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 4px;
+    background-color: #EA7F13;
+    margin: 4px 0;
+    border-radius: 4px;
+    margin-left: -200px;
+  }
+
+  .Navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 100px;
+    padding-left: 10px;
+  }
+
+  .Navbar-links.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Navbar-links ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .Navbar-links li {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .Navbar-links a {
+    font-size: 18px;
+  }
+
+  .Contact-btn {
+    margin-left: 0;
+    width: 90%;
+    height: 45px;
+    background: #EA7F13;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .cont-p {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+}

@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+.Prastavit-Container{
+
+  background-color: white;
+  width: 100%;
+
+}
+
+.Prastavit-head{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Prastavit-head h1{
+  color: var(--Text, #000);
+/* Heading/Niramit/Niramit */
+font-family: Niramit , sans-serif;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.prastavit{
+  color: var(--Brand, #EA7F13);
+text-align: center;
+/* Heading/Niramit/Niramit */
+font-family: Niramit , sans-serif;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.Prastavit-info{
+  align-self: stretch;
+  margin-top: -20px;
+  color: var(--Grey, #848484);
+text-align: center;
+/* Body/Niramit */
+font-family: Niramit;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.event-container {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.event-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+/* Card styling */
+.event-card-cont {
+  min-width: 260px;
+  flex-shrink: 0;
+}
+.event-card-cont {
+  position: relative;
+  width: 400px;
+  min-width: 400px; /* Prevent cards from shrinking */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  flex-shrink: 0; /* Prevent cards from shrinking */
+}
+.event-card-cont:hover {
+  transform: translateY(-5px);
+}
+
+.event-image {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.event-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.event-info {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent  */
+
+}
+
+.event-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6600;
+  color: var(--Brand, #EA7F13);
+/* Heading/Niramit/Niramit */
+font-family: Niramit;
+
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: -5px;
+}
+
+.event-desc {
+  color: var(--Background, #FFF);
+/* Body/Niramit */
+font-family: Niramit;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 0px;
+}
+.event-icons {
+  font-size: 13px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+margin-top: -15px;
+}
+
+.register-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -50px;
+}
+
+.info-icon{
+  height: 18px;
+  display: flex;
+  margin-bottom: 2px;
+  align-items: center;
+  margin-right: 5px;
+
+  
+ 
+}
+
+.icon-text{
+  display: flex;
+  flex-direction: row;
+  color: var(--Background, #FFF);
+/* Body/Niramit */
+font-family: Niramit;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+.event-image{
+  margin-top: 10px;
+
+}
+.Calendar-icon{
+  background: transparent;
+  height: 60px;
+  width: 60px;
+  margin-top: -15px;
+}
+.event-date{
+  background: none;
+}
+
+
+.event-date p{
+  color: white;
+  font-size: 12px;
+  margin-top: -30px;
+  margin-left: 15px;
+
+}
+
+
+@media screen and (max-width: 400px) {
+  .Prastavit-Container {
+    border: 2px solid black;
+    padding: 10px;
+ 
+  }
+
+  .Prastavit-head {
+    padding: 12px;
+  }
+
+  .Prastavit-head h1,
+  .prastavit {
+    font-size: 24px;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .Prastavit-info {
+    font-size: 15px;
+    margin-top: -8px;
+    padding: 0 12px;
+  }
+
+  .event-container {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    padding: 10px 14px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .event-container::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .event-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+
+  .event-card-cont {
+    width: 95vw;
+    min-width: 30px;
+    flex-shrink: 0;
+  }
+
+  .event-image {
+    height: 190px;
+    margin: 10px;
+    border-radius: 6px;
+  }
+
+  .event-info {
+    height: auto;
+    padding: 0px;
+    gap: 8px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    width: 85vw;
+  }
+
+  .event-title {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .event-desc {
+    margin-top: -6px;
+    font-size: 11px;
+  }
+
+  .event-icons {
+    font-size: 9px;
+    gap: 3px;
+    margin-top: -8px;
+    margin-bottom: 20px;
+  }
+
+  .info-icon {
+    height: 18px;
+    margin-right: 4px;
+  }
+
+  .icon-text {
+    font-size: 9px;
+  }
+
+  .register-btn {
+    padding: 10px;
+    font-size: 13px;
+
+    width: 80%;
+  
+    margin: 0px auto 10px;
+  }
+
+  .Calendar-icon {
+    width: 42px;
+    height: 42px;
+    margin-top: -8px;
+  }
+
+  .event-date p {
+    font-size: 11px;
+    margin-left: 10px;
+    margin-top: -18px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 321px) {
+  .Prastavit-Container {
+    padding: 0px;
+    border: 2px solid black;
+  }
+
+  .Prastavit-head {
+    padding: 10px;
+  }
+
+  .Prastavit-head h1,
+  .prastavit {
+    font-size: 22px;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .Prastavit-info {
+    font-size: 14px;
+    margin-top: -10px;
+    padding: 0 10px;
+  }
+
+  .event-container {
+    display: flex; /* ✅ Needed for flex-direction to apply */
+    flex-direction: row;
+
+    gap: 12px;
+    padding: 20px 20px;
+ 
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .event-container::-webkit-scrollbar {
+   
+    height: 5px;
+  }
+
+  .event-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+
+  .event-card-cont {
+
+    width: 240px;
+    min-width: 260px;
+    flex-shrink: 0; /* ✅ Prevent shrinking and force scroll */
+  }
+  
+  .event-image {
+    height: 180px;
+    margin: 10px;
+    border-radius: 6px;
+  }
+
+  .event-info {
+    height: auto;
+    padding: 6px;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .event-title {
+    font-size: 12px;
+    margin-top: 0;
+  
+  }
+
+  .event-desc {
+    margin-top: -8px;
+    font-size: 10px;
+  }
+
+  .event-icons {
+    font-size: 8px;
+    gap: 2px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+  }
+
+  .info-icon {
+    height: 16px;
+    margin-right: 3px;
+  }
+
+  .icon-text {
+    font-size: 8px;
+  }
+
+  .register-btn {
+    padding: 8px;
+    font-size: 12px;
+    margin-top: -30px;
+    width: 100%;
+    
+  }
+
+  .Calendar-icon {
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+  }
+
+  .event-date p {
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: -20px;
+  }
+}

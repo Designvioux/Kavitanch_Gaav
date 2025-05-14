@@ -1,0 +1,83 @@
+.spopup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.spopup-container {
+  position: relative;
+  width: 500px;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.spopup-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 1rem auto;
+}
+
+.spopup-title {
+  margin-top: 1px;
+  color: #252727;
+  text-align: center;
+  font-family: Niramit;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.spopup-message {
+  color: #848484;
+  text-align: center;
+  font-family: Niramit;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: -10px;
+}
+
+.spopup-subtext {
+  color: #6C6C6C;
+  font-family: Niramit;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: -8px;
+}
+
+.spopup-ok-btn {
+  padding: 0.5rem 1.25rem;
+  margin-top: 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #EA7F13;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  box-shadow: 0px 1px 4px rgba(25, 33, 61, 0.08);
+}
+
+.spopup-ok-btn:hover {
+  background-color: #ea580c;
+}
+
+.spopup-close-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: gray;
+  cursor: pointer;
+}

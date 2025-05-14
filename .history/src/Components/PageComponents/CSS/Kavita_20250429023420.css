@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+ 
+.Kavita-container {
+    padding: 40px 60px;
+    background: #fff;
+    font-family: Nirmita;
+  }
+  .Kavita-heading{
+    text-align: center;
+  }
+  .orange-heading {
+color: #EA7F13;
+font-size: 35px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+font-family: Niramit;
+  }
+  .black-heading{
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    font-family: Niramit;
+  }
+
+  .search-text {
+    color: var(--Grey, #848484);
+    text-align: center;
+    font-family: Niramit;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .search-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .search-bar {
+    border-radius: 8px;
+    
+    display: flex;
+    padding: 5px 10px 5px 24px;
+    align-items: center;
+    gap: 34px;
+    margin-top: 40px;
+    width: 364.477px;
+  }
+
+.search-icon{
+  height: 20px;
+}
+
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .category-btn {
+    background-color: white;
+    color: #EA7F13;
+    border: 1px solid gray;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    font: bold;
+    font-family: Niramit;
+  }
+  .category-btn:hover{
+    background-color: orange;
+    color: #FFF;
+    font-family: Niramit;
+  }
+  .poem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap:40px;
+  }
+  
+  .poem-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #fafafa;
+    transition: transform 0.2s ease;
+    gap: 20px;
+  }
+  
+  .poem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .poem-card img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .poem-info {
+    text-align: left;
+    color: var(--Text, #000);
+font-family: Niramit;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 15px; 
+  }
+  
+  .poem-info h3 {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .poem-info p {
+    margin-bottom: 5px;
+    height: 20px;
+    width: -10px;
+    color: var(--Grey, #848484);
+font-family: Niramit;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  
+  .pre-main{
+    text-align: center;
+    margin-top: -30px;
+  }
+.pre{
+color: var(--Brand, #EA7F13);
+text-align: center;
+font-family: Amita;
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.ma{
+color: var(--Brand, #EA7F13);
+text-align: center;
+font-family: Amita;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.pre-ma{
+   color: var(--Grey, #848484);
+font-family: Niramit;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.star-icon{
+  height: auto;
+  width: 80px;
+}
+.text{
+  text-align: center;
+  color: var(--Text, #000);
+font-family: Niramit;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

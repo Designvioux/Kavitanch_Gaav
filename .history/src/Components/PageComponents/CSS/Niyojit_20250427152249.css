@@ -1,0 +1,12 @@
+.Niyonit-Container{
+  height: auto;
+  width: 100vw;
+  position: relative;
+}
+
+.Niyojit-head{
+  display: flex;
+justify-content: center;
+gap:10px;
+font-size: 30px;
+}

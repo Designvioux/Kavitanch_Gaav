@@ -1,0 +1,54 @@
+.gallery-container{
+
+  font-family: Amita;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; 
+ margin-bottom: 150px;
+  }
+  .gallery-title1{
+    display: flex;
+    justify-content: center;
+ 
+    font-family: Amita;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; 
+
+    }
+  
+    
+  
+  .gallery-subtitle1{
+display: flex;
+justify-content: center;
+  font-family: Niramit;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  }
+ 
+  
+  
+
+
+.image-cont1{
+  margin-top: 100px;
+  margin-left: 0px;
+}
+.left-cont-img{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50%;
+  gap: 10px;
+}
+
+.img-cont1{
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+.Karyakari-Container {
+height: 100vh;
+width: 100vw;
+background-color: white;
+margin-top: 120px;
+
+
+}
+
+
+.Karyakari-heading{
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 500px;
+  
+ 
+  margin: 0 auto; /* <-- This centers it horizontally */
+  
+
+  /* Heading/Niramit/Niramit */
+  font-family: Niramit;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-weight: bold;
+}
+.Karyakari-heading span{
+  color: orange;
+}
+
+.Karyakri-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.Karyakri-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Karyakri-table th,
+.Karyakri-table td {
+
+  padding: 12px 15px;
+  text-align: center;
+  color: #000;
+
+/* Body/Niramit */
+font-family: Niramit;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 166.667% */
+}
+
+.Karyakri-table thead {
+  background-color: #fff0e1;
+  
+  color: white;
+}
+
+.Karyakri-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.Karyakri-table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.Karyakri-table th {
+  font-weight: bold;
+}
+
+.Karyakri-table td {
+  vertical-align: middle;
+}
+
+@media (max-width: 321px) {
+  .Karyakari-Container {
+    width: 100%;
+    margin-top: 60px;
+    padding: 10px;
+    overflow-x: hidden;
+    /* border: 2px solid black; */
+    /* margin-bottom: 200px; */
+  }
+
+  .Karyakari-heading {
+    flex-direction: row;
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .Karyakri-table {
+    overflow-x: auto;
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .Karyakri-table table {
+    width: 600px; /* Allows horizontal scrolling */
+    font-size: 12px;
+  }
+
+  .Karyakri-table th,
+  .Karyakri-table td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .Karyakri-table thead {
+    font-size: 13px;
+  }
+}

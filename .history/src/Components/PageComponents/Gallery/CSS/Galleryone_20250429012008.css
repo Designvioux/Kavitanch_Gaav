@@ -1,0 +1,23 @@
+.Gallery-Container-ss{
+  height: auto;
+  width: 100vw;
+}
+
+
+.Gallery-HeroSection {
+  height: 60vh;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../Images/Gallery/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.Head-Hero{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 158px;
+}

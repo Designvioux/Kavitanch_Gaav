@@ -1,0 +1,26 @@
+.Karyakari-Container {
+height: 100vh;
+width: 100vw;
+background-color: white;
+
+
+}
+
+
+.Karyakari-heading{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+.Karyakari-heading span{
+  color: orange;
+}
+
+.Karyakri-table{
+
+}
+
+.Karyakri-table tr{
+
+
+}

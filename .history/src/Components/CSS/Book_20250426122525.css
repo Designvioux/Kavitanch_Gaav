@@ -1,0 +1,349 @@
+/* Book.css - Complete Styles */
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Shrikhand', cursive, 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Book Container */
+.book-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1500px;
+  padding: 2rem;
+  background-color: #f8f1e5;
+}
+
+/* Book Main Structure */
+.book-main {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+/* Pages Wrapper */
+.book-pages-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+/* Individual Page Styles */
+.book-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left center;
+  transition: transform 1.2s cubic-bezier(0.42, 0, 0.58, 1);
+  background: white;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: inset 7px 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 0 5px 5px 0;
+}
+
+/* Right Pages (odd-numbered) */
+.book-page:nth-child(odd) {
+  background: linear-gradient(to right, #fff 95%, #f0e6d2 100%);
+  border-left: 1px solid #e0d5c0;
+}
+
+/* Left Pages (even-numbered) */
+.book-page:nth-child(even) {
+  background: linear-gradient(to right, #f9f9f9 95%, #e0d5c0 100%);
+  border-left: 1px solid #d0c5b0;
+}
+
+/* Flipped State */
+.book-page-flipped {
+  transform: rotateY(-180deg);
+}
+
+/* Page Content Styles */
+.page-content {
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.page-content h2 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 2.5rem;
+  color: #5a3921;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.page-content h3 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 2rem;
+  color: #7a5a3b;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.page-content h4 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.5rem;
+  color: #5a3921;
+  margin-top: auto;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.page-content p {
+  font-family: 'Noto Sans Devanagari', 'Arial', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+  margin: 1.5rem 0;
+  white-space: pre-line;
+}
+
+/* First Page Special Styling */
+.book-page:first-child {
+  background: #f8f1e5 url('https://www.transparenttextures.com/patterns/rice-paper.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 0 0 5px;
+}
+
+.book-page:first-child .page-content {
+  border: 2px dashed #c0a080;
+  border-radius: 5px;
+  padding: 30px;
+  background-color: rgba(255,255,255,0.7);
+}
+
+/* Navigation Buttons */
+.book-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(210, 180, 140, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #5a3921;
+}
+
+.book-nav:hover {
+  background: rgba(210, 180, 140, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.book-nav-left {
+  left: 30px;
+}
+
+.book-nav-right {
+  right: 30px;
+}
+
+/* Book Spine Effect */
+.book-main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 100%;
+  background: linear-gradient(to right, 
+    #5a3921 0%, 
+    #8b5a2b 30%, 
+    #a67c52 50%, 
+    #8b5a2b 70%, 
+    #5a3921 100%);
+  transform: translateX(-15px);
+  z-index: 10;
+  border-radius: 5px 0 0 5px;
+  box-shadow: inset -5px 0 10px rgba(0,0,0,0.3);
+}
+
+/* Page Shadow Effects */
+.book-page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(to left, 
+    rgba(0, 0, 0, 0.2) 0%, 
+    transparent 100%);
+  transform-origin: right center;
+  transform: rotateY(-90deg);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.book-page-flipped::after {
+  opacity: 1;
+}
+
+/* Page Corner Fold Effect */
+.book-page::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 30px 30px;
+  border-color: transparent transparent #f0e6d2 transparent;
+  z-index: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .book-main {
+    width: 350px;
+    height: 525px;
+  }
+  
+  .page-content {
+    padding: 30px;
+  }
+  
+  .page-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .page-content h3 {
+    font-size: 1.8rem;
+  }
+  
+  .page-content h4 {
+    font-size: 1.3rem;
+  }
+  
+  .page-content p {
+    font-size: 1rem;
+  }
+  
+  .book-nav {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .book-container {
+    padding: 1rem;
+  }
+  
+  .book-main {
+    width: 300px;
+    height: 450px;
+  }
+  
+  .page-content {
+    padding: 20px;
+  }
+  
+  .page-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .page-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .page-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .page-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .book-nav {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+  
+  .book-nav-left {
+    left: 15px;
+  }
+  
+  .book-nav-right {
+    right: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .book-main {
+    width: 280px;
+    height: 420px;
+  }
+  
+  .page-content {
+    padding: 15px;
+  }
+  
+  .page-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .page-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .page-content p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Page Numbers (optional) */
+.book-page .page-number {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.book-page:nth-child(even) .page-number {
+  left: 15px;
+  right: auto;
+}
+
+/* Add this to your HTML head for Devanagari font support */
+/* <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&family=Shrikhand&display=swap" rel="stylesheet"> */

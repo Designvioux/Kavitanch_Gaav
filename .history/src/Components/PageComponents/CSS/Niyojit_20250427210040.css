@@ -1,0 +1,86 @@
+.Niyonit-Container{
+  height: auto;
+  width: 100vw;
+  position: relative;
+}
+
+.Niyojit-head{
+  display: flex;
+justify-content: center;
+gap:10px;
+font-size: 30px;
+}
+
+.Niyojit-head span{
+  color: orange;
+}
+
+.Niyojit-card{
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  gap: 20px;
+}
+
+.Niyojit-card h2 {
+
+  display: flex;
+  justify-content: center;
+}
+
+.Niyojit-card p {
+  margin: 0 auto;      /* center the <p> block */
+  text-align: left;    /* make the text inside start from left */
+  width: 80%;          /* optional: control how wide the <p> should be */
+}
+
+
+.Niyojit-Cards-1{
+width: 40vw;
+background-image: url("../Images/Card1.png");
+background-repeat: no-repeat;
+background-size:40vw 45vh;
+height: 45vh;
+color: white;
+
+
+
+}
+
+.Niyojit-Cards-2{
+
+  width: 40vw;
+  background: url("../Images/Card2.png");
+  background-repeat: no-repeat;
+  background-size:40vw 45vh;
+  height: 45vh;
+  color: white;
+  
+  
+}
+
+.Niyojit-Cards-3{
+
+  width: 40vw;
+  height: 40vh;
+  background: url("../Images/Card3.png");
+  background-repeat: no-repeat;
+  background-size:40vw 45vh;
+  height: 45vh;
+  color: white;
+  
+
+  
+}
+
+.Niyojit-Cards-4{
+
+  width: 40vw;
+  background: url("../Images/Card4.png");
+  background-repeat: no-repeat;
+  background-size:40vw 45vh;
+  height: 45vh;
+  color: white;
+  
+}

@@ -1,0 +1,14 @@
+.Gallery-Container-ss{
+  height: auto;
+  width: 100vw;
+}
+
+
+.Gallery-HeroSection{
+  height: 50vh;
+  background-image: url("../../Images/Gallery/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}

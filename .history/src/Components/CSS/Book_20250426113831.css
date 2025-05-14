@@ -1,0 +1,151 @@
+/* Book.css */
+
+/* Container for the whole book */
+.book-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #fdfdfd;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Main book box */
+.book {
+  position: relative;
+  width: 900px;
+  height: 600px;
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  perspective: 2000px; /* Important for 3D flipping */
+  display: flex;
+}
+
+/* Pages container */
+.pages {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+/* Each page */
+.page {
+  width: 50%;
+  height: 100%;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Noto Serif', serif;
+  font-size: 22px;
+  line-height: 1.6;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  transition: transform 1s ease, opacity 0.8s ease;
+  backface-visibility: hidden;
+}
+
+/* Left page styling */
+.page:nth-child(odd) {
+  left: 0;
+  background: #ed1c24; /* Bold red */
+  color: #fff;
+  font-weight: 600;
+  transform-origin: right center;
+}
+
+/* Right page styling */
+.page:nth-child(even) {
+  left: 50%;
+  background: #ffffff;
+  color: #000;
+  transform-origin: left center;
+}
+
+/* Flipped page animation */
+.page.flipped:nth-child(odd) {
+  transform: rotateY(-180deg) translateX(100%);
+  opacity: 0.5;
+}
+
+.page.flipped:nth-child(even) {
+  transform: rotateY(180deg) translateX(-100%);
+  opacity: 0.5;
+}
+
+/* Middle book binding */
+.pages::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #ccc, #aaa);
+  z-index: 2;
+}
+
+/* Navigation buttons */
+.controls {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.controls button {
+  background: #f2f2f2;
+  border: 2px solid #ccc;
+  color: #333;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.controls button:hover {
+  background: #ddd;
+}
+
+.controls button:disabled {
+  background: #eee;
+  color: #aaa;
+  border-color: #eee;
+  cursor: not-allowed;
+}
+
+/* Side floating arrows */
+.book-container .side-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background: #f4a261;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.book-container .side-arrow.left {
+  left: 20px;
+}
+
+.book-container .side-arrow.right {
+  right: 20px;
+}

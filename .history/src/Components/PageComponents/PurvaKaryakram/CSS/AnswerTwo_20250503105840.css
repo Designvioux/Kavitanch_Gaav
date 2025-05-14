@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+.answer-two-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 2rem;
+}
+
+.answer-two-background-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.answer-two-overlay-text {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.answer-two-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 100;
+}
+
+.answer-two-orange {
+  color: orange;
+}
+
+.answer-two-white {
+  color: white;
+}
+
+.answer-two-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 40px;
+  padding: 2rem;
+  margin-top: 40px;
+}
+
+.answer-two-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 80%;
+}
+
+.answer-two-content {
+  padding: 1rem;
+}
+
+.answer-two-content img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.answer-two-event-title {
+  font-family: Niramit;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: -3px;
+}
+
+.answer-two-event-place,
+.answer-two-event-topic,
+.answer-two-event-details {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.2rem 0;
+}
+
+.answer-two-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.answer-two-event-date {
+  color: var(--Grey, #848484);
+  font-family: Niramit;
+  font-size: 10px;
+  font-weight: 40;
+  margin-left: -1px;
+}
+
+.answer-two-status {
+  background-color: orange;
+  display: flex;
+  width: 105px;
+  height: 31.531px;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 150px;
+  margin-bottom: 40px;
+  border: 2px solid orange;
+  color: white;
+  text-decoration: none;
+}

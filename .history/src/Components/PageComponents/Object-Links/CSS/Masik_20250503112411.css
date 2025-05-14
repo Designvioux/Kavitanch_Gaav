@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+.masik-small-letter{
+    margin-top: 30px;
+    text-align: center;
+}
+.masik-home{
+color: var(--text-secondary, #7A7A83);
+font-family: Niramit;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.masik-marathi{
+    color: var(--text-default, #202024);
+    font-family: Niramit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.masik-heading{
+    color: var(--Brand, #EA7F13);
+    text-align: center;
+    font-family: Niramit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin-top:-10px;
+}
+.masik-container {
+    padding: 40px 60px;
+    background: #fff;
+    font-family: Nirmita;
+    
+  }
+  .masik-search-bar{
+  display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    color: #6F6F6F;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ letter-spacing: 0.42px;
+  }
+  .masik-search-bar input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+  
+  }
+  .masik-search-bar button {
+    padding: 10px;
+    background-color: #f97316;
+    border: none;
+    border-radius: 0 4px 4px 0 #6F6F6F;
+    cursor: pointer;
+    color: #FFF;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 0.42px;
+  }
+ 
+  .masik-main{
+    text-align: center;
+    margin-top: -3px;
+  }
+  .masik-m{
+    color: var(--Brand, #EA7F13);
+    text-align: center;
+    font-family: Amita;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .masik-sik{
+    color: var(--Brand, #EA7F13);
+    text-align: center;
+    font-family: Amita;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .masik-grey{
+    color: var(--Grey, #848484);
+font-family: Niramit;
+font-size: 33px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 30px;
+  }
+  
+.masik-grid-container {
+  margin-top: -50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+  margin-top: 1px;
+  
+}
+.masik-card {
+background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column; 
+}
+.masik-card-image {
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.37);
+  
+}
+.masik-card-content {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.masik-title {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+  color: var(--Text, #000);
+  font-family: Niramit;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.masik-author {
+font-size: 16px;
+font-style: normal;
+margin-top: 0px;
+color: #848484;
+font-family: Niramit;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.masik-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: -10px;
+  
+}
+.masik-read-button, .masik-download-button {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.masik-read-button {
+  border-radius: 8px;
+  background: #EA7F13;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 7px;
+  align-items: center;
+  margin-right: 50px;
+  height: 30px;
+  width: 19px;
+  flex: 1 1;
+  padding: 5px 4p;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.masik-read-button:hover {
+  background-color: white;
+  color: #EA7F13;
+}
+
+.masik-download-button {
+  color: var(--Brand, #EA7F13);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+margin-right: 20px;
+margin-top: 0px;
+margin-bottom: -40px;
+margin-left: 10px;
+height: 35px;
+flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  border: 1px solid var(--Brand, #EA7F13);
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+}
+
+.masik-download-button:hover {
+  border-radius: 8px;
+  background: #EA7F13;
+  color: white;
+  padding-left:10px ;
+}
+.masik-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.masik-pagination-button {
+  background-color: white;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 40px;
+}
+
+.masik-pagination-button:hover {
+  background-color: white;
+  color: #EA7F13;
+}
+
+.masik-pagination-button-active {
+  background-color: #EA7F13;
+  color: white;
+  border-color: #F1F1F1;
+}
+
+.masik-pagination-button:disabled {
+  background-color: #e9ecef;
+  color: #333;
+  cursor: not-allowed;
+}
+
+.masik-pagination-dots {
+  font-size: 20px;
+  color: #333;
+  user-select: none;
+}
+.masik-next-btn{
+  color: #333;
+font-family: "Open Sans";
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.masik-prev-btn{
+  color: #CCC;
+font-family: "Open Sans";
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}

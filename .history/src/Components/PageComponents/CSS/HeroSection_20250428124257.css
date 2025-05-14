@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+.Aboutus-HeroSection{
+  display: flex;
+
+  background: url("../Images/library.png") , no-repeat;
+ height: 30vw;
+ width: 100vw;
+ background-size:contain ;
+ color: white;
+
+  
+}
+
+
+.Aboutus-HeroSection .bhasha{
+
+  color: var(--Grey-Light, #D9D9D9);
+  /* Heading/Niramit/Niramit */
+  font-family: Niramit;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100px;
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+.Aboutus-HeroSection .Likhit-img{
+  display: flex;
+  width: 250px;
+  height: 280px;
+  flex-shrink: 0;
+  aspect-ratio: 157/222;
+margin-top: 100px;
+ 
+}
+
+.Aboutus-HeroSection .middle-cont{
+display: flex;
+flex-direction: column;
+height: 10vw;
+margin-top: 1vw;
+margin-left: 50px;
+
+
+
+}
+
+
+.middle-cont .sahitya{
+  display: flex;
+  height: 44px;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  color: var(--Background, #FFF);
+font-family: Niramit;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-left: 0px;
+margin-top: 100px;
+text-align: center;
+gap: 10px;
+
+}
+
+
+.middle-cont .sahitya span{
+
+  display: flex;
+height: 55px;
+flex-direction: column;
+justify-content: flex-end;
+align-self: stretch;
+color: var(--Background, #FFF);
+font-family: Niramit;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+
+.middle-cont  .book-pages{
+
+margin-top: -250px;
+  height: 30vw;
+ 
+
+
+}
+
+.Aboutus-HeroSection .Books-bunch{
+  height: 30vh;
+  width: 13vw;
+  margin-top: 15vh;
+  margin-left: 5vw;
+}
+
+
+.Aboutus-HeroSection .sanskruti{
+
+  color: var(--Grey-Light, #D9D9D9);
+font-family: Niramit;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}

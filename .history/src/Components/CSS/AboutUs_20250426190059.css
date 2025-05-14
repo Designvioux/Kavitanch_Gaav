@@ -1,0 +1,30 @@
+.AboutUs-Container{
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.Aboutus-HeroSection{
+  display: flex;
+flex-direction: row;
+  background: url("../../Images/library.png") , no-repeat;
+ height: 70vh;
+ width: 100vw;
+ background-size: cover;
+ color: white;
+
+  
+}
+
+
+.Aboutus-HeroSection .bhasha{
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+
+.Aboutus-HeroSection .Likhit-img{
+  height: 20vh;
+  margin-top: 10vh;
+  width: 100vw;
+}

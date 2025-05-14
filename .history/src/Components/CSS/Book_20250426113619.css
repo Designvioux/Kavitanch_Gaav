@@ -1,0 +1,119 @@
+/* Book.css */
+
+/* Book outer container */
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #fafafa;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Book main wrapper */
+.book {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Pages wrapper */
+.pages {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Individual page */
+.page {
+  flex: 1;
+  height: 100%;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Left side page */
+.page:nth-child(even) {
+  background: white;
+  color: black;
+}
+
+/* Right side page */
+.page:nth-child(odd) {
+  background: #d62828; /* Red color similar to screenshot */
+  color: white;
+  font-weight: bold;
+}
+
+/* Navigation controls */
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+/* Nav Buttons */
+.controls button {
+  background: #f4a261;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.controls button:hover {
+  background: #e76f51;
+}
+
+.controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Position side arrows */
+.book-container::before,
+.book-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #f4a261;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.book-container::before {
+  left: 20px;
+}
+
+.book-container::after {
+  right: 20px;
+}

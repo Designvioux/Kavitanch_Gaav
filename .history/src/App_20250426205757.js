@@ -1,0 +1,33 @@
+
+import Blog from './Components/PageComponents/Blog/Blog_section.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import BlogDetails from './Components/PageComponents/Blog/BlogDetails.jsx';
+import Navbar from './Components/Navbar.jsx';
+import Home from './Components/Home.js';
+
+import Book from './Components/Book.jsx';
+import AboutUs from './Components/AboutUs.jsx';
+import Footer from './Components/Footer.jsx';
+// import Hero from './Components/Hero-Section.jsx';
+
+function App() {
+  return (
+    <div>
+  
+    <Router>
+    <Navbar/>
+    <Routes>
+      {/* <Route path="/Hero" element={<Hero/>}/> */}
+      <Route path="/" element={<Home/>}/>
+      <Route path="/Blog" element={<Blog/} />
+      <Route path="/blog-details" element={<BlogDetails />} />
+      <Route path="/book" element={<Book/>} />
+      <Route path="/about" element={<AboutUs/>}/>
+    </Routes>
+    <Footer/>
+  </Router>
+  </div>
+  );
+}
+
+export default App;

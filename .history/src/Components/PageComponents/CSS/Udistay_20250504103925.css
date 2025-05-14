@@ -1,0 +1,269 @@
+.Udistay-Container{
+  height: auto;
+  width: 100vw;
+margin-top: 120px;
+ 
+}
+
+.Udistay-heading span{
+  color:orange;
+  
+
+}
+
+
+.Udistay-heading{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 500px;
+  
+ 
+  margin: 0 auto; /* <-- This centers it horizontally */
+  
+
+  /* Heading/Niramit/Niramit */
+  font-family: Niramit;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-weight: bold;
+
+}
+
+.Mukhya-Udistay{
+
+display: flex;
+flex-direction: row;
+  margin-left: 140px;
+}
+
+
+.Mukhya-Udistay h3  {
+  color: var(--Text, #000);
+font-family: Niramit;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  margin-top: 40px;
+
+ 
+}
+
+
+.Mukhya-Udistay h6{
+  
+  margin-left: 10px;
+  color: #000;
+  font-family: Niramit;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
+
+
+}
+
+
+.Udistay-data{
+
+
+  margin-left: 140px;
+  margin-bottom: 100px;
+
+}
+
+.data-cont{
+
+
+  margin-top: 10px;
+  margin-left: 48px;
+  border: 2px solid rgba(201, 200, 200, 0.594);
+  border-radius: 10px;
+ padding-left: 20px;
+  width: 70vw;
+}
+
+.data-head{
+  color: var(--Text, #000);
+  font-family: Niramit;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+
+}
+
+.data-info span {
+  color: var(--Text, #000);
+
+  /* Body/Niramit */
+  font-family: Niramit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.data-info{
+  color: var(--Text, #000);
+
+/* Body/Niramit */
+font-family: Niramit;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px;
+}
+
+@media (max-width: 321px) {
+  .Udistay-Container {
+    width: 100%;
+    margin-top: 60px;
+    padding: 10px;
+    /* border: 2px solid black; */
+  }
+
+  .Udistay-heading {
+    flex-direction: row;
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    gap: 5px;
+    margin-top: -5px;
+  }
+
+  .Udistay-heading span {
+    color: orange;
+  }
+
+  .Mukhya-Udistay {
+    flex-direction: row;
+    margin: 20px auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Mukhya-Udistay h3 {
+    font-size: 15px;
+    margin-top: -12px;
+  }
+
+  .Mukhya-Udistay h6 {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .Udistay-data {
+    width: 90%;
+    margin-left: -5px;
+    margin-bottom: 60px;
+    padding: 0 10px;
+  }
+
+  .data-cont {
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  .data-head {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .data-info {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
+  }
+
+  .data-info span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 480px) {
+  .Udistay-Container {
+    width: 100%;
+    margin-top: 80px;
+    padding: 15px;
+  }
+
+  .Udistay-heading {
+    flex-direction: row;
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    gap: 8px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .Udistay-heading span {
+    color: orange;
+  }
+
+  .Mukhya-Udistay {
+    flex-direction: row;
+    margin: 20px auto;
+    align-items: center;
+    text-align: center;
+  /* border: 2px solid black; */
+  }
+
+  .Mukhya-Udistay h3 {
+    font-size: 15px;
+    margin-top: -2px;
+    
+  }
+
+  .Mukhya-Udistay h6 {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-left: 6px;
+  }
+
+  .Udistay-data {
+    width: 90%;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  .data-cont {
+    margin: 15px 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .data-head {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .data-info {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+  }
+
+  .data-info span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,337 @@
+.purvkaryakram-container {
+  background-color: #fffaf1;
+  padding: 80px 20px;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  border: 2px solid blsc;
+}
+
+.purvkaryakram-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.purvkaryakram-heading-main {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.purvkaryakram-orange {
+  color: #f57c00;
+}
+
+.purvkaryakram-black {
+  color: #000;
+}
+
+.purvkaryakram-heading-second {
+  max-width: 1644px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.purvkaryakram-event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+.purvkaryakram-event-card {
+  background-color: #fff3e0;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+ 
+}
+
+.purvkaryakram-event-image {
+  display: flex;
+  width: 250px;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+ 
+}
+
+.purvkaryakram-event-info {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #2c2c2c;
+}
+
+.purvkaryakram-event-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.purvkaryakram-event-date {
+  color: #888;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  width: auto 115px;
+  height: auto23px;
+}
+.purvkaryakram-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.purvkaryakram-view-all-button {
+text-align: center;
+margin-top: 20px;
+}
+
+
+.purvkaryakram-btn {
+display: inline-block;
+padding: 15px 18px;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+border-radius: 6px;
+box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+border:  1px solid var(--Brand, #EA7F13);
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+
+.btn_Brand {
+border-radius: 6px;
+border: 1px solid var(--Brand, #EA7F13);
+background: var(--Background, #FFF);
+color: #EA7F13;
+
+box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+.purvkaryakram-container {
+  background-color: #fffaf1;
+  padding: 80px 20px;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+.purvkaryakram-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.purvkaryakram-heading-main {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.purvkaryakram-orange {
+  color: #f57c00;
+}
+
+.purvkaryakram-black {
+  color: #000;
+}
+
+.purvkaryakram-heading-second {
+  max-width: 1644px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.purvkaryakram-event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+
+
+
+
+
+.event-info {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #2c2c2c;
+}
+
+.event-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.event-date {
+  color: #888;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  width: auto 115px;
+  height: auto23px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.view-all-button {
+text-align: center;
+margin-top: 20px;
+}
+
+.btn {
+display: inline-block;
+padding: 15px 18px;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+border-radius: 6px;
+box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+border:  1px solid var(--Brand, #EA7F13);
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+
+.btn_Brand {
+border-radius: 6px;
+border: 1px solid var(--Brand, #EA7F13);
+background: var(--Background, #FFF);
+color: #EA7F13;
+box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+.purvkaryakram-container {
+  background-color: #fffaf1;
+  padding: 80px 20px;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading-main {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.orange {
+  color: #f57c00;
+}
+
+.black {
+  color: #000;
+}
+
+.heading-second {
+  max-width: 1644px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+
+
+
+.event-info {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #2c2c2c;
+}
+
+.event-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.event-date {
+  color: #888;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  width: auto 115px;
+  height: auto23px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.view-all-button {
+text-align: center;
+margin-top: 20px;
+
+}
+
+
+.btn {
+display: inline-block;
+padding: 15px 18px;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+border-radius: 6px;
+box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+border:  1px solid var(--Brand, #EA7F13);
+cursor: pointer;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+
+.order_now {
+background-color: #ff6b6b; 
+color: white;
+cursor: pointer;
+}
+
+.btn_Brand {
+border-radius: 6px;
+border: 1px solid var(--Brand, #EA7F13);
+background: var(--Background, #FFF);
+color: #EA7F13;
+
+box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+cursor: pointer;
+}
+
+
+
+
+

@@ -1,0 +1,41 @@
+import React from 'react';
+
+import HeroSection from './PageComponents/About/HeroSection';
+import AboutInfo from './PageComponents/About/AboutInfo';
+import Prawas from './PageComponents/About/Prawas';
+import Udistay from './PageComponents/About/Udishtay';
+
+
+ 
+const AboutUs = () =>{
+
+
+
+
+return (
+
+  <div className='AboutUs-Container'>
+ <HeroSection/>
+ <AboutInfo/>  
+<Prawas/>
+<Udistay/>
+
+
+
+
+  </div>
+
+
+
+
+
+
+)
+
+
+
+}
+
+
+
+export default AboutUs;

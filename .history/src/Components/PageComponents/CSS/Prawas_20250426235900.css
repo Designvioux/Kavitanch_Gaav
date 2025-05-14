@@ -1,0 +1,142 @@
+
+.Prawas-heading{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  gap:10px;
+}
+
+
+
+.Prawas-heading span{
+
+color: orange;
+}
+
+
+.Prawas-head{
+ 
+}
+
+
+.timeline-container {
+  font-family: 'sans-serif';
+  text-align: center;
+  padding: 20px;
+  background: orange;
+}
+
+.timeline-bar {
+  margin: 20px 0;
+  position: relative;
+}
+
+.timeline-line {
+  height: 2px;
+  background: rgb(255, 255, 255);
+  position: relative;
+  margin: 20px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: -5px;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  transition: background 0.3s;
+}
+
+.timeline-dot.active {
+  background: #ffffff;
+  width: 20px;
+  height: 20px;
+  top:-10px;
+}
+
+.timeline-years {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.timeline-year {
+  color: black;
+  font-weight: bold;
+}
+
+.timeline-year.selected {
+  color: #007bff;
+}
+
+.event-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  
+}
+
+.arrow-button {
+  font-size: 24px;
+  padding: 8px 12px;
+  background: none;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.arrow-button:hover {
+  background: #007bff;
+  color: white;
+}
+
+.arrow-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.event-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.event-date {
+  display: flex;
+  justify-content: center;
+ position: relative;
+  font-size: 24px;
+  color: orange;
+}
+
+.event-title {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.event-description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.event-images {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.event-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}

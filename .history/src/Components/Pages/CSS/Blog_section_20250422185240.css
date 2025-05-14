@@ -1,0 +1,267 @@
+.blog-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.blog-para{
+  margin: 0;
+  color: var(--Grey, #848484);
+}
+
+.title {
+  color: var(--Text, #000);
+  font-family: Niramit;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  margin: 0;
+  padding: 0;
+}
+
+.title span {
+  color: #EA7F13;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  margin: 0;
+  padding: 0;
+}
+
+.search-text {
+  color: var(--Grey, #848484);
+  text-align: center;
+  font-family: Niramit;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.search-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.search-bar {
+  border-radius: 8px;
+  border: 1px solid #CCC;
+  display: flex;
+  padding: 5px 10px 5px 24px;
+  align-items: center;
+  gap: 34px;
+  margin-top: 40px;
+  width: 364.477px;
+}
+
+.search-text {
+  color: #6F6F6F;
+  font-family: Roboto;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+
+.seacrh-icon {
+  display: flex;
+  width: 47px;
+  height: 47px;
+  gap: 10px;
+  border-radius: 23.5px;
+  background: #EA7F13;
+  margin-left: 155px;
+}
+
+.category-title {
+  color: var(--Text, #000);
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 24px 0 0 0;
+}
+
+.category-filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.kavita-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #C6C6C6;
+  background: #FFF;
+  color: #EA7F13;
+  text-align: center;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.kavita-filters:hover {
+  background: #EA7F13;
+  color: #FFF;
+}
+
+.kavita-filters.active {
+  background: #EA7F13;
+  color: #FFF;
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 24px;
+  margin: 40px;
+}
+
+.event-card {
+  position: relative;
+  border: 1px solid var(--Brand, #EA7F13);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+ 
+
+}
+
+.blog-calendar {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.card-date {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-category {
+  background: #fff3e3;
+  color: #ea7f13;
+  font-size: 14px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  width: fit-content;
+  margin: 8px 0;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  color: #000;
+}
+
+.card-location,
+.card-topic {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  margin: 12px 0;
+}
+
+.card-readmore {
+  margin-top: auto;
+  align-self: flex-start;
+  color: #ea7f13;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration-line: underline;
+  transition: all 0.3s ease;
+}
+
+.card-readmore:hover {
+  color: #ff8000;
+}
+
+
+
+
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  gap: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.page-btn {
+  border: none;
+  background-color: #fff;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page-btn:hover {
+  background-color: #ffa726;
+  color: white;
+}
+
+.page-btn.active {
+  background-color: #ffa726;
+  color: white;
+}
+
+.page-dots {
+  padding: 0 10px;
+  color: #999;
+  font-weight: bold;
+}

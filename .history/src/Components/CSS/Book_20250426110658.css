@@ -1,0 +1,91 @@
+/* Book container background */
+
+
+/* Main flipbook styling */
+.flip-book {
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+/* Cover Page (First page) */
+.cover-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffe5b4;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #c0392b;
+}
+
+/* Left page (red background) */
+.left-page {
+  background: #e53935;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.left-page h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.left-page h2 {
+  font-size: 1.2rem;
+}
+
+/* Right page (white background) */
+.right-page {
+  background: #ffffff;
+  color: #111111;
+  padding: 2rem;
+  line-height: 1.8;
+  font-family: 'Baloo 2', cursive;
+}
+
+.right-page h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Flip buttons */
+.flip-button {
+  background-color: #ffe0e0;
+  color: #222;
+  font-weight: bold;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.flip-button:hover {
+  background-color: #ffbdbd;
+  transform: scale(1.1);
+}
+
+/* Button positioning */
+.button-left {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button-right {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}

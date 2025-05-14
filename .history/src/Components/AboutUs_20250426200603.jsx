@@ -1,0 +1,72 @@
+import React from 'react';
+import './CSS/AboutUs.css'
+import Book from '../Images/bookCover.png';
+import Likit from  '../Images/Likhit.png';
+import Book2 from  '../Images/Book2.png';
+ 
+const AboutUs = () =>{
+
+
+
+
+return (
+
+  <div className='AboutUs-Container'>
+<div className='Aboutus-HeroSection'>
+<h4 className='bhasha'>भाषेचा प्रचार</h4>
+<img src={Likit} alt="Likit" className='Likhit-img'></img>
+
+<div className='middle-cont'>
+<h2 className='sahitya'>साहित्याच सादरीकरण  </h2>
+
+<img src={Book2} alt='page-book' className='book-pages'></img>
+
+</div>
+
+<img src={Book} alt="Books" className='Books-bunch'></img>
+<p className='sanskruti'>संस्कृतीची जोपासना</p>
+
+
+</div>
+
+<div className='About-info'>
+  <h3></h3>
+
+</div>
+
+<div className='Gallery-Container'>
+<div className='img1'>
+  <img></img>
+</div>
+<div className='img-cont'>
+  <img></img>
+  <img></img>
+  <img></img>
+  <img></img>
+  <img></img>
+</div>
+
+
+</div>
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+)
+
+
+
+}
+
+
+
+export default AboutUs;

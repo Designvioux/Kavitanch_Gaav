@@ -1,0 +1,172 @@
+
+.gallery-container{
+
+font-family: Amita;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px; 
+}
+.gallery-title{
+  display: flex;
+  font-family: Amita;
+
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px; 
+
+
+}
+
+/* .image-cont1{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50%;
+}
+
+.image-cont2{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50%;
+}
+.right-img-cont{
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  width:10px;
+  height: 10px;
+}
+
+.gallery-image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+} */
+
+
+.gallery-image-container {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image-cont1, .image-cont2 ,.image-cont3 , .image-cont4{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  box-sizing: border-box;
+
+ 
+}
+
+.right-img-cont {
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 10px;
+  flex: 1;
+  
+}
+
+/* .image-cont1 img,
+.image-cont2 img,
+.right-img-cont img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+} */
+
+/* .right-img-cont img {
+  width: 48%;
+} */
+
+.img1{
+  width: 40%;
+
+}
+
+.img2, .img3 {
+  width: calc(50% - 5px); 
+}
+
+.img4 {
+  width: 100%;
+}
+
+
+.img11{
+  width: 50%;
+}
+
+.img22, .img33 {
+  width: calc(50% - 5px); 
+}
+
+.img44 {
+  width: 100%;
+}
+
+
+.img111{
+width: 40%;
+/* height: 30px; */
+  
+}
+
+.img222, .img333 {
+  width: calc(50% - 5px); 
+}
+
+.img444 {
+
+  width: 100%;
+}
+
+
+/* .right-bottom-img{
+  width: 100%;
+} */
+
+
+/* .right-img-cont img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; 
+} */
+
+
+
+
+.img1111{
+  width: 45%;
+  /* height: 30px; */
+    
+  }
+  
+  .img2222, .img3333 {
+
+    width: calc(40% - 5rem); 
+    width: 10vw;
+    height: 150px;
+    margin: 5px;
+
+  }
+  
+  .img4444 {
+ width: 100%;
+
+  }

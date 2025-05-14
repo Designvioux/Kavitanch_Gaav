@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Niramit', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: -30px;
+}
+
+/* Container for the section */
+.aamcha-section {
+    padding: 60px 20px;
+    max-width: 100%;
+    margin: auto;
+    font-family: Niramit;
+    background-color: #ffffff;
+}
+
+/* Title adjustments for smaller screens */
+.aamcha-title {
+    text-align: center;
+    font-size: 32px; /* Adjusted for small screen */
+    margin-bottom: 20px;
+    margin-top: -40px;
+}
+
+.orange-text {
+    color: #f57c00;
+}
+
+/* Description styling for mobile */
+.aamcha-description {
+    text-align: center;
+    color: var(--Grey, #848484);
+    font-family: Niramit;
+    font-size: 16px; /* Adjusted font size */
+    line-height: 1.5;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%; /* Adjust for small screens */
+    padding: 0 15px; /* Added padding for better readability */
+}
+
+/*******************************************************************************************************  */
+
+/* Content Box Styling */
+.aamcha-content {
+    background-color: #fff3e0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column; /* Stacked vertically on small screens */
+    align-items: center;
+    padding: 20px 20px;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #fff3e0;
+    margin-top: 50px; /* Reduced top margin for mobile */
+    width: 100%; /* Full width */
+    height: auto; /* Adjusted for mobile size */
+}
+
+/* Image styling inside the content */
+.aamcha-image img {
+    display: flex;
+    text-align: center;
+    margin-top: 0;
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Automatically adjust height */
+    flex-shrink: 0;
+    border: 2px solid #fff3e0;
+    border-radius: 20px;
+}
+
+/* Ebook card adjustments */
+.aamcha-card {
+    width: 100%;
+    text-align: center;
+    margin-left: 0; /* Adjust for small screen */
+    margin-top: 30px;
+}
+
+/* Ebook title styling */
+.ebook-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+    text-align: center;
+    margin-left: 0;
+}
+
+/* Ebook description */
+.ebook-desc {
+    color: var(--Grey, #848484);
+    font-family: Niramit;
+    font-size: 14px; /* Smaller font for mobile */
+    text-align: center;
+}
+
+/* Button container */
+.ebook-buttons {
+    display: flex;
+    gap: 15px;
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Button styles */
+.read-button {
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: block;
+    width: 90%; /* Button width adjusts to mobile */
+    margin: 0 auto;
+}
+
+.download-button {
+    background-color: #fff;
+    color: #f57c00;
+    border: 2px solid #f57c00;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    width: 90%; /* Button width adjusts to mobile */
+    margin: 0 auto;
+}
+
+.read-button:hover,
+.download-button:hover {
+    opacity: 0.85;
+}
+
+/* Image styling for the aamcha-section */
+.aamcha-image {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+/* For mobile responsiveness (321px) */
+@media (max-width: 321px) {
+
+    /* Adjust title and description */
+    .aamcha-title {
+        font-size: 28px;
+    }
+
+    .aamcha-description {
+        font-size: 14px;
+        padding: 0 10px; /* Reduce padding for mobile */
+    }
+
+    .aamcha-content {
+        padding: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .aamcha-card {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Adjust ebook title and description */
+    .ebook-title {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .ebook-desc {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    /* Buttons adjustment */
+    .ebook-buttons {
+        gap: 10px;
+    }
+
+    .read-button,
+    .download-button {
+        width: 90%;
+        padding: 10px 15px;
+        font-size: 14px;
+        margin: 10px auto;
+    }
+
+    /* Image adjustments */
+    .aamcha-image img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

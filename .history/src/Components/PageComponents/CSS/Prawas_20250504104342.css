@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+.Prawas-Container{
+  height: auto;
+  width: 100vw;
+  margin-top: 180px;
+}
+
+.Prawas-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 500px;
+  margin: 0 auto; /* <-- This centers it horizontally */
+
+  /* Heading/Niramit/Niramit */
+  font-family: Niramit;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.Prawas-Container .Prawas-heading span{
+  color: orange;
+}
+
+.Prawas-Container .timeline-container {
+  margin-top: 20px;
+  font-family: 'sans-serif';
+  text-align: center;
+  padding: 10px;
+  background: orange;
+}
+
+.Prawas-Container .timeline-bar {
+  margin: 20px 0;
+  position: relative;
+}
+
+.Prawas-Container .timeline-line {
+  height: 2px;
+  background: rgb(255, 255, 255);
+  position: relative;
+  margin: 20px;
+}
+
+.Prawas-Container .timeline-dot {
+  position: absolute;
+  top: -5px;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  transition: background 0.3s;
+}
+
+.Prawas-Container .timeline-dot.active {
+  background: #ffffff;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+}
+
+.Prawas-Container .timeline-years {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.Prawas-Container .timeline-year {
+  color: black;
+  font-weight: bold;
+}
+
+.Prawas-Container .timeline-year.selected {
+  color: #007bff;
+}
+
+.Prawas-Container .event-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+.Prawas-Container .arrow-button {
+  font-size: 24px;
+  padding: 8px 12px;
+  background: none;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.Prawas-Container .arrow-button:hover {
+  background: #007bff;
+  color: white;
+}
+
+.Prawas-Container .arrow-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.Prawas-Container .event-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.Prawas-Container .event-date {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: var(--Brand, #EA7F13);
+  text-align: center;
+  font-family: Niramit;
+  font-size: 29px;
+  font-weight: 400;
+}
+
+.Prawas-Container .event-title {
+  color: orange;
+  margin-bottom: 10px;
+  font-family: Niramit;
+  font-size: 29px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.Prawas-Container .event-description {
+  color: var(--Text, #000);
+  text-align: center;
+  font-family: Niramit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Prawas-Container .event-images {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.Prawas-Container .event-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+@media (max-width: 480px) {
+  .Prawas-Container {
+    width: 100%;
+    margin-top: 80px;
+    padding: 15px;
+  }
+
+  .Prawas-heading {
+    flex-direction: column;
+    width: 100%;
+    font-size: 32px;
+    gap: 10px;
+    text-align: center;
+    margin-top: -40px;
+    font-weight: bold;
+  }
+
+  .Prawas-Container .timeline-container {
+    padding: 1px 0px 0px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .Prawas-Container .timeline-line {
+    width: 90%;
+    margin: 15px auto;
+  }
+
+  .Prawas-Container .timeline-years {
+    flex-direction: row;
+    align-items: center;
+    gap: 58px;
+    padding: 0 10px;
+    justify-content: center;
+  }
+
+  .Prawas-Container .timeline-year {
+    font-size: 16px;
+  }
+
+  .Prawas-Container .event-section {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+    padding: 0 10px;
+  }
+
+  .Prawas-Container .arrow-button {
+    font-size: 22px;
+    padding: 8px 12px;
+    margin-top: 20px;
+  }
+
+  .Prawas-Container .event-content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .Prawas-Container .event-date,
+  .Prawas-Container .event-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .Prawas-Container .event-description {
+    font-size: 15px;
+    padding: 0 10px;
+    text-align: justify;
+    line-height: 24px;
+  }
+
+  .Prawas-Container .event-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+  }
+
+  .Prawas-Container .event-image {
+    width: 95%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .Prawas-Container {
+    width: 100%;
+    margin-top: 90px; /* Reduced margin-top */
+    padding: 10px;
+  }
+
+  .Prawas-heading {
+    flex-direction: column;
+    width: 100%;
+    font-size: 26px; /* Slightly smaller font size */
+    gap: 6px;
+    text-align: center;
+    margin-top: -50px; /* Adjusted top margin */
+    font-weight: bold;
+  }
+
+  .Prawas-Container .timeline-container {
+    padding: 0;
+    width: 100%;
+    margin-left: -5px;
+  }
+
+  .Prawas-Container .timeline-line {
+    margin: 10px 0;
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .Prawas-Container .timeline-years {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    margin-left: 5px;
+  }
+
+  .Prawas-Container .timeline-year {
+    font-size: 12px; /* Smaller font size for better fit */
+  }
+
+  .Prawas-Container .event-section {
+    flex-direction: column;
+    gap: 12px; /* Reduced gap */
+    margin-top: 15px;
+  }
+
+  .Prawas-Container .arrow-button {
+    font-size: 18px; /* Reduced font size */
+    padding: 6px 8px;
+    margin-top: 15px;
+  }
+
+  .Prawas-Container .event-content {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  .Prawas-Container .event-date,
+  .Prawas-Container .event-title {
+    font-size: 18px; /* Smaller font size */
+  }
+
+  .Prawas-Container .event-description {
+    font-size: 12px; /* Adjusted font size */
+    padding: 0 8px;
+    text-align: justify;
+  }
+
+  .Prawas-Container .event-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .Prawas-Container .event-image {
+    width: 85%;
+    height: auto;
+  }
+}
+
+
+
+@media (max-width: 321px) {
+  .Prawas-Container {
+    width: 100%;
+    margin-top: 100px;
+    padding: 10px;
+  }
+
+  .Prawas-heading {
+    flex-direction: column;
+    width: 100%;
+    font-size: 28px; /* Smaller font size */
+    gap: 8px;
+    text-align: center;
+    margin-top: -60px;
+    font-weight: bold;
+  }
+
+  .Prawas-Container .timeline-container {
+    padding: -5px;
+    width: 100%;
+    margin-left: -10px;
+  }
+
+  .Prawas-Container .timeline-line {
+    margin: 10px 0;
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .Prawas-Container .timeline-years {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    margin-left: 5px;
+  }
+
+  .Prawas-Container .timeline-year {
+    font-size: 14px;
+  }
+
+  .Prawas-Container .event-section {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .Prawas-Container .arrow-button {
+    font-size: 20px;
+    padding: 6px 10px;
+    margin-top: 20px;
+  }
+
+  .Prawas-Container .event-content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .Prawas-Container .event-date,
+  .Prawas-Container .event-title {
+    font-size: 20px;
+  }
+
+  .Prawas-Container .event-description {
+    font-size: 14px;
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  .Prawas-Container .event-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .Prawas-Container .event-image {
+    width: 90%;
+    height: auto;
+  }
+}

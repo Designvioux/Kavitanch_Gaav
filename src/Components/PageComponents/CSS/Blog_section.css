@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+.blog-page{
+  margin-bottom: 50px;
+}
+.blog-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: -20px;
+  
+}
+.blog-orange{
+  color: #EA7F13;
+  font-size: 54px;
+  font-family: Niramit;
+ display: flex;
+ flex-direction: row;
+ font-weight: 800;
+}
+
+
+.blog-black{
+  color: black;
+  font-size: 54px;
+  /* font-size: 54px; */
+  font-family: Niramit;
+   flex-direction: row;
+   margin-left: 10px;
+   font-weight: 800;
+}
+.blog-para{
+  margin: 0;
+  color: var(--Grey, #848484);
+  margin-top: 30px;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 20px;
+}
+.blog-search-text {
+    color: var(--Grey, #848484);
+    text-align: center;
+    font-family: Niramit;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-search-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100px;
+}
+
+.blog-search-bar {
+    /* border-radius: 8px; */
+    display: flex;
+    padding: 5px 10px 5px 24px;
+    align-items: center;
+    gap: 34px;
+    margin-top: -10px;
+    width: 384.477px;
+
+ 
+}
+.blog-search-type{
+  width: 900px;
+    height: 40px;
+}
+.blog-seacrh-icon {
+    display: flex;
+    width: 41px;
+    height: 41px;
+    gap: 10px;
+    /* border-radius: 23.5px; */
+    background: #EA7F13;
+    margin-left: -75px;
+    margin-top: 0.5px;
+}
+
+.category-title {
+  color: var(--Text, #000);
+  text-align: center;
+  font-family: Inter;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: -15px 0 0 0;
+}
+
+.category-filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.kavita-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #C6C6C6;
+  background: #FFF;
+  color: #EA7F13;
+  text-align: center;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.kavita-filters:hover {
+  background: #EA7F13;
+  color: #FFF;
+}
+
+.kavita-filters.active {
+  background: #EA7F13;
+  color: #FFF;
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 24px;
+  margin: 15px;
+}
+
+.event-card {
+ position: relative;
+  width: 300px;
+  min-width: 300px; /* Prevent cards from shrinking */
+  
+  border: 1px solid var(--Brand, #EA7F13);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+ 
+
+}
+
+.blog-calendar {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.card-date {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-category {
+  background: #fff3e3;
+  color: #ea7f13;
+  font-size: 14px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  width: fit-content;
+  margin: 8px 0;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  color: #000;
+}
+
+.card-location,
+.card-topic {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  margin: 12px 0;
+}
+
+.card-readmore {
+  margin-top: auto;
+  align-self: flex-start;
+  color: #ea7f13;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration-line: underline;
+  transition: all 0.3s ease;
+}
+
+.card-readmore:hover {
+  color: #ff8000;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  gap: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.page-btn {
+  border: none;
+  background-color: #fff;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: -10px;
+}
+
+.page-btn:hover {
+  background-color: #ffa726;
+  color: white;
+}
+
+.page-btn.active {
+  background-color: #ffa726;
+  color: white;
+}
+
+.page-dots {
+  padding: 0 10px;
+  color: #999;
+  font-weight: bold;
+}
+
+
+
+
+
+/* Responsive styles for 480px and below */
+@media (max-width: 480px) {
+  .blog-title {
+    margin-top: 20px;
+    padding: 0 16px;
+  }
+
+  .title, .title span {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .search-text {
+    font-size: 16px;
+    padding: 0 12px;
+  }
+
+  .search-sec {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .search-bar {
+    flex-direction: row;
+    width: 90%;
+    padding: 5px 12px;
+    gap: 12px;
+  }
+
+  .search-type {
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+
+  .seacrh-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .category-title {
+    font-size: 20px;
+    padding: 0 12px;
+  }
+
+  .category-filters {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 12px;
+  }
+
+  .kavita-filters {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 12px;
+    margin: 20px 0;
+  }
+
+  .event-card {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-description {
+    font-size: 13px;
+  }
+
+  .card-location,
+  .card-topic {
+    font-size: 13px;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    margin: 24px 0;
+  }
+
+  .page-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  /* Additional spacing for small screens */
+  .blog-title,
+  .category-title,
+  .card-container,
+  .pagination {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .blog-title {
+    margin-top: 16px;
+    padding: 0 12px;
+  }
+
+  .title, .title span {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .search-text {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .search-sec {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -30px;
+  }
+
+  .search-bar {
+    width: 90%;
+    padding: 5px 10px;
+    gap: 10px;
+  }
+
+  .search-type {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 14px;
+  }
+
+  .seacrh-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .category-title {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .category-filters {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 10px;
+    margin-left: -6px;
+  }
+
+  .kavita-filters {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    margin: -10px 0;
+  }
+
+  .event-card {
+    width: 100%;
+    min-width: 100%;
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 13px;
+  }
+
+  .card-description {
+    font-size: 12px;
+  }
+
+  .card-location,
+  .card-topic {
+    font-size: 12px;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 6px;
+  }
+
+  .page-btn {
+    padding: 5px 8px;
+    font-size: 13px;
+    margin-top: -30px;
+  }
+
+  /* Optional: Reduce shadow and padding for very small screens */
+  .event-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+}

@@ -1,0 +1,41 @@
+.Niyonit-Container{
+  height: auto;
+  width: 100vw;
+  position: relative;
+}
+
+.Niyojit-head{
+  display: flex;
+justify-content: center;
+gap:10px;
+font-size: 30px;
+}
+
+.Niyojit-head span{
+  color: orange;
+}
+
+.Niyojit-card{
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+.Niyojit-Cards-1{
+
+border: 2px solid black;
+width: 600px;
+
+
+}
+
+.Niyojit-Cards-2{
+  border: 2px solid black;
+  width: 600px;
+  
+}
+

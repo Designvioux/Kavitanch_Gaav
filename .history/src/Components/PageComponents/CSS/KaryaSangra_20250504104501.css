@@ -1,0 +1,109 @@
+.karyaSangra-Container {
+  height: auto;
+  width: 100vw;
+  margin-top: -90px;
+}
+
+.KaryaSangra-heading {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 500px;
+  margin: 0 auto; /* <-- This centers it horizontally */
+  
+  /* Heading/Niramit/Niramit */
+  font-family: Niramit;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-weight: bold;
+}
+
+.KaryaSangra-heading span {
+  color: orange;
+}
+
+.Img-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.img-box {
+  height: 40vh;
+}
+
+/* For small screens (max-width: 321px) */
+@media (max-width: 321px) {
+  .karyaSangra-Container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .KaryaSangra-heading {
+    width: 100%;
+    flex-direction: column; /* Switch to column layout */
+    font-size: 28px; /* Smaller font size */
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .Img-Container {
+    flex-direction: column; /* Stack images vertically */
+    gap: 20px;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .img-box {
+    width: 90%;
+    height: auto; /* Ensure image height adapts */
+    object-fit: cover; /* Keep aspect ratio */
+  }
+}
+
+/* For medium-small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .karyaSangra-Container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .KaryaSangra-heading {
+    width: 100%;
+    flex-direction: column; /* Column layout on smaller screens */
+    font-size: 28px; /* Slightly smaller font size */
+    text-align: center;
+    padding: 0 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .Img-Container {
+    flex-direction: column; /* Stack images vertically */
+    gap: 20px;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .img-box {
+    width: 90%; /* Set the image width to 90% */
+    height: auto;
+    object-fit: cover; /* Make sure the image maintains its aspect ratio */
+  }
+}

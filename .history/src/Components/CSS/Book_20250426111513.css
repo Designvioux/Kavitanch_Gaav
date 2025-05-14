@@ -1,0 +1,100 @@
+/* Book.css */
+
+/* General body settings */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6; /* Light gray background */
+  font-family: 'Noto Serif', serif;
+}
+
+/* Book container */
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f3f4f6;
+  padding: 1rem;
+}
+
+/* Title styling */
+.book-title {
+  font-size: 2.25rem; /* 36px */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fb923c; /* Tailwind orange-400 */
+}
+
+/* Subtitle / Tagline */
+.book-tagline {
+  font-size: 1.25rem; /* 20px */
+  margin-bottom: 1.5rem;
+  font-family: 'Noto Serif', serif;
+  text-align: center;
+  color: #4b5563; /* Gray-700 */
+}
+
+/* Flipbook styling */
+.flip-book {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Individual page styling */
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  background: white;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Noto Serif', serif;
+}
+
+/* Cover page styling */
+.cover-page {
+  background-color: #dc2626; /* Red-600 */
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+/* Navigation button styling */
+.nav-button {
+  background-color: #fb923c; /* Orange-400 */
+  color: white;
+  padding: 0.75rem;
+  border-radius: 9999px; /* Fully round */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #f97316; /* Orange-500 */
+}
+
+/* Button positioning */
+.button-left {
+  position: absolute;
+  left: -4rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button-right {
+  position: absolute;
+  right: -4rem;
+  top: 50%;
+  transform: translateY(-50%);
+}

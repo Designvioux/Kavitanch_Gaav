@@ -1,0 +1,455 @@
+
+.gallery-container{
+
+  font-family: Niramit;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px; 
+}
+.gallery-title{
+  display: flex;
+  font-family: Amita;
+
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px; 
+
+
+}
+
+/* .image-cont1{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50%;
+}
+
+.image-cont2{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50%;
+}
+.right-img-cont{
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  width:10px;
+  height: 10px;
+}
+
+.gallery-image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+} */
+
+
+.gallery-image-container {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image-cont1, .images-cont2, .image-cont3, .image-cont4 {
+  position: relative; /* Needed for positioning pseudo-elements */
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  box-sizing: border-box;
+  padding-top:40px; /* Space for the 'HI' text */
+  padding-bottom:5px; /* Space for the 'HI' text */
+  margin-top: 20px;
+  border: 2px solid rgba(64, 64, 64, 0.468);
+border-radius: 5px;
+padding-left: 2px;
+padding-right: 5px;
+}
+
+.image-cont1::before {
+  display: flex;
+
+
+  content: "संमेलन"; /* Add your content */
+  position: absolute;
+  top: -10px;
+  left: 10px;
+
+  
+  font-weight: bold;
+
+
+  font-size: 20px;
+  
+
+
+}
+
+.images-cont2::before  {
+  display: flex;
+
+
+  content: "स्पर्धा"; /* Add your content */
+  position: absolute;
+  top: -10px;
+  left: 10px;
+
+  
+  font-weight: bold;
+
+
+  font-size: 20px;
+
+
+}
+
+
+.image-cont3::before {
+  display: flex;
+
+
+  content: "बातम्या"; /* Add your content */
+  position: absolute;
+  top: -10px;
+  left: 10px;
+
+  
+  font-weight: bold;
+
+
+  font-size: 20px;
+
+}
+
+
+.image-cont4::before {
+  display: flex;
+
+
+  content: "भिंतीवरील कविता"; /* Add your content */
+  position: absolute;
+  top: -10px;
+  left: 10px;
+
+  
+  font-weight: bold;
+
+
+  font-size: 20px;
+
+}
+
+.right-img-cont {
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 10px;
+  flex: 1;
+  
+}
+
+/* .image-cont1 img,
+.image-cont2 img,
+.right-img-cont img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+} */
+
+/* .right-img-cont img {
+  width: 48%;
+} */
+
+.img1{
+  width: 40%;
+
+}
+
+.img2, .img3 {
+  width: calc(50% - 5px); 
+}
+
+.img4 {
+  width: 100%;
+}
+
+
+.img-11{
+  width: 50%;
+}
+
+.img-22, .img-33 {
+  width: calc(50% - 5px); 
+}
+
+.img-44 {
+  width: 100%;
+}
+
+
+.img111{
+width: 42%;
+/* height: 30px; */
+  
+}
+
+.img222, .img333 {
+  width: calc(50% - 5px); 
+}
+
+.img444 {
+
+  width: 100%;
+}
+
+
+/* .right-bottom-img{
+  width: 100%;
+} */
+
+
+/* .right-img-cont img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; 
+} */
+
+
+
+
+.img1111{
+  width: 45%;
+  /* height: 30px; */
+    
+  }
+  
+  .img2222, .img3333 {
+
+    width: calc(40% - 5rem); 
+    width: 11vw;
+    height: 18vh;
+    margin-left: 0px;
+
+  }
+  
+  .img4444 {
+ width: 100%;
+
+  }
+
+
+.View-More{
+  display:flex ;
+  justify-content:center ;
+}
+  .view-more{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px;
+    cursor: pointer;
+  }
+
+  .view-more:hover{
+background-color: rgb(255, 123, 0);
+transition: calc(0.8s);
+cursor: pointer;
+  }
+
+  @media (max-width: 400px) {
+    .gallery-container {
+      font-size: 32px;
+      line-height: 42px;
+      text-align: center;
+      width: 100vw;
+      padding: 2.3vw;
+      border: ;
+     
+    }
+  
+    .gallery-title {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      flex-direction: column;
+    }
+  
+    .gallery-image-container {
+      flex-direction: column;
+      padding: 10px;
+      gap: 12px;
+    }
+  
+    .image-cont1,
+    .images-cont2,
+    .image-cont3,
+    .image-cont4 {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 10px;
+      margin-top: 10px;
+    }
+  
+    .image-cont1::before,
+    .images-cont2::before,
+    .image-cont3::before,
+    .image-cont4::before {
+      font-size: 16px;
+      top: -5px;
+      left: 10px;
+    }
+  
+    .right-img-cont {
+      margin-left: 0;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img-11,
+    .img-22,
+    .img-33,
+    .img-44,
+    .img111,
+    .img222,
+    .img333,
+    .img444,
+    .img1111,
+    .img2222,
+    .img3333,
+    .img4444 {
+      width: 100% !important;
+      height: auto;
+    }
+  
+    .img2222,
+    .img3333 {
+      width: 80vw !important;
+    }
+  
+    .View-More {
+      justify-content: center;
+    }
+  
+    .view-more {
+      width: 90%;
+      font-size: 14px;
+      padding: 10px;
+      margin: 15px auto;
+      border-radius: 15px;
+    }
+  }
+  
+
+  @media (max-width: 321px) {
+    .gallery-container {
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
+      width: 100vw;
+      padding: 4vw;
+      border: 2px solid black;
+    }
+  
+    .gallery-title {
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      flex-direction: column;
+    }
+  
+    .gallery-image-container {
+      flex-direction: column;
+      padding: 10px;
+      gap: 15px;
+    }
+  
+    .image-cont1,
+    .images-cont2,
+    .image-cont3,
+    .image-cont4 {
+
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 10px;
+      margin-top: 10px;
+      
+    }
+  
+    .image-cont1::before,
+    .images-cont2::before,
+    .image-cont3::before,
+    .image-cont4::before {
+      font-size: 16px;
+      top: -5px;
+      left: 5px;
+    }
+  
+    .right-img-cont {
+      margin-left: 0;
+      gap: 8px;
+      justify-content: center;
+    }
+  
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img-11,
+    .img-22,
+    .img-33,
+    .img-44,
+    .img111,
+    .img222,
+    .img333,
+    .img444,
+    .img1111,
+    .img2222,
+    .img3333,
+    .img4444 {
+      width: 100% !important;
+      height: auto;
+    }
+  
+    .img2222,
+    .img3333 {
+      width: 80vw !important;
+      height: auto;
+    }
+  
+    .View-More {
+      justify-content: center;
+    }
+  
+    .view-more {
+      width: 90%;
+      font-size: 14px;
+      padding: 8px;
+      margin: 10px auto;
+    }
+  }
+  

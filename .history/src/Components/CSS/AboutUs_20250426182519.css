@@ -1,0 +1,11 @@
+.AboutUs-Container{
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+}
+
+.Aboutus-HeroSection{
+
+  background: url(../../Images/library.png);
+  background-color: 100vh 100vw;
+}

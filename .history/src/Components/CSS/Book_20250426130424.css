@@ -1,0 +1,203 @@
+/* Book Container */
+.book-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1500px;
+  background-color: #f8f1e5;
+  padding: 2rem;
+}
+
+/* Book Main Structure */
+.book-main {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Pages Wrapper */
+.book-pages-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+/* Individual Page Styles */
+.book-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left center;
+  transition: transform 1s ease-in-out;
+  background: white;
+  overflow: hidden;
+  box-shadow: inset 7px 0 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Right Pages (odd-numbered) */
+.book-page:nth-child(odd) {
+  background: linear-gradient(to right, #fff 95%, #f0e6d2 100%);
+  border-right:2px solid black;
+}
+
+/* Left Pages (even-numbered) */
+.book-page:nth-child(even) {
+  background: linear-gradient(to right, #f9f9f9 95%, #e0d5c0 100%);
+}
+
+/* Flipped State */
+.book-page-flipped {
+  transform: rotateY(-180deg);
+}
+
+/* Page Content Styles */
+.page-content {
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.page-content h2 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 2.2rem;
+  color: #5a3921;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.page-content h3 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.8rem;
+  color: #7a5a3b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.poem-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* changed from center to start */
+  white-space: pre-wrap; /* NEW: this keeps poem line breaks */
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  overflow-y: auto;
+  padding-top: 1rem;
+}
+
+.poem-content p {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.page-footer {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.2rem;
+  color: #5a3921;
+  text-align: center;
+  margin-top: auto;
+  padding-bottom: 1rem;
+}
+
+/* Navigation Buttons */
+.book-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(210, 180, 140, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: #5a3921;
+}
+
+.book-nav:hover {
+  background: rgba(210, 180, 140, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.book-nav-left {
+  left: 100px;
+}
+
+.book-nav-right {
+  right: 190px;
+}
+
+/* Book Spine Effect */
+.book-main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 100%;
+  background: linear-gradient(to right, #5a3921 0%, #8b5a2b 100%);
+  transform: translateX(-15px);
+  z-index: 10;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .book-main {
+    width: 320px;
+    height: 480px;
+  }
+  
+  .page-content {
+    padding: 25px;
+  }
+  
+  .page-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .page-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .poem-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-main {
+    width: 280px;
+    height: 420px;
+  }
+  
+  .page-content {
+    padding: 20px;
+  }
+  
+  .book-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}

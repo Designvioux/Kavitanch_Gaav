@@ -1,0 +1,77 @@
+import React from 'react';
+import './CSS/AboutUs.css'
+import Book from '../Images/bookCover.png';
+import Likit from  '../Images/Likhit.png';
+import Book2 from  '../Images/Book2.png';
+import vachnalay from '../Images/vachnalay.png';
+import sanman from '../Images/sa';
+ 
+const AboutUs = () =>{
+
+
+
+
+return (
+
+  <div className='AboutUs-Container'>
+
+    {/* About Hero Section */}
+
+
+<div className='Aboutus-HeroSection'>
+<h4 className='bhasha'>भाषेचा प्रचार</h4>
+<img src={Likit} alt="Likit" className='Likhit-img'></img>
+
+<div className='middle-cont'>
+<h2 className='sahitya'>साहित्याच सादरीकरण  </h2>
+
+<img src={Book2} alt='page-book' className='book-pages'></img>
+
+</div>
+
+<img src={Book} alt="Books" className='Books-bunch'></img>
+<p className='sanskruti'>संस्कृतीची जोपासना</p>
+
+
+</div>
+
+
+{/* About info */}
+
+<div className='About-info'>
+  <div className='About-heading'>
+  <h3> <span>आमच्या</span>बद्दल</h3>
+  <p>भारतातील पाहिलं माझ कवितांचं गाव  जकातवाड</p>
+  </div>
+  <div className='About-information1'>
+    <img src={}></img>
+    <p></p>
+  </div>
+  <div className='About-information2'></div>
+    <p></p>
+    <img></img>
+</div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+)
+
+
+
+}
+
+
+
+export default AboutUs;

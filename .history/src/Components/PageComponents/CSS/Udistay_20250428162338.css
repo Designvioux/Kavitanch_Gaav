@@ -1,0 +1,102 @@
+.Udistay-Container{
+  height: auto;
+  width: 100vw;
+margin-top: 20px;
+ 
+}
+
+.Udistay-heading span{
+  color:orange;
+  
+
+}
+
+
+.Udistay-heading{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 500px;
+  
+ 
+  margin: 0 auto; /* <-- This centers it horizontally */
+  
+
+  /* Heading/Niramit/Niramit */
+  font-family: Niramit;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-weight: bold;
+
+}
+
+.Mukhya-Udistay{
+
+display: flex;
+flex-direction: row;
+  margin-left: 140px;
+}
+
+
+.Mukhya-Udistay h3  {
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 40px;
+
+ 
+}
+
+
+.Mukhya-Udistay h6{
+  
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 100;
+  
+
+
+}
+
+
+.Udistay-data{
+
+
+  margin-left: 140px;
+  margin-bottom: 100px;
+
+}
+
+.data-cont{
+
+
+  margin-top: 10px;
+  margin-left: 48px;
+  border: 2px solid rgba(201, 200, 200, 0.594);
+  border-radius: 10px;
+ padding-left: 20px;
+  width: 70vw;
+}
+
+.data-head{
+  font-size: 20px;
+  font-weight: 700;
+
+
+}
+
+.data-info span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.data-info{
+  font-size: 12px;
+  margin-left: 10px;
+}

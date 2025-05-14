@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+body{
+    overflow-x: hidden;
+    font-family: 'Niramit';
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+}
+.testimonial-wrapper {
+    text-align: center;
+    padding: 0px 0px;
+    /* font-family: 'Marathi', sans-serif; */
+    height: 700px;
+  }
+  
+  .heading1 {
+    /* color: var(--Brand, #EA7F13); */
+    text-align: center;
+    /* Heading/Niramit/Niramit */
+    font-family: Niramit;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-weight: bold;
+  }
+  
+ .orange{
+    color: orange;
+ }
+.black{
+    color: black;
+}
+  .subheading {
+    color: var(--Grey, #848484);
+text-align: center;
+/* Body/Niramit */
+font-family: Niramit;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 100px;
+  }
+  
+  .testimonial {
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    opacity: 0.3;
+    transform: scale(0.9);
+    transition: all 0.4s ease;
+  }
+  
+  .testimonial.active {
+    opacity: 1;
+    transform: scale(1.05);
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial.hidden {
+    display: none;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    color: #888;
+    font-size: 14px;
+    margin-top: -10px;
+  }
+  
+  .quote {
+    font-size: 15px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  .controls button {
+    border: none;
+    background: orange;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 8px 12px;
+    border-radius: 60px;
+    cursor: pointer;
+    height: 40px;
+  }
+  
+  .heading1{
+    background-color: white;
+  }
+
+
+
+  @media (max-width: 400px) {
+    .testimonial-wrapper {
+     
+      height: auto;
+ 
+      border: 2px solid black;
+ 
+    }
+  
+    .heading1 {
+      font-size: 22px;
+      padding: 0 15px;
+      text-align: center;
+    }
+  
+    .subheading {
+      font-size: 12px;
+      padding: 0 15px;
+      text-align: center;
+      margin-top: 5px;
+    }
+  
+    .carousel {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .testimonial {
+      width: 100%;
+      max-width: 300px;
+      padding: 15px;
+      margin: 0 auto;
+      transform: scale(1);
+      opacity: 1;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+  
+    .testimonial.active {
+      transform: scale(1);
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+  
+    .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 0 auto 10px;
+      display: block;
+    }
+  
+    .title {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .quote {
+      font-size: 16px;
+      text-align: center;
+      padding: 0 10px;
+      line-height: 1.5;
+    }
+  
+    .controls {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+  
+    .controls button {
+      font-size: 14px;
+      padding: 6px 12px;
+      height: auto;
+      margin: 5px;
+      border-radius: 6px;
+    }
+  }
+  
+
+
+
+
+
+
+  @media (max-width: 321px) {
+    .testimonial-wrapper {
+      padding: 20px 10px;
+      height: auto;
+      border: 2px solid black;
+    }
+  
+    .heading1 {
+      font-size: 18px;
+      padding: 0 10px;
+    }
+  
+    .subheading {
+      font-size: 6px;
+      padding: 0 10px;
+    }
+  
+    .carousel {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .testimonial {
+      width: 100%;
+      max-width: 280px;
+      padding: 15px;
+      margin: 0 auto;
+      transform: scale(1);
+      opacity: 1;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+  
+    .testimonial.active {
+      transform: scale(1);
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+  
+    .avatar {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .title {
+      font-size: 12px;
+    }
+  
+    .quote {
+      font-size: 14px;
+    }
+  
+    .controls {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .controls button {
+      font-size: 14px;
+      padding: 6px 10px;
+      height: auto;
+      margin: 5px;
+    }
+  }
+  

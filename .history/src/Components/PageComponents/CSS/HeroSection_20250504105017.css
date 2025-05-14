@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+.Aboutus-HeroSection{
+  display: flex;
+
+  background: url("../Images/library.png") , no-repeat;
+ height: 30vw;
+ width: 100vw;
+ background-size:contain ;
+ color: white;
+
+  
+}
+
+
+.Aboutus-HeroSection .bhasha{
+
+  color: var(--Grey-Light, #D9D9D9);
+  /* Heading/Niramit/Niramit */
+  color: var(--Grey-Light, #D9D9D9);
+/* Heading/Niramit/Niramit */
+font-family: Niramit;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  width: 100px;
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+.Aboutus-HeroSection .Likhit-img{
+  display: flex;
+  width: 250px;
+  height: 280px;
+  flex-shrink: 0;
+  aspect-ratio: 157/222;
+margin-top: 100px;
+ 
+}
+
+.Aboutus-HeroSection .middle-cont{
+display: flex;
+flex-direction: column;
+height: 10vw;
+margin-top: 1vw;
+margin-left: 50px;
+
+
+
+}
+
+
+.middle-cont .sahitya{
+  display: flex;
+  height: 44px;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  color: var(--Background, #FFF);
+  font-family: Niramit;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+margin-left: 0px;
+margin-top: 100px;
+text-align: center;
+gap: 10px;
+
+}
+
+
+.middle-cont .sahitya span{
+
+  display: flex;
+height: 55px;
+flex-direction: column;
+justify-content: flex-end;
+align-self: stretch;
+color: var(--Background, #FFF);
+font-family: Niramit;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+
+.middle-cont  .book-pages{
+
+margin-top: -250px;
+  height: 30vw;
+ 
+
+
+}
+
+.Aboutus-HeroSection .Books-bunch{
+  height: 30vh;
+  width: 13vw;
+  margin-top: 15vh;
+  margin-left: 5vw;
+}
+
+
+.Aboutus-HeroSection .sanskruti{
+display: flex;
+flex-direction: column;
+color: var(--Grey-Light, #D9D9D9);
+font-family: Niramit;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+align-items:center ;
+margin-top: 200px;
+margin-left: 20px;
+}
+
+
+
+@media (max-width: 480px) {
+  .Aboutus-HeroSection {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+  }
+
+  .Aboutus-HeroSection .bhasha {
+    font-size: 18px;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .Aboutus-HeroSection .Likhit-img {
+    width: 160px;
+    height: auto;
+    margin-top: 20px;
+    align-self: center;
+  }
+
+  .Aboutus-HeroSection .middle-cont {
+    margin-left: 0;
+    align-items: center;
+    margin-top: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .middle-cont .sahitya {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .middle-cont .sahitya span {
+    font-size: 16px;
+    display: block;
+    margin-top: 5px;
+  }
+
+  .middle-cont .book-pages {
+    height: auto;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .Aboutus-HeroSection .Books-bunch {
+    height: auto;
+    width: 120px;
+    margin: 20px auto 0 auto;
+  }
+
+  .Aboutus-HeroSection .sanskruti {
+    font-size: 18px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .Aboutus-HeroSection .sanskruti span {
+    font-size: 16px;
+    display: block;
+    margin-top: 5px;
+  }
+  
+}
+
+
+
+@media (max-width: 400px) {
+  .Aboutus-HeroSection {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 12px;
+  }
+
+  .Aboutus-HeroSection .bhasha {
+    font-size: 17px;
+    width: auto;
+    margin-left: 0;
+    text-align: center;
+    justify-content: center;
+    padding: 6px;
+  }
+
+  .Aboutus-HeroSection .Likhit-img {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+    align-self: center;
+  }
+
+  .Aboutus-HeroSection .middle-cont {
+    margin-left: 0;
+    align-items: center;
+    margin-top: 0px;
+    height: auto;
+  }
+
+  .middle-cont .sahitya {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .middle-cont .sahitya span {
+    font-size: 16px;
+    height: auto;
+    text-align: center;
+  }
+
+  .middle-cont .book-pages {
+    height: auto;
+    margin-top: 20px;
+    width: 95%;
+    max-width: 300px;
+  }
+
+  .Aboutus-HeroSection .Books-bunch {
+    height: auto;
+    width: 110px;
+    margin: 20px auto 0 auto;
+  }
+
+  .Aboutus-HeroSection .sanskruti {
+    font-size: 17px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .Aboutus-HeroSection .sanskruti span {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 321px) {
+  .Aboutus-HeroSection {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+
+  }
+
+  .Aboutus-HeroSection .bhasha {
+    font-size: 16px;
+    width: auto;
+    margin-left: 0;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    
+   }
+
+  .Aboutus-HeroSection .Likhit-img {
+    width: 140px;
+    height: auto;
+    margin-top: 20px;
+    align-self: center;
+  }
+
+  .Aboutus-HeroSection .middle-cont {
+    margin-left: 0;
+    align-items: center;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .middle-cont .sahitya {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .middle-cont .sahitya span {
+    font-size: 15px;
+    height: auto;
+    text-align: center;
+  }
+
+  .middle-cont .book-pages {
+    height: auto;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .Aboutus-HeroSection .Books-bunch {
+    height: auto;
+    width: 100px;
+    margin: 20px auto 0 auto;
+  }
+
+  .Aboutus-HeroSection .sanskruti {
+    font-size: 16px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .Aboutus-HeroSection .sanskruti span {
+    font-size: 14px;
+    text-align: center;
+  }
+}

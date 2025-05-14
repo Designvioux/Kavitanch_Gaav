@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit&display=swap');
+
+.Gallery-Container-ss {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.Gallery-HeroSection {
+  height: 50vh;
+  width: 100%;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../Images/Gallery/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.Head-Hero {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 158px;
+  margin-top: 70px;
+  width: 500px;
+}
+
+.Hero-Heading {
+  font-family: 'Niramit', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.Hero-info {
+  font-family: 'Niramit', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #fff;
+}
+
+.img-cont-er {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 70px;
+  gap: 40px;
+}
+
+.left-img-cont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.img-container-1 img {
+  width: calc(50% - 10px);
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.img-container-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img-container-2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.rightt-img-cont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.rightt-img-cont img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: white;
+}
+
+
+
+
+
+
+@media (max-width: 321px) {
+
+  .Gallery-Container-ss{
+  
+    width: 100vw;
+    padding: 4.6vw;
+ 
+    border: 2px solid black;
+  }
+  .Gallery-HeroSection {
+    height: 30vh;
+margin-top: -15px;
+    width: 100vw;
+    margin-left: -15px;
+    border: 5px solid black;
+    padding: 3vw;
+    background-color: black;
+
+
+  }
+
+  .Head-Hero {
+    margin-left: 0px;
+    margin-top: 100px;
+    width: 100vw;
+    padding: 2vw;
+  }
+
+  .Hero-Heading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .Hero-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .img-cont-er {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    border: 2px solid black;
+    width: 100vw;
+    m
+  }
+
+  .left-img-cont,
+  .rightt-img-cont {
+    width: 100%;
+  }
+
+  .img-container-1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .img-container-1 img {
+    width: 100%;
+  }
+
+  .img-container-2 {
+    gap: 15px;
+  }
+
+  .img-container-2 img,
+  .rightt-img-cont img {
+    width: 100%;
+    height: auto;
+  }
+}

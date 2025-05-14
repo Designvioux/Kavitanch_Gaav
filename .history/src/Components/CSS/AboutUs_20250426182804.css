@@ -1,0 +1,14 @@
+.AboutUs-Container{
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.Aboutus-HeroSection{
+
+  background: url("../../Images/library.png");
+ height: 70vh;
+ width: 100vw;
+ background-size: 100vh ;
+  
+}

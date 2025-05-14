@@ -1,0 +1,22 @@
+.karyaSangra-Container{
+  height: auto;
+  width: 100vw;
+}
+
+.KaryaSangra-heading{
+  font-size: 30px;
+}
+
+.KaryaSangra-heading span {
+  color:orange;
+}
+
+.Img-Container{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+img-box{
+  
+}
