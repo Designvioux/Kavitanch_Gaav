@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+.Prastavit-Container {
+  background-color: white;
+  width: 100vw; /* full viewport width */
+}
+
+.Prastavit-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Prastavit-head h1 {
+  color: var(--Text, #000);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(3vw, 5vw, 4rem); /* scalable font size */
+  margin-top: 2vh;
+}
+
+.prastavit {
+  color: var(--Brand, #EA7F13);
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(3vw, 5vw, 4rem);
+}
+
+.Prastavit-info {
+  align-self: stretch;
+  margin-top: 1vh;
+  color: var(--Grey, #848484);
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(1.2vw, 1.8vw, 1.5rem);
+  margin-top: -1vh;
+}
+
+.event-container {
+  display: flex;
+  gap: 1.2vw;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 1vh 1vw;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.event-container::-webkit-scrollbar {
+  height: 0.5vh;
+}
+
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 1vw;
+}
+
+/* Adjust card width and image height for better default screen fit */
+.event-card-cont {
+  width: clamp(20rem, 26vw, 24rem);
+  min-width: clamp(20rem, 26vw, 24rem);
+  height: auto;
+  border-radius: 1vw;
+  box-shadow: 0 0.4vh 1.2vh rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+
+.event-image {
+  margin: 0;
+  height: clamp(18vh, 24vh, 26vh);
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+}
+
+/* Padding fix to remove vertical gaps */
+.event-info {
+  padding: 1vh 1vw;
+  margin: 0;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  gap: 0.6vh;
+}
+
+/* Responsive and clean layout for icons and description */
+.event-title {
+  font-size: clamp(1rem, 1.5vw, 1.4rem);
+  margin: 0;
+}
+
+.event-desc {
+  font-size: clamp(0.75rem, 0.95vw, 0.85rem);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.event-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4vh;
+  margin-top: 0;
+}
+
+.icon-text {
+  align-items: center;
+  gap: 0.5vw;
+  font-size: clamp(0.7rem, 0.9vw, 0.8rem);
+}
+
+/* Fix for button alignment and spacing */
+.register-btn {
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
+  align-self: center;
+  padding: 0.7vh 1.5vw;
+  font-size: clamp(0.8rem, 1vw, 0.95rem);
+}
+
+/* Ensure date badge stays in place */
+.event-date {
+  top: 1vh;
+  left: 1vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.4vh 1vw;
+  border-radius: 0.5vw;
+}
+
+/* Tweak event-container padding and spacing */
+.event-container {
+  gap: 1.5vw;
+  padding: 2vh 2vw;
+}
+
+
+.event-date p {
+  color: white;
+  font-size: clamp(0.8vw, 1.2vw, 0.9rem);
+  margin-top: -3vh;
+  margin-left: 1.5vw;
+}
+
+.event-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: clamp(10vh, 12vh, 12rem);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1vh;
+  gap: 1vh;
+  padding: 1vh 1vw;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.event-title {
+  font-size: clamp(1.5vw, 2vw, 1.8rem);
+  font-weight: 700;
+  color: var(--Brand, #EA7F13);
+  font-family: 'Niramit', sans-serif;
+  margin-top: -0.5vh;
+}
+
+.event-desc {
+  color: var(--Background, #FFF);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.8vw, 1vw, 0.75rem);
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.event-icons {
+  font-size: clamp(0.7vw, 0.9vw, 0.8rem);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-top: -1vh;
+}
+
+.register-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: clamp(0.8vh, 1vh, 1rem);
+  border-radius: 0.6vw;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -5vh;
+  font-size: clamp(0.9vw, 1vw, 1rem);
+}
+
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+.info-icon {
+  height: clamp(1vh, 1.5vh, 1.8vh);
+  display: flex;
+  margin-bottom: 0.2vh;
+  align-items: center;
+  margin-right: 0.5vw;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  color: var(--Background, #FFF);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.8vw, 1vw, 0.75rem);
+  font-weight: 400;
+  line-height: normal;
+}
+
+.event-image {
+  margin-top: 1vh;
+}
+
+.Calendar-icon {
+  background: transparent;
+  height: clamp(4vh, 5vh, 5vh);
+  width: clamp(4vh, 5vh, 5vh);
+  margin-top: -1.5vh;
+}

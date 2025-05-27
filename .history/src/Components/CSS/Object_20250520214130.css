@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+
+
+
+.aamcha-section {
+  padding: 6vh 1.39vw;
+
+    max-width: 1200px;
+    margin: auto;
+    font-family:"Niramit";
+    height: auto;
+    background-color: #ffffff;
+  
+
+
+ 
+    
+  }
+  
+  .aamcha-title {
+ 
+    font-family: "Niramit";
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+
+ 
+    text-align: center;
+
+margin-bottom: clamp(0.5rem, 1.39vw, 1.25rem);
+   
+  
+
+  
+margin-top: clamp(-2.5rem, -2.78vh, -2.5rem);
+  }
+ .orange-text {
+    color: #f57c00; 
+  }
+  
+  .aamcha-description {
+
+    margin: 0 auto;
+    width: 100%;
+ 
+    max-width: 1200px;
+ 
+    
+  
+    padding: 0 clamp(0.5rem, 1.04vw, 1rem);
+    color: #444;
+   
+   
+    color: var(--Grey, #848484);
+font-family: "Niramit";
+ 
+font-size: clamp(0.875rem, 1.75vw, 1.25rem);
+
+text-align: center;
+
+  }
+ 
+  .aamcha-content {
+    background-color: #fff3e0; 
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  
+    padding: clamp(2rem, 4.44vh, 2.5rem) clamp(3rem, 3.47vw, 3.125rem);
+    gap: clamp(1rem, 2.5vw, 2rem); /* make gap responsive too */
+    
+    width: 100vw; /* ✅ Fixed layout width */
+    max-width: 100%; /* allow responsiveness for very small screens */
+    height: clamp(20rem, 38vh, 20.75rem);
+  
+    margin: clamp(5rem, 16.67vh, 9.375rem) auto 0 auto; 
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #fff3e0;
+  
+    position: relative;
+    overflow: visible;
+  }
+  
+
+  
+  .aamcha-image img {
+    width: clamp(10rem, 17.36vw, 15.625rem);
+    
+    height: clamp(18rem, 50vh, 22.5rem);
+    object-fit: cover;
+    border: 2px solid #fff3e0;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    transform: perspective(800px) rotateX(5deg) rotateY(-5deg);
+    position: absolute;
+    z-index: 1;
+    left: clamp(1rem, 5vw, 3rem);
+  
+    top: clamp(5rem, 12vh, 7rem);
+
+
+  }
+  
+
+  
+  .aamcha-image img:hover {
+    transform: perspective(clamp(400px, 3vw, 800px)) rotateX(0deg) rotateY(0deg) scale(clamp(1, 1.03, 1.05));
+
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+     z-index: 1;
+     position: absolute;
+  }
+  
+  .aamcha-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  
+    /* Align left responsively, but within safe bounds */
+    transform: translateX(clamp(-6rem, -5vw, -8rem));
+  }
+  
+  
+  .ebook-titlee {
+ 
+    font-size: clamp(1.75rem, 2vw, 1.875rem);
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 clamp(2.5rem, 3.7vh, 3.3125rem);
+    align-self: flex-start;
+    color: var(--Text, #000);
+    font-family:" Niramit";
+ 
+  }
+  
+  .ebook-desc {
+    color: var(--Grey, #848484);
+
+font-family: "Niramit";
+font-size: clamp(1rem, 1.25vw, 1.125rem);
+ 
+
+ 
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  
+margin-left: 0px;
+margin-top: 0px;
+
+  }
+  
+  .ebook-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    position: relative;
+z-index: 2;
+
+
+  }
+  
+  .read-button {
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    padding: clamp(0.5rem, 0.7vh, 0.625rem) clamp(1rem, 1.25vw, 1.125rem);
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0px;
+    text-decoration: none;
+    margin-top: clamp(1rem, 3vh, 1.25rem);
+    position: relative;
+z-index: 2;
+
+  }
+  
+  .download-button {
+    background-color: #fff;
+    color: #f57c00;
+    border: 2px solid #f57c00;
+    padding: clamp(0.6rem, 1vh, 0.625rem) clamp(1rem, 1.25vw, 1.125rem);
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+   margin-top: clamp(1rem, 2.2vh, 1.25rem);
+    position: relative;
+z-index: 2;
+
+  }
+  
+  .read-button:hover,
+  .download-button:hover {
+    opacity: 0.85;
+    position: relative;
+z-index: 2;
+
+  }
+  .aamcha-image{
+margin: 0;
+position: relative;
+width: 100vw;
+height: 100vh;
+z-index: 1;
+   
+  }
+
+
+
+
+  @media (max-width: 320px) {
+    .aamcha-section {
+      padding: 6vh 4vw;
+    }
+  
+    .aamcha-title {
+      font-size: clamp(1.2rem, 6vw, 1.5rem);
+      margin-top: clamp(-1.5rem, -3vh, -1rem);
+      margin-bottom: clamp(0.5rem, 2vh, 1rem);
+    }
+  
+    .aamcha-description {
+      font-size: clamp(0.7rem, 3.5vw, 0.85rem);
+      padding: 0 clamp(2vw, 3vw, 4vw);
+    }
+  
+    .aamcha-content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 60vh;
+      width: 100vw;
+      padding: clamp(2vh, 2.5vh, 3vh) clamp(3vw, 4vw, 5vw);
+      gap: clamp(2vh, 2.5vh, 3vh);
+      margin-top: clamp(14vh, 20vh, 24vh);
+    }
+  
+    .aamcha-image {
+      position: relative;
+      width: 100vw;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .aamcha-image img {
+      position: relative;
+      width: clamp(8rem, 56vw, 11rem);  /* around 180px at 320px screen */
+      height: clamp(12rem, 69vw, 13.75rem); /* around 220px at 320px */
+      left: auto;
+      top: -20vh;
+      transform: none;
+    }
+  
+    .aamcha-card {
+      transform: none;
+      align-items: center;
+      text-align: center;
+      padding: 0 clamp(3vw, 4vw, 5vw);
+      margin-top: -20vh;
+    }
+  
+    .ebook-titlee {
+      font-size: clamp(1rem, 5vw, 1.2rem);
+      margin: 0 auto clamp(2vh, 3vh, 3.5vh) auto;
+    }
+  
+    .ebook-desc {
+      font-size: clamp(0.75rem, 3.5vw, 0.9rem);
+      line-height: clamp(1.2, 1.5, 1.6);
+    }
+  
+    .ebook-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(1vh, 1.5vh, 2vh);
+    }
+  
+    .read-button,
+    .download-button {
+      width: 60vw;
+      font-size: clamp(0.8rem, 3.5vw, 0.9rem);
+      padding: clamp(1vh, 1.5vh, 2vh) clamp(3vw, 4vw, 5vw);
+      text-align: center;
+margin-top: -1vh;
+    }
+  }
+  
+
+
+
+  

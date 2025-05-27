@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+.Prastavit-Container{
+
+  background-color: white;
+  width: 100%;
+
+}
+
+.Prastavit-head{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Prastavit-head h1{
+  color: var(--Text, #000);
+/* Heading/Niramit/Niramit */
+ 
+font-family: "Niramit";
+
+font-size: clamp(1.5vw, 3.5vw, 10vw);
+  
+margin-top: 20px;
+}
+.prastavit{
+  color: var(--Brand, #EA7F13);
+text-align: center;
+
+ 
+font-family: "Niramit";
+font-size: clamp(1.5vw, 3.5vw, 10vw);
+
+  
+
+}
+
+.Prastavit-info{
+
+ 
+  align-self: stretch;
+  
+  margin-top: 10px;
+  color: var(--Grey, #848484);
+text-align: center;
+
+font-family: "Niramit";
+font-size: clamp(0.5vw, 1.35vw, 4vw);
+
+margin-top: -3vh;
+ 
+
+  
+}
+
+.event-container {
+  display: flex;
+  gap: 1vw;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 1vh 0vw;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.event-container::-webkit-scrollbar {
+  height: 1vh;
+}
+
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 1vw;
+}
+
+/* Card styling */
+.event-card-cont {
+  min-width: 14vw;
+  flex-shrink: 0;
+}
+.event-card-cont {
+  position: relative;
+  width: 25vw;
+  min-width:25vw; /* Prevent cards from shrinking */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  height: clamp(2.25vw, 21.67vw, 21.67vw);
+
+  flex-shrink: 0; /* Prevent cards from shrinking */
+}
+.event-card-cont:hover {
+  transform: translateY(-5px);
+}
+
+.event-image {
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  height: clamp(10.13vw, 21.66vw, 21.66vw);
+
+
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.event-date {
+  position: absolute;
+  top: 1vh;
+  left: 0.5vw;
+  background: #e0e0e0;
+  padding: 0.6vh 1vw;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: clamp(12px, 1.2vw, 14px);
+
+}
+
+.event-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 17vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent  */
+
+}
+
+.event-title {
+  font-size: clamp(18px, 1.6vw, 22px);
+
+  font-weight: bold;
+  color: #ff6600;
+  color: var(--Brand, #EA7F13);
+/* Heading/Niramit/Niramit */
+font-family: "Niramit";
+
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: -5px;
+}
+
+.event-desc {
+  color: var(--Background, #FFF);
+/* Body/Niramit */
+font-family: "Niramit";
+font-size: clamp(10px, 1vw, 12px);
+
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 0px;
+}
+.event-icons {
+  font-size: clamp(10px, 1vw, 13px);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+margin-top: -1.5vh;
+}
+
+.register-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 1.3vh;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -6vh;
+}
+
+.info-icon{
+  height: 2vh;
+  display: flex;
+  margin-bottom: 0.2vh;
+  align-items: center;
+  margin-right: 0.5vw;
+
+  
+ 
+}
+
+.icon-text{
+  display: flex;
+  flex-direction: row;
+  color: var(--Background, #FFF);
+/* Body/Niramit */
+font-family:" Niramit";
+font-size: clamp(10px, 0.9vw, 12px);
+
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+.event-image{
+  margin-top: 1vh;
+
+}
+.Calendar-icon{
+  background: transparent;
+  height: 8vh;
+  width: 4vw;
+  margin-top: -2vh;
+}
+.event-date{
+  background: none;
+}
+
+
+.event-date p{
+  color: white;
+  font-size: clamp(10px, 0.8vw, 12px);
+
+  margin-top: -5vh;
+  margin-left: 1vw;
+
+}
+

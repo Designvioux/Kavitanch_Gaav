@@ -1,0 +1,315 @@
+ @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap'); 
+
+
+
+.Kavita-Category-Container{
+  display: flex;
+  padding: 6vh 10vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+background: #FFE7E3;
+
+
+}
+
+
+.Category-heading{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.Kavita-Category-head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify:space-between;
+ 
+  margin-top: -4.5vh;
+  color: var(--Text, #000);
+  
+  font-family: Niramit;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+
+
+  font-weight: 600;
+  line-height: normal;
+  align-self: stretch; 
+ 
+
+  color: var(--Text, #000);
+ 
+  
+}
+
+
+
+.Kavita-Category-head span {
+
+  color: var(--Brand, #EA7F13);
+text-align: center;
+margin-right: 10px;
+
+font-family: Niramit;
+ 
+font-size: clamp(2rem, 4vw, 3.5rem);
+
+
+ 
+
+  
+}
+
+.Kavita-Category-info{
+  color: var(--Grey, #848484);
+text-align: center;
+
+font-family: Niramit;
+ 
+font-size: clamp(0.875rem, 1.75vw, 1.25rem);
+
+margin-top: -2.8vh;
+
+ max-width: 120vw;
+
+  
+
+}
+
+.Category-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  padding: 2vw;
+  scroll-behavior: smooth;
+  height: auto;
+
+
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  white-space: nowrap; 
+  -webkit-overflow-scrolling: touch; 
+  scrollbar-width: none; 
+  justify-content: flex-start; 
+}
+
+.card {
+
+width: clamp(150px, 14vw, 200px);
+  background-color: #fff;
+  border-radius: 10px;
+padding: 5px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+position: relative;
+  transition: transform 0.3s ease;
+  margin-top: 2vh;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+.card-head {
+
+  color: var(--Brand, #EA7F13);
+  text-align: center;
+  font-family: "Amita";
+  font-size: clamp(20px, 2vw, 35px);
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -7vh;
+  margin-left: -8vw;
+  z-index: 1000;
+}
+
+.big-card-head {
+  color: var(--Brand, #EA7F13);
+  text-align: center;
+  font-family:"Amita";
+  font-size: clamp(28px, 3.5vw, 50px);
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  
+}
+
+.bold-info {
+  font-weight: bold;
+  color: #000;
+}
+
+
+.card p {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 1vw  auto;
+  align-items: center;
+  font-size: 0.65vw; 
+  color: #444;
+  line-height: 1.6;
+  margin-top: -3.5vh;
+  width: 80%; 
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: justify; 
+  cursor: pointer;
+  font-family: Niramit;
+ 
+}
+
+.Vacha_button {
+
+  font-family: 'Mukta', sans-serif;
+  margin-top: 1vh;
+  background-color: #EA7F13;
+  color: white;
+  cursor: pointer;
+  border: 2px solid rgb(227, 113, 7);
+  border-radius: 10px;
+  padding: 0px;
+  width: 40%;
+  margin-top:15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8vw;
+  font-weight: bold;
+}
+.Vacha_button:hover{
+  background-color: #efa357;
+  color: black;
+}
+
+.card img {
+  position: absolute;
+  bottom: 1.5vh;
+  right: 1vw;
+  width: 1.5vw;
+  height: 3vh;
+
+}
+
+#samajik {
+  margin-left: -2.08vw;  /* -40px ≈ -2.08vw (40 / 1920 * 100) */
+}
+
+#Nature-id {
+  margin-left: 1.04vw;   /* 20px ≈ 1.04vw */
+}
+
+ 
+@media only screen and (max-width: 320px) {
+  .Kavita-Category-Container {
+    padding: 20px 10px; /* Reduced padding for small screens */
+  }
+
+  .Kavita-Category-head {
+    font-size: 1.8rem; /* Smaller heading */
+    margin-top: -10px; /* Adjusted spacing */
+    flex-wrap: wrap; /* Allow text to wrap */
+    text-align: center;
+  }
+
+  .Kavita-Category-head span {
+    font-size: 1.8rem; /* Matching size */
+    margin-right: 5px; /* Reduced spacing */
+  }
+
+  .Kavita-Category-info {
+    font-size: 12px; /* Fixed small size */
+    margin-top: 5px; /* Reduced spacing */
+    max-width: 100%; /* Full width */
+    white-space: normal; /* Allow text wrapping */
+  }
+
+  /* Card container adjustments */
+  .Category-card {
+    padding: 15px 5px; /* Reduced padding */
+    gap: 15px; /* Smaller gap between cards */
+    justify-content: flex-start; /* Force left-aligned scrolling */
+    width: 100%; /* Full width */
+    -webkit-overflow-scrolling: touch; /* Smooth iOS scrolling */
+  }
+
+  /* Individual card styling */
+  .card {
+    padding-top: clamp(20px, 7.8vh, 25px); /* 25px equivalent */
+    min-width: clamp(260px, 81.25vw, 280px); 
+    height: auto;
+    margin-top: 0;
+    padding: 8px;
+    scroll-snap-align: start; /* Better scrolling alignment */
+  }
+
+  .card-head {
+    position: absolute;
+    font-size: clamp(20px, 6.25vw, 25px);
+    /* Center horizontally and vertically */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Text styling */
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    /* Remove previous margins */
+    margin: 0;
+    /* Ensure proper stacking */
+    z-index: 10;
+    /* Width for better text flow */
+    width: 90%;
+    text-align: center;
+  }
+
+  .big-card-head {
+    font-size: clamp(35px, 11.25vw, 28px);
+    line-height: clamp(1.2, 3.75vh, 1.3);
+  }
+
+  .card p {
+    font-size: 12px; /* Fixed readable size */
+    margin: 8px auto; /* Reduced spacing */
+    width: 90%; /* Slightly wider text */
+    white-space: normal; /* Ensure text wraps */
+    text-align: center;
+  }
+
+  .Vacha_button {
+    width: 50%; /* Larger tap target */
+    font-size: clamp(10px, 3.125vw, 12px); /* 12px at 320px */
+    padding: clamp(4px, 1.25vh, 6px) 0;
+    margin-top: 10px; /* Consistent spacing */
+  }
+
+  .card img {
+    width: clamp(12px, 3.75vw, 16px);
+    height: clamp(12px, 3.75vw, 16px);
+    bottom: 10px; /* Adjusted positioning */
+    right: 10px;
+  }
+
+  /* Specific card adjustments */
+  #samajik {
+    margin-left: -15px; /* Reduced offset */
+  }
+
+  #Nature-id {
+    margin-left: 5px; /* Reduced offset */
+  }
+}

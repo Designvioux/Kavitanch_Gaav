@@ -1,0 +1,950 @@
+/* /* @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap'); */
+
+/* 
+
+.Prastavit-Container{
+
+  background-color: white;
+  width: 100%;
+
+}
+
+.Prastavit-head{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Prastavit-head h1{
+  color: var(--Text, #000);
+
+ 
+font-family: Niramit;
+font-size: 54px;
+  
+margin-top: 20px;
+}
+.prastavit{
+  color: var(--Brand, #EA7F13);
+text-align: center;
+
+ 
+font-family: Niramit;
+font-size: 54px;
+
+}
+
+.Prastavit-info{
+ 
+
+ 
+  align-self: stretch;
+  
+  margin-top: 10px;
+  color: var(--Grey, #848484);
+text-align: center;
+
+font-family: "Niramit";
+ 
+font-size: 18px;
+
+margin-top: -10px;
+ 
+
+  
+}
+
+.event-container {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.event-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+
+.event-card-cont {
+  min-width: 260px;
+  flex-shrink: 0;
+}
+.event-card-cont {
+  position: relative;
+  width: 400px;
+  min-width: 400px; 
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  flex-shrink: 0; 
+}
+.event-card-cont:hover {
+  transform: translateY(-5px);
+}
+
+.event-image {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.event-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.event-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6); 
+
+}
+
+.event-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6600;
+  color: var(--Brand, #EA7F13);
+
+font-family: Niramit;
+
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: -5px;
+}
+
+.event-desc {
+  color: var(--Background, #FFF);
+
+font-family: Niramit;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 0px;
+}
+.event-icons {
+  font-size: 13px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+margin-top: -10px;
+}
+
+.register-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -50px;
+}
+
+.info-icon{
+  height: 18px;
+  display: flex;
+  margin-bottom: 2px;
+  align-items: center;
+  margin-right: 5px;
+
+  
+ 
+}
+
+.icon-text{
+  display: flex;
+  flex-direction: row;
+  color: var(--Background, #FFF);
+
+font-family: Niramit;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+.event-image{
+  margin-top: 10px;
+
+}
+.Calendar-icon{
+  background: transparent;
+  height: 60px;
+  width: 60px;
+  margin-top: -15px;
+}
+.event-date{
+  background: none;
+}
+
+
+.event-date p{
+  color: white;
+  font-size: 12px;
+  margin-top: -30px;
+  margin-left: 15px;
+
+}
+  */
+
+
+
+/* 
+  @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+:root {
+  --brand-color: #EA7F13;
+  --text-color: #000;
+  --grey-color: #848484;
+  --background-color: #FFF;
+}
+
+.Prastavit-Container {
+  background-color: white;
+  width: 100%;
+}
+
+
+.Prastavit-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Prastavit-head h1 {
+  color: var(--text-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2vw, 4vw, 8vw);
+  margin-top: 2vh;
+}
+
+.prastavit {
+  color: var(--brand-color);
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2vw, 4vw, 8vw);
+}
+
+.Prastavit-info {
+  align-self: stretch;
+  margin-top: -5vh;
+  color: var(--grey-color);
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.5vw, 1.5vw, 3vw);
+}
+
+
+
+
+
+.event-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  width: 100%;
+  
+  box-sizing: border-box;
+}
+
+.event-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+
+.event-card-cont {
+  position: relative;
+
+  width: 30vw; 
+  min-width: 300px; 
+  height: auto; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.event-card-cont:hover {
+  transform: translateY(-5px);
+}
+
+
+.event-image {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+
+
+}
+
+
+.Calendar-icon {
+  background: transparent;
+  height: 60px;
+  width: 60px;
+  margin-top: -15px;
+}
+
+.event-date {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  background: none;
+}
+
+.event-date p {
+  color: white;
+  font-size: 14px;
+  margin: -30px 10px;
+}
+
+
+.event-info {
+  position: relative;
+  bottom: 0;
+  width: 95%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.event-title {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Niramit', sans-serif;
+  color: var(--brand-color);
+  margin-top: -5px;
+}
+
+.event-desc {
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+
+.event-icons {
+  font-size: 14px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+.info-icon {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.register-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -40px;
+}
+
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+ */
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+:root {
+  --brand-color: #EA7F13;
+  --text-color: #000;
+  --grey-color: #848484;
+  --background-color: #FFF;
+}
+
+/* Container */
+.Prastavit-Container {
+  background-color: white;
+  width: 100%;
+}
+
+/* Heading */
+.Prastavit-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Prastavit-head h1 {
+  color: var(--text-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-top: clamp(1rem, 2vh, 2rem);
+  line-height: 1.2;
+}
+
+.prastavit {
+  color: var(--brand-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+/* Info */
+.Prastavit-info {
+  color: var(--grey-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.875rem, 1.75vw, 1.125rem);
+  margin-top: clamp(-0.5rem, -1vh, 0rem);
+  padding: 0 clamp(1rem, 5vw, 3rem);
+  line-height: 1.4;
+}
+
+/* Event Card Scroll Container */
+.event-container {
+  display: flex;
+  gap: clamp(0.75rem, 1.5vw, 1.25rem);
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: clamp(0.5rem, 1vw, 1rem);
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: clamp(1.5rem, 3vh, 2.5rem);
+}
+
+.event-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+/* Event Card */
+.event-card-cont {
+  position: relative;
+  width: clamp(18.75rem, 30vw, 25rem);
+  min-width: 18.75rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  padding: 0.625rem;
+}
+
+.event-card-cont:hover {
+  transform: translateY(-0.3125rem);
+}
+
+/* Event Image */
+.event-image {
+  height: clamp(15.625rem, 25vw, 18.75rem);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0.625rem;
+}
+
+/* Calendar Icon */
+.Calendar-icon {
+  background: transparent;
+  height: clamp(3.125rem, 5vw, 3.75rem);
+  width: clamp(3.125rem, 5vw, 3.75rem);
+  margin-top: -0.6rem;
+}
+
+/* Event Date */
+.event-date {
+  position: absolute;
+  top: 0.375rem;
+  left: 1.25rem;
+  background: none;
+}
+
+.event-date p {
+  color: white;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  margin: -1.875rem 0.625rem;
+}
+
+
+.event-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: clamp(20vh, 60%, 40vh); /* Adjust min, preferred, max */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.event-info {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 7rem auto;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Title */
+.event-title {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 700;
+  font-family: 'Niramit', sans-serif;
+  color: var(--brand-color);
+  margin-top: -0.3125rem;
+}
+
+/* Description */
+.event-desc {
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  font-weight: 400;
+  margin-top: 0;
+}
+
+/* Icons */
+.event-icons {
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.625rem;
+}
+
+.info-icon {
+  height: clamp(1rem, 1.5vw, 1.25rem);
+  display: flex;
+  align-items: center;
+  margin-right: 0.625rem;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  font-weight: 400;
+}
+
+/* Register Button */
+.register-btn {
+  background: var(--brand-color);
+  color: white;
+  border: none;
+  padding: clamp(0.5rem, 1vw, 0.625rem) clamp(0.75rem, 1.5vw, 0.9375rem);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -2.5rem;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+}
+
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .event-card-cont {
+    min-width: clamp(16rem, 80vw, 20rem);
+    width: clamp(16rem, 80vw, 20rem);
+  }
+  
+  .event-image {
+    height: clamp(12rem, 60vw, 15rem);
+  }
+  
+  .event-info {
+    margin: clamp(4rem, 25vw, 6rem) auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .Prastavit-head h1,
+  .prastavit {
+    font-size: clamp(1.5rem, 6.25vw, 2rem);
+  }
+  
+  .Prastavit-info {
+    font-size: clamp(0.75rem, 3.25vw, 1rem);
+    margin-top: clamp(-0.5rem, -1.25vh, -0.25rem);
+  }
+  
+  .event-container {
+    gap: clamp(0.5rem, 2.75vw, 1rem);
+    padding: clamp(0.5rem, 1.85vw, 0.75rem);
+  }
+  
+  .event-card-cont {
+    width: clamp(16rem, 82vw, 18rem);
+    padding: clamp(0.5rem, 2.25vw, 0.75rem);
+  }
+  
+  .event-image {
+    height: clamp(10rem, 50vw, 12rem);
+  }
+  
+  .event-info {
+    min-height: 12rem;
+    margin-top: clamp(3rem, 25vw, 5rem);
+    padding: clamp(0.5rem, 2.1vw, 0.75rem);
+  }
+  
+  .event-title {
+    font-size: clamp(0.875rem, 4.15vw, 1rem);
+  }
+  
+  .event-desc {
+    font-size: clamp(0.625rem, 2.85vw, 0.75rem);
+  }
+  
+  .icon-text {
+    font-size: clamp(0.625rem, 2.65vw, 0.75rem);
+  }
+  
+  .info-icon {
+    height: clamp(0.75rem, 2.3vh, 1rem);
+    width: clamp(1rem, 4vw, 1.25rem);
+  }
+  
+  .Calendar-icon {
+    height: clamp(3rem, 12vw, 4rem);
+    width: clamp(3rem, 13vw, 4rem);
+  }
+  
+  .event-date p {
+    font-size: clamp(0.625rem, 3.25vw, 0.75rem);
+  }
+  
+  .register-btn {
+    font-size: clamp(0.625rem, 3.3vw, 0.75rem);
+    padding: clamp(0.5rem, 1.9vw, 0.625rem) clamp(0.75rem, 3.4vw, 1rem);
+    margin-top: clamp(-3rem, -14vw, -2rem);
+  }
+}
+
+
+
+
+@media (min-width: 321px) and (max-width: 500px) {
+
+  .Prastavit-head h1,
+  .prastavit {
+    font-size: clamp(5.5vw, 6.25vw, 7vw);
+    margin-top: clamp(2vh, 2.5vh, 3vh);
+    line-height: 1.2;
+  }
+
+  .Prastavit-info {
+    font-size: clamp(2.8vw, 3.25vw, 3.5vw); 
+    margin-top: clamp(-1.5vh, -1.25vh, -1vh);
+    padding: 0 clamp(3vw, 3.75vw, 4.5vw);
+    line-height: 1.4;
+  }
+
+ 
+  .event-container {
+    gap: clamp(2.25vw, 2.75vw, 3.25vw); 
+    padding: clamp(1.25vw, 1.85vw, 2.25vw);
+    margin-bottom: clamp(3.5vh, 4.25vh, 5vh);
+    scroll-snap-type: x mandatory; 
+  }
+
+ 
+  .event-card-cont {
+    width: clamp(76vw, 82vw, 88vw); 
+ 
+    padding: clamp(1.8vw, 2.25vw, 2.7vw);
+    box-shadow: 
+      0 clamp(0.45vw, 0.55vw, 0.65vw) 
+      clamp(1.25vw, 1.5vw, 1.75vw) rgba(0, 0, 0, 0.18);
+    scroll-snap-align: center; 
+    height: auto;
+
+  }
+
+ 
+  .event-image {
+    height: clamp(30vh, 36vh, 30vh); 
+    border-radius: clamp(0.6vw, 0.7vw, 0.8vw) clamp(0.6vw, 0.7vw, 0.8vw) 0 0;
+    object-position: center top; 
+  }
+
+
+
+  .event-card-cont .event-info {
+  
+    min-height: 22vh;
+    height: clamp(18vh, 22vh, 26vh); 
+    padding-top: 4vh; 
+    margin-top: clamp(5vh, 8vh, 9vh);
+    
+   
+    padding: clamp(1.8vw, 2.1vw, 2.4vw);
+ 
+    background: linear-gradient(
+      to top, 
+      rgba(0,0,0,0.82) 15%, 
+      rgba(0,0,0,0.78) 30%,
+      rgba(0,0,0,0.72) 45%,
+      transparent 100%
+    );
+    backdrop-filter: blur(0.4px);
+    border-radius: 0 0 clamp(0.6vw, 0.7vw, 0.8vw) clamp(0.6vw, 0.7vw, 0.8vw);
+    
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+  }
+
+ 
+   .event-title {
+    font-size: clamp(3.9vw, 4.15vw, 4.4vw);
+    margin-bottom: clamp(0.6vh, 0.7vh, 0.8vh);
+    letter-spacing: 0.05vw;
+  }
+
+  .event-desc {
+    font-size: clamp(1.85vw, 2.85vw, 3vw);
+    line-height: clamp(3.6vw, 3.8vw, 4vw);
+    margin-bottom: clamp(0.8vh, 2.2vh, 3vh);
+  }
+
+
+  .event-icons {
+    gap: clamp(0.4vh, 0.6vh, 0.8vh);
+    margin-top: clamp(-1.2vh, -2vh, -0.8vh);
+  }
+
+  .icon-text {
+    font-size: clamp(2.5vw, 2.65vw, 2.85vw);
+    margin-bottom: clamp(0.2vh, 0.5vh, vh);
+  }
+
+  .event-card-cont .info-icon {
+    height: clamp(2vh, 2.3vh, 2.5vh);
+    width: clamp(3.8vw, 4vw, 4.5vw);
+  }
+
+
+  .Calendar-icon {
+    height: clamp(9.2vw, 12vw, 12vw);
+    width: clamp(9.2vw, 13vw, 15vw);
+    margin-top: clamp(-2.5vh, -4vh, -5vh);
+  }
+
+  .event-card-cont .event-date p {
+    font-size: clamp(3.1vw, 3.25vw, 3.4vw);
+    margin: clamp(-4vh, -8vh, -10vh) clamp(2vw, 3vw, 5vw);
+  } 
+
+
+  .event-image {
+    position: relative; 
+    overflow: visible;
+  }
+  
+ 
+  .event-card-cont {
+    padding-top: clamp(3vh, 4vh, 5vh); 
+  }
+
+  .register-btn {
+    font-size: clamp(3.1vw, 3.3vw, 3.5vw);
+    padding: 
+      clamp(1.7vw, 1.9vw, 2.1vw) 
+      clamp(3.1vw, 3.4vw, 3.7vw);
+    margin-top: clamp(-12vw, -14vw, -16vw);
+    border-radius: clamp(0.6vw, 0.8vw, 1vw);
+    letter-spacing: 0.05vw;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .Prastavit-head h1,
+  .prastavit {
+    font-size: clamp(4vw, 6vw, 8vw);
+    text-align: center;
+    margin-top: 3vh;
+  }
+
+  .Prastavit-info {
+    font-size: clamp(2.5vw, 3.2vw, 4vw);
+    margin-top: -2vh;
+    padding: 0 3vw;
+  }
+
+  .event-container {
+    gap: 3vw;
+    padding: 1.5vw;
+    margin: 0vh 0vw 5vh 0vw;
+  }
+
+
+  .event-card-cont {
+    width: 81vw; 
+    min-width: 90vw;
+    padding: 2.5vw;
+    box-shadow: 0 0.6vw 2.5vw rgba(0, 0, 0, 0.2);
+    margin: 2vh 0vw; 
+  }
+
+  .event-card-cont  .event-image {
+    height:50vw; 
+  }
+
+  .event-card-cont .event-info {
+    width: 95%;
+    padding: 2.5vw;
+    margin-top:20vw;
+    gap: 1vw;
+  }
+  .event-info .event-title {
+    font-size: clamp(12px, 5vw, 7vw);
+
+  }
+  
+
+  .event-desc{
+     font-size: clamp(1.2vw, 3.5vw, 4.5vw);
+     margin-top: -1vh;
+  }
+  .icon-text {
+    font-size: clamp(1.2vw, 3.2vw, 4.5vw);
+  }
+
+  .event-info .event-icons {
+    font-size: clamp(1vw, 1.5vw, 3vw);
+    
+  }
+  .info-icon {
+    height: clamp(12px, 2.5vw, 30px);
+    width: clamp(12px, 2vw, 30px);
+  }
+  
+  .Calendar-icon {
+    height: 13vw;
+    width: 12.5vw;
+    margin-top: -2vh;
+  }
+  .event-date p {
+    font-size: clamp(3vw, 3.75vw, 4.5vw);
+    margin: clamp(-28px, -3vw, -25px) clamp(8px, 1vw, 10px);
+  }
+  
+
+  .register-btn {
+    font-size: clamp(3vw, 3.5vw, 4.5vw);
+    padding: 2.5vw 3.75vw;
+    margin-top: -5vh;
+  }
+}

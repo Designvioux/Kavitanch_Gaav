@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+.Prastavit-Container {
+  background-color: white;
+  width: 100%;
+}
+
+.Prastavit-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Prastavit-head h1 {
+  color: var(--Text, #000);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(1.5rem, 4vw, 4.5rem); /* fluid font size with min 1.5rem and max 4.5rem */
+  margin-top: 20px;
+}
+
+.prastavit {
+  color: var(--Brand, #EA7F13);
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(1.25rem, 3vw, 3rem);
+}
+
+.Prastavit-info {
+  align-self: stretch;
+  margin-top: 10px;
+  color: var(--Grey, #848484);
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.35vw, 1.5rem);
+  margin-top: -3vh;
+}
+
+/* Scrollable event container */
+.event-container {
+  display: flex;
+  gap: 1vw;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 1vh 0;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.event-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+/* Event card container */
+.event-card-cont {
+  flex-shrink: 0;
+  width: clamp(200px, 22vw, 320px); /* fluid width between 200px and 320px */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+
+}
+
+.event-card-cont:hover {
+  transform: translateY(-5px);
+}
+
+/* Event image */
+.event-image {
+  margin: 1vh 0.5vw;
+  height: clamp(150px, 18vw, 280px); /* fluid height */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Event date badge */
+.event-date {
+  position: absolute;
+  top: 1vh;
+  left: 0.5vw;
+  background: rgba(224, 224, 224, 0.85);
+  padding: 0.6vh 1vw;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: clamp(0.7rem, 1.1vw, 1.2rem);
+  color: #000;
+}
+
+.event-date p {
+  margin: 0;
+  color: white;
+  font-size: clamp(10px, 0.8vw, 12px);
+  margin-top: -5vh;
+  margin-left: 1vw;
+}
+
+/* Event info area (text overlay) */
+.event-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vw;
+  height: 40vh;
+  box-sizing: border-box;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Event title */
+.event-title {
+  font-family: 'Niramit', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1rem, 1.6vw, 2rem);
+  color: var(--Brand, #EA7F13);
+  margin: 0;
+}
+
+/* Event description */
+.event-desc {
+  font-family: 'Niramit', sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.75rem, 0.8vw, 1.2rem);
+  color: var(--Background, #FFF);
+  margin: 0;
+}
+
+/* Event icons */
+.event-icons {
+  font-size: clamp(0.6rem, 0.8vw, 1.2rem);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-top: -1.5vh;
+}
+
+/* Register button */
+.register-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 1.3vh 0;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -6vh;
+  width: clamp(80px, 8vw, 130px);
+  height: clamp(30px, 3vw, 48px);
+  font-size: clamp(0.75rem, 0.8vw, 1rem);
+}
+
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+/* Info icon and text */
+.info-icon {
+  height: 2vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2vh;
+  margin-right: 0.5vw;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Niramit', sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.6rem, 0.8vw, 1rem);
+  color: var(--Background, #FFF);
+  line-height: normal;
+}
+
+/* Misc */
+.Calendar-icon {
+  background: transparent;
+  height: 8vh;
+  width: 4vw;
+  margin-top: -2vh;
+}
+
+.event-date {
+  background: none;
+}
+
+.event-image {
+  margin-top: 1vh;
+}

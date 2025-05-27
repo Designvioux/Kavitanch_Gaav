@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+.Navbar {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  width: 100vw;
+}
+
+.logo-jakatwadi {
+  border-radius: 10%;
+  height: 13vh;
+  margin-top: 20%;
+  margin-left: 5%;
+}
+
+.Navbar-heading {
+  margin-left: 2%;
+}
+
+.Navbar-heading h2 {
+  color: var(--Brand, #EA7F13);
+  font-family: 'Amita', serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  width: 20vw;
+  margin-top: 15%;
+  margin-bottom: -5%;
+  margin-left: 2%;
+}
+
+.Home-a {
+  color: var(--Brand, #EA7F13);
+}
+
+.Contact-btn {
+  display: flex;
+  height: 9vh;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  border-radius: 1em;
+  background: #EA7F13;
+  margin-left: 5%;
+}
+
+.cont-p {
+  width: 8vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 0%;
+  height: 50%;
+}
+
+.Navbar-heading h4 {
+  color: var(--Brand, #EA7F13);
+  font-family: 'Amita', serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 25vw;
+  margin: 0%;
+}
+
+.Navbar-links {
+  display: flex;
+  margin-left: 4%;
+}
+
+.Navbar-links ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.Navbar-links li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  width: 7vw;
+  font-family: 'Inter', sans-serif;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+
+.Navbar-links a {
+  text-decoration: none;
+  color: var(--Text, #000);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Navbar-links li a:hover {
+  color: var(--Brand, #EA7F13);
+  transition: 0.4s;
+  text-underline-offset: 1em;
+}
+
+.Navbar-links li a.active {
+  color: orange;
+  font-weight: 600;
+  /* border-bottom: 2px solid orange; */
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  margin-right: 2%;
+  margin-left: auto;
+  margin-top: 10%;
+}

@@ -1,0 +1,637 @@
+/* .purvkaryakram-container {
+  background-color: #fffaf1;
+  padding: 80px 20px;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+margin-top: -80px;
+}
+
+.purvkaryakram-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.purvkaryakram-heading-main {
+ 
+  font-size: 54px;
+  margin-top: -45px;
+
+ 
+ 
+  
+}
+
+.purvkaryakram-orange {
+  color: #f57c00;
+ 
+  font-size: 54px;
+ 
+  
+}
+
+.purvkaryakram-black {
+  color: #000;
+ 
+  font-size: 54px;
+}
+
+.purvkaryakram-heading-secondd {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 18px;
+   color: var(--Grey, #848484);
+
+ 
+}
+
+
+
+.purvkaryakram-event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+.purvkaryakram-event-card {
+  background-color: #fff3e0;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(5, 0, 0, 0.2);
+  width: 90%;
+  border: 2px solid rgb(255, 226, 179);
+ 
+}
+.purvkaryakram-event-card:hover {
+  background-color: #fff3e0;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(5, 0, 0, 0.7);
+  width: 90%;
+  border: 2px solid rgb(255, 226, 179);
+ 
+}
+.purvkaryakram-event-image {
+  display: flex;
+  width: 230px;
+  margin-left: 27px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+ 
+}
+
+.purvkaryakram-event-info {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #2c2c2c;
+  font-family: Niramit;
+}
+
+.purvkaryakram-event-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+   font-family: Niramit;
+}
+
+.purvkaryakram-event-date {
+  color: #888;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  width: auto 115px;
+  height: auto23px;
+   font-family: Niramit;
+}
+.purvkaryakram-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.purvkaryakram-view-all-button {
+text-align: center;
+margin-top: 80px;
+}
+
+
+
+.purvkaryakram-btn {
+display: inline-block;
+padding: 15px 18px;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+border-radius: 6px;
+box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+border:  1px solid var(--Brand, #EA7F13);
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+
+.btn_Brand {
+border-radius: 6px;
+border: 1px solid var(--Brand, #EA7F13);
+background: var(--Background, #FFF);
+color: #EA7F13;
+
+box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+
+
+.btn_Brand:hover{
+  background: var(--Background, #EA7F13);
+  border: 1px solid var(--Brand, #b4620f);
+  color: #FFF;
+}
+.purvkaryakram-container {
+  background-color: #fffaf1;
+  padding: 80px 20px;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+.purvkaryakram-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.purvkaryakram-heading-main {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.purvkaryakram-orange {
+  color: #f57c00;
+}
+
+.purvkaryakram-black {
+  color: #000;
+}
+
+.purvkaryakram-heading-second {
+  max-width: 1644px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.purvkaryakram-event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+
+
+
+
+
+.event-info {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #2c2c2c;
+   font-family: Niramit;
+}
+
+.event-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+   font-family: Niramit;
+}
+
+.event-date {
+  color: #888;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  width: auto 115px;
+  height: auto23px;
+   font-family: Niramit;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.view-all-button {
+text-align: center;
+margin-top: 20px;
+}
+
+.btn {
+display: inline-block;
+padding: 15px 18px;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+border-radius: 6px;
+box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+border:  1px solid var(--Brand, #EA7F13);
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+
+.btn_Brand {
+border-radius: 6px;
+border: 1px solid var(--Brand, #EA7F13);
+background: var(--Background, #FFF);
+color: #EA7F13;
+box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+.purvkaryakram-container {
+  background-color: #fffaf1;
+  padding: 80px 20px;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading-main {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.orange {
+  color: #f57c00;
+}
+
+.black {
+  color: #000;
+}
+
+.heading-second {
+  max-width: 1644px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+
+
+
+.event-info {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #2c2c2c;
+}
+
+.event-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.event-date {
+  color: #888;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  width: auto 115px;
+  height: auto23px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.view-all-button {
+text-align: center;
+margin-top: 20px;
+
+}
+
+
+.btn {
+display: inline-block;
+padding: 15px 18px;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+border-radius: 6px;
+box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+border:  1px solid var(--Brand, #EA7F13);
+cursor: pointer;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+
+.order_now {
+background-color: #ff6b6b; 
+color: white;
+cursor: pointer;
+}
+
+.btn_Brand {
+border-radius: 6px;
+border: 1px solid var(--Brand, #EA7F13);
+background: var(--Background, #FFF);
+color: #EA7F13;
+
+box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+cursor: pointer;
+} */
+
+
+
+
+
+
+
+.purvkaryakram-container {
+  background-color: #fffaf1;
+  padding: clamp(5vh, 5vw, 8vh) clamp(4vw, 6vw, 8vw);
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  margin-top: clamp(-8vh, -5vw, -3vh);
+}
+
+.purvkaryakram-heading {
+  text-align: center;
+  margin-bottom: clamp(3vh, 3vw, 4vh);
+  font-size: clamp(0.875rem, 1.75vw, 1.25rem);
+  
+}
+
+.purvkaryakram-heading-main {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: bold;
+  margin-top: clamp(-3vh, -2vw, -1vh);
+}
+
+.purvkaryakram-orange {
+  color: #f57c00;
+}
+
+.purvkaryakram-black {
+  color: #000;
+}
+
+.purvkaryakram-heading-second {
+  max-width: 90vw;
+  margin: 0 auto;
+  font-size: clamp(1.5vw, 2.5vw, 2vw);
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Horizontal scroll container, flex with nowrap */
+
+/* For WebKit browsers */
+.purvkaryakram-event-grid::-webkit-scrollbar {
+  height: clamp(0.5vh, 1vh, 1vh);
+}
+.purvkaryakram-event-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+.purvkaryakram-event-grid::-webkit-scrollbar-thumb {
+  background-color: rgba(245, 124, 0, 0.5);
+  border-radius: clamp(1vh, 1vw, 2vh);
+}
+
+/* Each event card fixed width with clamp for responsiveness */
+.purvkaryakram-event-grid {
+  display: flex;          /* horizontal row */
+  gap: 24px;
+  overflow-x: auto;       /* scroll if overflow */
+  padding-bottom: 10px;   /* some space below cards */
+}
+
+.purvkaryakram-event-card {
+  flex: 0 0 clamp(15vw, 20vw, 25vw);  /* width scales with viewport, min 15vw max 25vw */
+  background-color: #fff3e0;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(5, 0, 0, 0.2);
+  border: 2px solid rgb(255, 226, 179);
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.purvkaryakram-event-card:hover {
+  box-shadow: 0 4px 6px rgba(5, 0, 0, 0.7);
+}
+
+/* Event image */
+.purvkaryakram-event-image {
+  display: flex;
+  width: clamp(15vw, 20vw, 12vw);
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  aspect-ratio: 1/1; /* keep square */
+  
+  object-fit: cover;
+}
+
+/* Info text */
+.purvkaryakram-event-info {
+    font-size: clamp(0.7rem, 3.5vw, 0.85rem);
+  line-height: 1.5;
+  color: #2c2c2c;
+  font-family: Niramit, sans-serif;
+  margin-top: clamp(1vh, 1vw, 2vh);
+  text-align: center;
+}
+
+/* Event title */
+.purvkaryakram-event-title {
+  font-weight: bold;
+  font-size: clamp(1.2rem, 6.5vw, 1.5rem);
+  margin-bottom: clamp(0.5vh, 1vw, 1vh);
+  font-family: Niramit, sans-serif;
+}
+
+/* Event date */
+.purvkaryakram-event-date {
+  color: #888;
+  font-size: clamp(0.9vw, 1.5vw, 1vw);
+  margin-top: clamp(0.5vh, 1vw, 1vh);
+  font-family: Niramit, sans-serif;
+}
+
+/* Buttons */
+.purvkaryakram-btn {
+  display: inline-block;
+  padding: clamp(1vh, 1vw, 2vh) clamp(2vw, 2.5vw, 4vw);
+  font-size: clamp(0.8vw, 1vw, 1.5vw);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: clamp(0.5vh, 0.5vw, 1vh);
+  border: clamp(0.1vh, 0.2vw, 0.3vh) solid var(--Brand, #EA7F13);
+  background: var(--Background, #FFF);
+  color: #EA7F13;
+  box-shadow: 0 clamp(0.5vh, 0.7vw, 1vh) rgba(25, 33, 61, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.purvkaryakram-btn:hover {
+  background: var(--Background, #EA7F13);
+  border-color: #b4620f;
+  color: #FFF;
+}
+
+/* View all button container */
+.purvkaryakram-view-all-button {
+  text-align: center;
+  margin-top: clamp(4vh, 4vw, 6vh);
+}
+
+@media (min-width: 501px) and (max-width: 769px) {
+  .purvkaryakram-event-grid {
+    gap: 14px;
+    padding-bottom: 12px;
+    overflow-x: auto;
+    scroll-padding-left: 24px;
+  }
+
+  .purvkaryakram-event-card {
+    flex: 0 0 40vw;     /* about half viewport width minus gaps */
+    max-width: 45vw;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(5, 0, 0, 0.2);
+  }
+
+  .purvkaryakram-event-title {
+    font-size: 1.6rem;
+  }
+
+  .purvkaryakram-event-info {
+    font-size: 0.9rem;
+  }
+
+  .purvkaryakram-event-date {
+    font-size: 1rem;
+  }
+
+  .purvkaryakram-event-image {
+    width: 40vw;
+    aspect-ratio: 1 / 1;
+  }
+
+  .purvkaryakram-btn {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 500px) {
+  .purvkaryakram-event-grid {
+    gap: 20px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    scroll-padding-left: 20px;
+  }
+
+  .purvkaryakram-event-card {
+    flex: 0 0 80vw;       /* slightly smaller than full width */
+    max-width: 80vw;
+    padding: 14px;
+    border-radius: 14px;
+    box-shadow: 0 4px 6px rgba(5, 0, 0, 0.18);
+  }
+
+  .purvkaryakram-event-title {
+    font-size: 1.4rem;
+  }
+
+  .purvkaryakram-event-info {
+    font-size: 0.85rem;
+  }
+
+  .purvkaryakram-event-date {
+    font-size: 0.9rem;
+  }
+
+  .purvkaryakram-event-image {
+    width: 60vw;
+    aspect-ratio: 1 / 1;
+  }
+
+  .purvkaryakram-btn {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+}
+
+
+
+@media (max-width: 320px) {
+  .purvkaryakram-event-grid {
+    gap: 16px;             /* smaller gap on very small screens */
+    padding-bottom: 8px;
+    overflow-x: auto;
+    scroll-padding-left: 16px;
+  }
+
+  .purvkaryakram-event-card {
+    flex: 0 0 90vw;       /* each card full viewport width */
+    max-width: 90vw;
+    padding: 12px;         /* reduce padding */
+    border-radius: 12px;   /* slightly smaller radius */
+    box-shadow: 0 3px 5px rgba(5, 0, 0, 0.15);
+  }
+
+  .purvkaryakram-event-title {
+    font-size: 1.2rem;     /* reduce title size */
+  }
+
+  .purvkaryakram-event-info {
+    font-size: 0.75rem;    /* smaller info text */
+  }
+
+  .purvkaryakram-event-date {
+    font-size: 0.8rem;     /* smaller date text */
+  }
+
+  .purvkaryakram-event-image {
+    width: 70vw;           /* smaller image inside card */
+    aspect-ratio: 1 / 1;
+  }
+
+  .purvkaryakram-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

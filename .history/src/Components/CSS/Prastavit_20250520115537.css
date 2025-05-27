@@ -1,0 +1,448 @@
+/* /* @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap'); */
+
+
+/*  
+.Prastavit-Container{
+
+  background-color: white;
+  width: 100%;
+
+}
+
+.Prastavit-head{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Prastavit-head h1{
+  color: var(--Text, #000);
+
+ 
+font-family: Niramit;
+font-size: 54px;
+  
+margin-top: 20px;
+}
+.prastavit{
+  color: var(--Brand, #EA7F13);
+text-align: center;
+
+ 
+font-family: Niramit;
+font-size: 54px;
+
+}
+
+.Prastavit-info{
+ 
+
+ 
+  align-self: stretch;
+  
+  margin-top: 10px;
+  color: var(--Grey, #848484);
+text-align: center;
+
+font-family: "Niramit";
+ 
+font-size: 18px;
+
+margin-top: -10px;
+ 
+
+  
+}
+
+.event-container {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.event-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+
+.event-card-cont {
+  min-width: 260px;
+  flex-shrink: 0;
+}
+.event-card-cont {
+  position: relative;
+  width: 400px;
+  min-width: 400px; 
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  flex-shrink: 0; 
+}
+.event-card-cont:hover {
+  transform: translateY(-5px);
+}
+
+.event-image {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.event-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.event-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6); 
+
+}
+
+.event-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6600;
+  color: var(--Brand, #EA7F13);
+
+font-family: Niramit;
+
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: -5px;
+}
+
+.event-desc {
+  color: var(--Background, #FFF);
+
+font-family: Niramit;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 0px;
+}
+.event-icons {
+  font-size: 13px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+margin-top: -10px;
+}
+
+.register-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -50px;
+}
+
+.info-icon{
+  height: 18px;
+  display: flex;
+  margin-bottom: 2px;
+  align-items: center;
+  margin-right: 5px;
+
+  
+ 
+}
+
+.icon-text{
+  display: flex;
+  flex-direction: row;
+  color: var(--Background, #FFF);
+
+font-family: Niramit;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+.event-image{
+  margin-top: 10px;
+
+}
+.Calendar-icon{
+  background: transparent;
+  height: 60px;
+  width: 60px;
+  margin-top: -15px;
+}
+.event-date{
+  background: none;
+}
+
+
+.event-date p{
+  color: white;
+  font-size: 12px;
+  margin-top: -30px;
+  margin-left: 15px;
+
+}
+ 
+
+
+
+
+
+
+@media (min-width: 321px) and (max-width: 500px) {
+
+  .Prastavit-head h1,
+  .prastavit {
+    font-size: clamp(5.5vw, 6.25vw, 7vw);
+    margin-top: clamp(2vh, 2.5vh, 3vh);
+    line-height: 1.2;
+  }
+
+  .Prastavit-info {
+    font-size: clamp(2.8vw, 3.25vw, 3.5vw); 
+    margin-top: clamp(-1.5vh, -1.25vh, -1vh);
+    padding: 0 clamp(3vw, 3.75vw, 4.5vw);
+    line-height: 1.4;
+  }
+
+ 
+  .event-container {
+    gap: clamp(2.25vw, 2.75vw, 3.25vw); 
+    padding: clamp(1.25vw, 1.85vw, 2.25vw);
+    margin-bottom: clamp(3.5vh, 4.25vh, 5vh);
+    scroll-snap-type: x mandatory; 
+  }
+
+ 
+  .event-card-cont {
+    width: clamp(76vw, 82vw, 88vw); 
+ 
+    padding: clamp(1.8vw, 2.25vw, 2.7vw);
+    box-shadow: 
+      0 clamp(0.45vw, 0.55vw, 0.65vw) 
+      clamp(1.25vw, 1.5vw, 1.75vw) rgba(0, 0, 0, 0.18);
+    scroll-snap-align: center; 
+    height: auto;
+
+  }
+
+ 
+  .event-image {
+    height: clamp(30vh, 36vh, 40vh); 
+    border-radius: clamp(0.6vw, 0.7vw, 0.8vw) clamp(0.6vw, 0.7vw, 0.8vw) 0 0;
+    object-position: center top; 
+  }
+
+
+
+  .event-info {
+  
+    min-height: 28vh;
+    height: clamp(18vh, 22vh, 26vh); 
+    padding-top: 4vh; 
+    margin-top: clamp(5vh, 8vh, 9vh);
+    
+   
+    padding: clamp(1.8vw, 2.1vw, 2.4vw);
+ 
+    background: linear-gradient(
+      to top, 
+      rgba(0,0,0,0.82) 15%, 
+      rgba(0,0,0,0.78) 30%,
+      rgba(0,0,0,0.72) 45%,
+      transparent 100%
+    );
+    backdrop-filter: blur(0.4px);
+    border-radius: 0 0 clamp(0.6vw, 0.7vw, 0.8vw) clamp(0.6vw, 0.7vw, 0.8vw);
+    
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+  }
+
+ 
+   .event-title {
+    font-size: clamp(3.9vw, 4.15vw, 4.4vw);
+    margin-bottom: clamp(0.6vh, 0.7vh, 0.8vh);
+    letter-spacing: 0.05vw;
+  }
+
+  .event-desc {
+    font-size: clamp(1.85vw, 2.65vw, 3vw);
+    line-height: clamp(3.6vw, 3.8vw, 4vw);
+    margin-bottom: clamp(0.6vh, 2vh, 3vh);
+  }
+
+
+  .event-icons {
+    gap: clamp(0.4vh, 0.6vh, 0.8vh);
+    margin-top: clamp(-1.2vh, -1vh, -0.8vh);
+  }
+
+  .icon-text {
+    font-size: clamp(2.55vw, 2.65vw, 2.85vw);
+  }
+
+  .info-icon {
+    height: clamp(2vh, 2.6vh, 3vh);
+    width: clamp(3.8vw, 4vw, 4.5vw);
+  }
+
+
+  .Calendar-icon {
+    height: clamp(9.2vw, 12vw, 12vw);
+    width: clamp(9.2vw, 13vw, 15vw);
+    margin-top: clamp(-2.5vh, -4vh, -5vh);
+  }
+
+  .event-date p {
+    font-size: clamp(3.1vw, 3.25vw, 3.4vw);
+    margin: clamp(-4.5vh, -8vh, -10vh) clamp(2vw, 3vw, 5vw);
+  } 
+
+
+  .event-image {
+    position: relative; 
+    overflow: visible;
+  }
+  
+ 
+  .event-card-cont {
+    padding-top: clamp(3vh, 4vh, 5vh); 
+  }
+
+  .register-btn {
+    font-size: clamp(3.1vw, 3.3vw, 3.5vw);
+    padding: 
+      clamp(1.7vw, 1.9vw, 2.1vw) 
+      clamp(3.1vw, 3.4vw, 3.7vw);
+    margin-top: clamp(-12vw, -14vw, -16vw);
+    border-radius: clamp(0.6vw, 0.8vw, 1vw);
+    letter-spacing: 0.05vw;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .Prastavit-head h1,
+  .prastavit {
+    font-size: clamp(4vw, 6vw, 8vw);
+    text-align: center;
+    margin-top: 3vh;
+  }
+
+  .Prastavit-info {
+    font-size: clamp(2.5vw, 3.2vw, 4vw);
+    margin-top: -2vh;
+    padding: 0 3vw;
+  }
+
+  .event-container {
+    gap: 3vw;
+    padding: 1.5vw;
+    margin: 0vh 0vw 5vh 0vw;
+  }
+
+
+  .event-card-cont {
+    width: 81vw; 
+    min-width: 90vw;
+    padding: 2.5vw;
+    box-shadow: 0 0.6vw 2.5vw rgba(0, 0, 0, 0.2);
+    margin: 2vh 0vw; 
+  }
+
+  .event-image {
+    height:50vw; 
+  }
+
+  .event-info {
+    width: 95%;
+    padding: 2.5vw;
+    margin: 11vh auto 0;
+    gap: 0.4vw;
+  }
+
+.event-title {
+  font-size: clamp(4px, 4vw, 12px);
+}
+
+
+
+  .event-desc{
+     font-size: clamp(1.2vw, 3.5vw, 4.5vw);
+     margin-top: -2vh;
+  }
+  .icon-text {
+    font-size: clamp(1.2vw, 3.2vw, 4.5vw);
+  }
+
+  .event-icons {
+    font-size: clamp(1vw, 1.5vw, 3vw);
+    margin-top: -2vh;
+  }
+.info-icon{
+  height: 2.5vh;
+  width: 5vw;
+}
+  .Calendar-icon {
+    height: 12.5vw;
+    width: 12.5vw;
+    margin-top: -3vh;
+  }
+
+  .event-date p {
+    font-size: clamp(3vw, 3.75vw, 4.5vw);
+    margin: -25px 8px;
+  }
+
+  .register-btn {
+    font-size: clamp(3vw, 3.5vw, 4.5vw);
+    padding: 2.5vw 3.75vw;
+    margin-top: -5vh;
+  }
+}
+  */

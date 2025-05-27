@@ -1,0 +1,329 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Amita&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.footer-container{
+    background: var(--Brand, #EA7F13);
+    margin-top: -20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+  
+}
+.logo{
+    width: 106px;
+height: 106px;
+border-radius: 106px;
+margin-top: 35px;
+margin-left: 80px;
+}
+.logo-text{
+display: flex;
+flex-direction: row;
+width: 600px;
+
+}
+.logo-cont{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.logo-text1{
+    font-family: Amita;
+    color: var(--Background, #FFF);
+text-align: center;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 46px;
+margin-bottom: 0px; 
+
+}
+.logo-text2{
+    font-family: Amita;
+    color: var(--Background, #FFF);
+text-align: center;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 46px; 
+margin-top: -10px;
+margin-left: 5px;
+
+}
+.social{
+    margin-left: 5px;
+    margin-top: -20px;
+    width: 300px;color: var(--Background, #FFF);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.s-icon{
+    height: 18px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+.s-icon:hover{
+   height: 20px; 
+
+}
+.download{
+     margin-top: 35px;
+margin-left: 400px;
+cursor: pointer;
+}
+
+.download-text{
+    color: var(--Background, #FFF);
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 250px;
+
+}
+.download-logo{
+    height: 40px;
+    width: 150px;
+    aspect-ratio: 83/24;
+    margin-top: -10px;
+
+}
+
+
+.pages {
+    width: 150px;
+    height: 200px; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: Inter;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 35px;
+}
+
+.page-ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    gap:25px;
+    
+}
+
+.page-ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.page-ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+.copyright{
+    color: var(--Text, #000);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+flex-direction: row;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 40.8vw;
+margin-top: -1px;
+}
+.copyright-1{
+
+}
+.copyright-2{
+  color: #000;
+  text-decoration: none;
+}
+.copyright-2:hover{
+  color: #EA7F13;
+}
+
+ */
+
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+ 
+ /* Footer Container */
+ .footer-container {
+   background: var(--Brand, #EA7F13);
+   width: 100vw;
+   margin-top: -2vh;
+   display: flex;
+   flex-direction: row;
+   height: clamp(30vh, 35vh, 40vh);
+   flex-wrap: wrap;
+   padding: clamp(2vw, 3vw, 4vw);
+ }
+ 
+ /* Logo Section */
+ .logo {
+   width: clamp(8vw, 7vw, 10vw);
+   height: clamp(8vw, 7vw, 10vw);
+   border-radius: 50%;
+
+
+ }
+ 
+ .logo-text {
+   display: flex;
+   flex-direction: row;
+   width: clamp(25vw, 35vw, 50vw);
+
+ }
+ 
+ .logo-cont {
+   display: flex;
+   flex-direction: column;
+   margin-left: clamp(0.5vw, 1vw, 1.5vw);
+   margin-top: clamp(-2.5vh, -3.5vh, -4vh);
+
+
+ }
+ 
+ .logo-text1 {
+   font-family: 'Amita';
+   color: var(--Background, #FFF);
+   text-align: center;
+   font-size: clamp(2vw, 2.5vw, 3vw); /* Smaller */
+   font-weight: 700;
+   line-height: clamp(3vh, 5vh, 6vh);
+   margin-bottom: 0;
+ }
+ 
+ .logo-text2 {
+   font-family: 'Amita';
+   color: var(--Background, #FFF);
+   text-align: center;
+   font-size: clamp(1.2vw, 1.5vw, 2vw); /* Smaller */
+   font-weight: 400;
+   line-height: clamp(2.5vh, 4vh, 5vh);
+   margin-top: clamp(-1.5vh, -1vh, 0);
+   margin-left: clamp(1vw, 1vw, 1vw);
+ }
+ 
+ /* Social Icons */
+ .social {
+   margin-left: clamp(1vw, 1.5vw, 2vw);
+   margin-top: clamp(-2vh, -1vh, 0vh);
+   width: clamp(35vw, 30vw, 40vw);
+   font-family: 'Inter';
+   font-size: clamp(1vw, 1.2vw, 1.5vw); /* Smaller */
+   color: var(--Background, #161616);
+ }
+ 
+ .s-icon {
+   height: clamp(1.2vw, 1.5vw, 2vw);
+   margin-right: clamp(1.5vw, 2vw, 2.5vw);
+   cursor: pointer;
+   margin-bottom: clamp(1vh, 1.5vh, 2vh);
+ }
+ 
+ .s-icon:hover {
+   height: clamp(1.5vw, 2vw, 2.2vw);
+ }
+ 
+ /* Download Section */
+ .download {
+   margin-top: clamp(3vh, 4vh, 5vh);
+   margin-left: clamp(5vw, 20vw, 25vw);
+   cursor: pointer;
+ }
+ 
+ .download-text {
+   font-family: 'Inter';
+   font-size: clamp(1vw, 1.2vw, 1.5vw); /* Smaller */
+   color: var(--Background, #FFF);
+   width: clamp(28vw, 30vw, 35vw);
+ }
+ 
+ .download-logo {
+   height: clamp(3.5vh, 4vh, 5vh);
+   width: clamp(12vw, 14vw, 18vw);
+   aspect-ratio: 83/24;
+   margin-top: clamp(-1vh, -0.5vh, 0vh);
+ }
+ 
+ /* Pages Links */
+ .pages {
+   width: clamp(18vw, 20vw, 25vw);
+   height: clamp(20vh, 25vh, 30vh);
+   display: flex;
+   flex-direction: column;
+   font-family: 'Inter';
+   font-size: clamp(1vw, 1.2vw, 1.5vw); 
+   border: 2px solid black;
+ 
+
+ }
+ 
+ .page-ul {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   height: 100%;
+   gap: clamp(1.5vh, 2vh, 2.5vh);
+   padding: 0;
+   margin: 0;
+ }
+ 
+ .page-ul li {
+   list-style: none;
+   margin-left: 0;
+ }
+ 
+ .page-ul li a {
+   color: white;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ 
+ /* Copyright */
+ .copyright {
+   color: var(--Text, #000);
+   font-family: 'Inter';
+   font-size: clamp(0.8vw, 1vw, 1.2vw); /* Smaller */
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: clamp(25vw, 30vw, 35vw);
+   margin-top: clamp(2vh, 3vh, 4vh);
+   width: 100vw;
+
+ }
+ 
+ .copyright-2 {
+   color: #000;
+   text-decoration: none;
+ }
+ 
+ .copyright-2:hover {
+   color: #EA7F13;
+ }
+ 
+
+ 

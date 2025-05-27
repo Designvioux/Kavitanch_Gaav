@@ -1,0 +1,193 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Niramit';
+  margin: 0;
+  padding: 0;
+  
+  
+}
+.Header{
+    background: var(--Brand, #EA7F13);
+    display: flex;
+padding: 10px 30px;
+flex-direction: column;
+align-items: center;
+gap: 57px;
+align-self: stretch;
+margin-bottom: 50px;
+
+}
+.heading{
+    color: var(--Background, #fff);
+text-align: center;
+font-family: Niramit;
+ 
+font-size: 54px;
+
+font-weight: 400;
+line-height: normal; 
+ 
+
+  
+background: var(--Brand, #EA7F13);
+}
+
+.sub-heading{
+    margin-top: -80px;
+    color: var(--Background, #FFF);
+text-align: center;
+font-family: Niramit;
+ 
+font-size: 18px;
+
+ max-width: 1200px;
+
+  
+margin-left: 70px;
+  margin-right: 70px;
+}
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top:-20px;
+    padding: 0px 0;
+
+    
+    margin-bottom: 50px;
+  }
+  
+  .stat-box {
+    background-color: #fff;
+    padding: 5px 60px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 120px;
+    min-height: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .stat-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .stat-value {
+    color: var(--Brand, #EA7F13);
+text-align: center;
+font-family: Inter;
+font-size: 42px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  }
+  
+  .stat-label {
+    color: #797979;
+text-align: center;
+
+
+font-family: Niramit;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: -30px;
+  }
+  
+  */
+
+
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+body {
+  font-family: 'Niramit', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER SECTION */
+.Header {
+  background: var(--Brand, #EA7F13);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(1vh, 2vh, 3vh) clamp(3vw, 4vw, 5vw);
+  gap: clamp(2vh, 6vh, 8vh);
+  align-self: stretch;
+  margin-bottom: clamp(3vh, 5vh, 6vh);
+}
+
+/* HEADING TEXT */
+.heading {
+  color: var(--Background, #fff);
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  background: var(--Brand, #EA7F13);
+}
+
+/* SUB HEADING TEXT */
+.sub-heading {
+  margin-top: clamp(-8vh, -6vh, -4vh);
+  color: var(--Background, #FFF);
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.875rem, 1.75vw, 1.25rem);
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* STATS CONTAINER */
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: clamp(1.5vw, 2vw, 3vw);
+  margin-top: clamp(-2vh, -1vh, 0vh);
+  padding: 0;
+  margin-bottom: clamp(4vh, 5vh, 6vh);
+  flex-wrap: wrap;
+}
+
+/* INDIVIDUAL STAT BOX */
+.stat-box {
+  background-color: #fff;
+  padding: clamp(0.5vh, 1vh, 1.5vh) clamp(2vw, 3vw, 4vw);
+
+  border-radius: clamp(1vw, 2vw, 3vw);
+  text-align: center;
+  min-width: clamp(10vw, 15vw, 20vw);
+  min-height: clamp(10vh, 12vh, 14vh);
+  box-shadow: 0 clamp(0.2vh, 0.4vh, 0.5vh) clamp(1vh, 2vh, 2.5vh) rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.stat-box:hover {
+  transform: scale(1.05);
+}
+
+/* VALUE INSIDE STAT BOX */
+.stat-value {
+  color: var(--Brand, #EA7F13);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-weight: 500;
+}
+
+/* LABEL INSIDE STAT BOX */
+.stat-label {
+  color: #797979;
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.875rem, 1.75vw, 1.25rem);
+  margin-top: clamp(-2vh, -1vh, -0.5vh);
+}
