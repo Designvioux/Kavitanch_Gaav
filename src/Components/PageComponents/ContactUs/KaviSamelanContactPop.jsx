@@ -26,7 +26,6 @@ const ContactPop = ({ onClose, setShowSuccessPopup, selectedEvent }) => {
         <button className="popup-close" onClick={onClose}>
           <IoClose />
         </button>
-
         <div className="popup-header">
           <h2 className="popup-subtitle">{selectedEvent?.title || 'कवी संमेलन'}</h2>
           <div className="popup-info">

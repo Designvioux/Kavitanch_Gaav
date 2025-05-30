@@ -11,10 +11,10 @@
   flex-direction: row;
   height: 20vh;
   width: 100%;
-  
-  
-  align-items: center;
+ box-shadow: 0 6px 10px -4px rgba(71, 68, 68, 0.4) !important;  
+ align-items: center;
 }
+
 
 .logo-jakatwadi {
   border-radius: 100%;
@@ -395,9 +395,6 @@ margin-left: clamp(1vw, 4vw, 10vw); /* min 2vw, preferred 10vw, max 15vw */
     height: 100%;
 
   }
-
-
-
   .logo-jakatwadi {
     height: auto;
     width: 25vw;

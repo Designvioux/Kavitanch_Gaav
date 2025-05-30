@@ -218,11 +218,12 @@ margin: 0 auto;
   height: 2px;
   background: #fff;
   position: relative;
+  width: 49vw;
 }
 
 .Prawas-Container .timeline-dot {
   position: absolute;
-  top: -0.5vh;
+  top: -0.8vh;
   transform: translateX(-50%);
   background: #fff;
   border: 2px solid #fff;
@@ -247,17 +248,19 @@ margin: 0 auto;
   margin-top: 3vh;
   display: flex;
   justify-content: space-between;
-  padding: 0 2vw;
+  padding: 0 auto;
+
 }
 
 .Prawas-Container .timeline-year {
   color: black;
   font-weight: bold;
   font-size: clamp(12px, 1.2vw, 16px);
+  margin-left: -16px;
 }
 
 .Prawas-Container .timeline-year.selected {
-  color: #007bff;
+  color: white;
 }
 
 .Prawas-Container .event-section {
@@ -306,6 +309,7 @@ margin: 0 auto;
 
   font-size: clamp(20px, 2.5vw, 32px);
   margin-top: 2vh;
+  position: relative;
 }
 
 .Prawas-Container .event-title {

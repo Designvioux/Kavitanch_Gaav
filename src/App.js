@@ -20,6 +20,8 @@ import ContactPop from './Components/PageComponents/ContactUs/KaviSamelanContact
 import SuccessPopup from './Components/PageComponents/ContactUs/SuccesPopUp.jsx';
 import TestimonialCarousel from './Components/Pratisad.jsx';
 import ScrollToTop from "./Components/ScrollToTop.jsx";
+import Prastavit from './Components/Prastavit.jsx';
+import Purvkaryakram from './Components/Purva.jsx';
 // import Hero from './Components/Hero-Section.jsx';
 
 function App() {
@@ -46,6 +48,8 @@ function App() {
       <Route path="/KaviSamelanPop" element={<ContactPop/>}/>
       <Route path="/SuccessPopup" element={<SuccessPopup/>}/>
       <Route path="/Testimonial" element={<TestimonialCarousel/>}/>
+      <Route path="/Prastavit" element={<Prastavit/>}/>
+      <Route path="/Purva" element={<Purvkaryakram/>}/>
     </Routes>
     <Footer/>
   </Router>

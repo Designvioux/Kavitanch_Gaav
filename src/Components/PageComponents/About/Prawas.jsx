@@ -7,8 +7,6 @@ import img3 from '../Images/image 9.png'
 import img4 from '../Images/image 5.jpg'
   
 const Prawas = () => {
-
-
   const years = [1992, '2022-23', 2024, 2025];
   const events = {
     1992: {

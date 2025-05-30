@@ -12,7 +12,7 @@ import Purva from './Purva.jsx';
 import Que from './Answer.jsx';
 import ContactPop from './PageComponents/ContactUs/KaviSamelanContactPop.jsx';
 import SuccessPopup from './PageComponents/ContactUs/SuccesPopUp.jsx';
-
+import KaryakramContainer from "./Karyakram.js";
 const Home = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Hero />
-      <Prastavit onOpenPopup={handleOpenPopup} />
+     <KaryakramContainer />
 
       {showPopup && (
         <ContactPop
@@ -45,7 +45,6 @@ const Home = () => {
       <Object />
       <MajaGav />
       <Pratisad />
-      <Purva />
       <Que />
 
       {showSuccessPopup && (
