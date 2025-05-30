@@ -1,0 +1,271 @@
+// import React, { useState, useRef, useEffect } from 'react';
+// import '../CSS/Prawas.css';
+
+// import img1 from '../Images/image 8.jpg'
+// import img2 from '../Images/kaviSamelan.jpg'
+// import img3 from '../Images/image 9.png'
+// import img4 from '../Images/image 5.jpg'
+
+
+
+  
+// const Prawas = () => {
+  
+  
+
+//   const years = [1992, '2022-23', 2024, 2025];
+//   const events = {
+//     1992: {
+//       date: '१ मे १९१९',
+//       title: 'इतिहास',
+//       description: 'ही ऐतिहासिक घटना आहे ज्याने आपल्या देशाच्या स्वातंत्र्य चळवळीला गती दिली.',
+//       images: [
+//         '/images/1919-1.jpg',
+//         '/images/1919-2.jpg',
+//         '/images/1919-3.jpg',
+//       ],
+//     },
+//     '2022-23': {
+//       date: '१ मे २०२२-२३',
+//       title: 'साहित्य महोत्सव',
+//       description: 'या कालावधीत विविध साहित्यकृतींचा गौरव करण्यात आला.',
+//       images: [
+//         '/images/2022-1.jpg',
+//         '/images/2022-2.jpg',
+//         '/images/2022-3.jpg',
+//       ],
+//     },
+//     2024: {
+//       date: '१ मे २०२४',
+//       title: 'कविता महोत्सव',
+//       description: 'हा एक साहित्यिक उत्सव आहे ज्यामध्ये विविध कवी आपली कविता सादर करतात. या महोत्सवात विविध विषयांवर आधारित कविता ऐकायला मिळतात आणि नवीन प्रतिभावान कवींना एक व्यासपीठ मिळते. रसिक प्रेक्षकांसाठी हा एक सांस्कृतिक आनंदाचा अनुभव असतो.',
+//       images: [
+//         img1,
+//         img2,
+//         img3,
+//         img4,
+//       ],
+//     },
+//     2025: {
+//       date: '१ मे २०२५',
+//       title: 'नवीन पर्व',
+//       description: 'या वर्षी नवीन सांस्कृतिक उपक्रम राबवण्यात आले.',
+//       images: [
+//         '/images/2025-1.jpg',
+//         '/images/2025-2.jpg',
+//         '/images/2025-3.jpg',
+//       ],
+//     },
+//   };
+
+
+//   const [currentIndex, setCurrentIndex] = useState(2); // Start with 2024
+
+//   const dotRefs = useRef([]);
+
+//   useEffect(() => {
+//     if (dotRefs.current[currentIndex]) {
+//       dotRefs.current[currentIndex].scrollIntoView({
+//         behavior: 'smooth',
+//         inline: 'center',
+//         block: 'nearest'
+//       });
+//     }
+//   }, [currentIndex]);
+
+//   const handlePrev = () => {
+//     if (currentIndex > 0) {
+//       setCurrentIndex(prev => prev - 1);
+//     }
+//   };
+
+//   const handleNext = () => {
+//     if (currentIndex < years.length - 1) {
+//       setCurrentIndex(prev => prev + 1);
+//     }
+//   };
+
+//   const currentYear = years[currentIndex];
+//   const currentEvent = events[currentYear];
+
+
+
+// return (
+
+
+
+
+
+//   <div className='Prawas-Container'>
+//     <div className='Prawas-head'>
+    
+//    <h2 className='Prawas-heading'><span>आमचा</span> प्रवास</h2>
+//    </div>
+//    <div className="timeline-container">
+//       {/* Timeline Bar */}
+//       <div className="timeline-bar">
+//         <div className="timeline-line">
+//           {years.map((year, idx) => (
+//             <div
+//               key={idx}
+//               className={`timeline-dot ${idx === currentIndex ? 'active' : ''}`}
+//               style={{ left: `${(idx / (years.length - 1)) * 100}%` }}
+//             />
+//           ))}
+//         </div>
+//         <div className="timeline-years">
+//           {years.map((year, idx) => (
+//             <div key={idx} className={`timeline-year ${idx === currentIndex ? 'selected' : ''}`}>
+//               {year}
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+
+//       {/* Event Details */}
+//       <div className="event-section">
+//         <button onClick={handlePrev} disabled={currentIndex === 0} className="arrow-button"><i className="fa-solid fa-caret-left"></i></button>
+//         <div className="event-content">
+//         <h2 className="event-date">{currentEvent.date}</h2>
+//           <h3 className="event-title">{currentEvent.title}</h3>
+//           <p className="event-description">{currentEvent.description}</p>
+//         </div>
+//         <button onClick={handleNext} disabled={currentIndex === years.length - 1} className="arrow-button">  <i className="fa-solid fa-caret-right"></i> </button>
+//       </div>
+
+//       {/* Event Images */}
+//       <div className="event-images">
+//         {currentEvent.images.map((imgSrc, idx) => (
+//           <img key={idx} src={imgSrc} alt="event" className="event-image" />
+//         ))}
+//       </div>
+//     </div>
+
+
+
+//   </div>
+// )
+
+// };
+
+// export default Prawas;
+
+import React, { useState } from 'react';
+
+const events = [
+  {
+    year: 2018,
+    date: 'Jan 2018',
+    title: 'Started Journey',
+    description: 'Began the Prawas project with initial ideas and concepts.',
+    images: ['https://via.placeholder.com/200x150?text=2018-1', 'https://via.placeholder.com/200x150?text=2018-2']
+  },
+  {
+    year: 2019,
+    date: 'June 2019',
+    title: 'First Milestone',
+    description: 'Achieved first prototype and user feedback.',
+    images: ['https://via.placeholder.com/200x150?text=2019-1']
+  },
+  {
+    year: 2020,
+    date: 'Dec 2020',
+    title: 'Growth Phase',
+    description: 'Expanded features and user base increased.',
+    images: ['https://via.placeholder.com/200x150?text=2020-1', 'https://via.placeholder.com/200x150?text=2020-2']
+  },
+  {
+    year: 2021,
+    date: 'Sept 2021',
+    title: 'Major Release',
+    description: 'Released version 2.0 with new design.',
+    images: ['https://via.placeholder.com/200x150?text=2021-1']
+  },
+  {
+    year: 2022,
+    date: 'Mar 2022',
+    title: 'Current Status',
+    description: 'Prawas project continues to evolve and grow.',
+    images: ['https://via.placeholder.com/200x150?text=2022-1', 'https://via.placeholder.com/200x150?text=2022-2']
+  },
+];
+
+const PrawasTimeline = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const goPrev = () => {
+    setActiveIndex((prev) => Math.max(prev - 1, 0));
+  };
+
+  const goNext = () => {
+    setActiveIndex((prev) => Math.min(prev + 1, events.length - 1));
+  };
+
+  return (
+    <div className="Prawas-Container">
+      <h1 className="Prawas-heading">
+        Prawas <span>Timeline</span>
+      </h1>
+
+      <div className="timeline-container">
+        <div className="timeline-bar">
+          <div className="timeline-line"></div>
+          {events.map((event, index) => (
+            <div
+              key={event.year}
+              className={`timeline-dot ${index === activeIndex ? 'active' : ''}`}
+              style={{ left: `${(index / (events.length - 1)) * 100}%` }}
+              onClick={() => setActiveIndex(index)}
+              title={event.year}
+            ></div>
+          ))}
+        </div>
+
+        <div className="timeline-years">
+          {events.map((event, index) => (
+            <div
+              key={event.year}
+              className={`timeline-year ${index === activeIndex ? 'selected' : ''}`}
+              onClick={() => setActiveIndex(index)}
+            >
+              {event.year}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="event-section">
+        <button
+          className="arrow-button"
+          onClick={goPrev}
+          disabled={activeIndex === 0}
+          aria-label="Previous Event"
+        >
+          &#8592;
+        </button>
+
+        <div className="event-content">
+          <div className="event-date">{events[activeIndex].date}</div>
+          <div className="event-title">{events[activeIndex].title}</div>
+          <div className="event-description">{events[activeIndex].description}</div>
+          <div className="event-images">
+            {events[activeIndex].images.map((img, idx) => (
+              <img key={idx} src={img} alt={`${events[activeIndex].title} ${idx + 1}`} className="event-image" />
+            ))}
+          </div>
+        </div>
+
+        <button
+          className="arrow-button"
+          onClick={goNext}
+          disabled={activeIndex === events.length - 1}
+          aria-label="Next Event"
+        >
+          &#8594;
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default PrawasTimeline;

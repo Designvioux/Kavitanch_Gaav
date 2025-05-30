@@ -1,0 +1,404 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+.Prawas-Container{
+  height: auto;
+  width: 100vw;
+ 
+  margin-top: 220px;
+
+  
+}
+
+.Prawas-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 500px;
+  margin: 0 auto; 
+  font-family: Niramit;
+ 
+  font-size: 54px;
+ 
+}
+
+.Prawas-Container .Prawas-heading span{
+  color: orange;
+}
+
+.Prawas-Container .timeline-container {
+  margin-top: 20px;
+  font-family: Niramit;
+  text-align: center;
+
+  background: orange;
+  padding-top: 30px;
+}
+
+.Prawas-Container .timeline-bar {
+
+  position: relative;
+  width: 50vw;
+  margin-left: 360px;
+  
+}
+
+.Prawas-Container .timeline-line {
+  height: 2px;
+  background: rgb(255, 255, 255);
+  position: relative;
+ 
+
+}
+
+.Prawas-Container .timeline-dot {
+  position: absolute;
+  top: -5px;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  transition: background 0.3s;
+  
+}
+.Prawas-Container .timeline-dot.active {
+  background: #ffffff;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+}
+.Prawas-Container .timeline-years {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+ 
+}
+.Prawas-Container .timeline-year {
+  color: black;
+  font-weight: bold;
+}
+.Prawas-Container .timeline-year.selected {
+  color: #007bff;
+}
+.Prawas-Container .event-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  background-color: #fff;
+}
+.Prawas-Container .arrow-button {
+  font-size: 24px;
+  padding: 8px 12px;
+  background: none;
+  border: 2px solid orange;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  background-color:orange;
+  color: #fff;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 240px;
+}
+.Prawas-Container .arrow-button:hover {
+  background: rgb(255, 177, 67);
+  color: white;
+}
+
+.Prawas-Container .arrow-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.Prawas-Container .event-content {
+  width: 600px;
+  text-align: center;
+  height: 300px;
+}
+
+.Prawas-Container .event-date {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: var(--Brand, #EA7F13);
+  text-align: center;
+  font-family: Niramit;
+  margin-top: -10px;
+  font-size: 32px;
+
+
+}
+
+.Prawas-Container .event-title {
+  color: orange;
+  margin-bottom: 10px;
+  font-family: Niramit;
+ 
+  font-size: 32px;
+
+  align-items: center;
+  text-align: center;
+}
+
+.Prawas-Container .event-description {
+  color: var(--Text, #000);
+  text-align: center;
+  font-family: Niramit;
+ 
+  font-size: 18px;
+
+}
+
+.Prawas-Container .event-images {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin-top: -40px;
+}
+
+.Prawas-Container .event-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+ */
+
+
+
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+ .Prawas-Container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.Prawas-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.Prawas-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #003366;
+}
+
+.Prawas-heading span {
+  color: #d6336c;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.timeline-bar {
+  user-select: none;
+}
+
+.timeline-line {
+  position: relative;
+  height: 8px;
+  background: #ccc;
+  border-radius: 4px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d6336c #eee;
+  margin-bottom: 15px;
+}
+
+.timeline-line::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timeline-line::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+.timeline-line::-webkit-scrollbar-thumb {
+  background-color: #d6336c;
+  border-radius: 4px;
+}
+
+.timeline-dots-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  gap: 25px;
+  min-width: 100%;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #bbb;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-dot:hover,
+.timeline-dot:focus {
+  outline: none;
+  background-color: #d6336c;
+  transform: scale(1.15);
+}
+
+.timeline-dot.active {
+  background-color: #d6336c;
+  box-shadow: 0 0 10px #d6336c66;
+}
+
+.timeline-years {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.timeline-year {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+  padding: 4px 8px;
+  transition: color 0.3s ease;
+}
+
+.timeline-year.selected,
+.timeline-year:hover,
+.timeline-year:focus {
+  color: #d6336c;
+  outline: none;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.event-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: 2px solid #d6336c;
+  color: #d6336c;
+  font-size: 1.8rem;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.arrow-button:hover,
+.arrow-button:focus {
+  background-color: #d6336c;
+  color: white;
+  outline: none;
+}
+
+.event-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.event-date {
+  font-size: 1.25rem;
+  color: #777;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.event-title {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #003366;
+}
+
+.event-description {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.event-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.event-image {
+  max-width: 180px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.event-image:hover,
+.event-image:focus {
+  transform: scale(1.05);
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .timeline-dots-wrapper {
+    gap: 15px;
+  }
+
+  .timeline-dot {
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline-years {
+    gap: 20px;
+  }
+
+  .timeline-year {
+    font-size: 1rem;
+  }
+
+  .event-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .event-content {
+    max-width: 100%;
+  }
+
+  .event-images {
+    gap: 10px;
+  }
+
+  .event-image {
+    max-width: 140px;
+  }
+}
