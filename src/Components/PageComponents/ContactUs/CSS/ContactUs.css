@@ -30,41 +30,31 @@
 .contactus-overlay-text h1 {
   color: #FFF;
   font-family: Niramit;
-
-  font-size: 54px;
-  /* font-style: normal; */
-  font-weight: 600;
-  /* line-height: normal; */
-
-  /* font-size: 50px; */
-  /* font-style: normal;
-  font-weight: 600;
-  line-height: normal; */
-
+  font-size: clamp(28px, 5vw, 54px);
+  font-weight: 800;
   margin: 0;
 }
-
 /* Form Title */
 .contactus-form-title {
   text-align: center;
   margin-top: 30px;
-
-  font-size: 50px;
-
-  /* font-size: 40px; */
+  margin: 0 auto;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(28px, 3vw, 54px);
+  font-weight: 800;
 
 }
 
 .contactus-black-text {
   color: #000;
   font-family: Niramit;
-  font-weight: 400;
+   font-weight: 550;
 }
 
 .contactus-orange-text {
   color: #EA7F13;
   font-family: Niramit;
-  font-weight: 400;
+  font-weight: 550;
 }
 
 /* Contact Form */
@@ -176,22 +166,24 @@
 }
 
 .contactus-map-heading {
-
+ font-family: 'Niramit', sans-serif;
+  font-weight: 800;
   margin-bottom: 20px;
+
 }
 
 .contactus-map-heading-grey {
   color: #606060;
+  font-size: clamp(28px, 2vw, 54px);
   font-family: Niramit;
-  font-size: 34px;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .contactus-map-heading-orange {
   color: #EA7F13;
   font-family: Amita;
-  font-size: 38px;
-  font-weight: 400;
+  font-size: clamp(28px, 2.5vw, 54px);
+  font-weight: 800;
 }
 
 .contactus-map-container iframe {
@@ -216,22 +208,22 @@
 
 .contactus-note-header {
   text-align: center;
-  font-size: 34px;
+  font-size: clamp(28px, 3vw, 54px);
   margin-bottom: 20px;
 }
 
 .contactus-note-black-text {
   color: #000;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .contactus-note-orange-text {
   color: #EA7F13;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .contactus-note-list {
-  font-size: 18px;
+  font-size: 1.8vw;
   margin: 10px 0;
   color: #333;
   list-style: none;

@@ -5,7 +5,8 @@ import kavikatta from '../Images/Kavi-Kattta.jpg';
 import Calendar from '../Icons/Calendar.png';
 import Clock from '../Icons/Clock.png';
 import Loc from '../Icons/Location.png';
-
+import { Link } from 'react-router-dom';
+import KaryakramContainer from './Karyakram';
 const events = [
   {
     id: 1,
@@ -33,8 +34,6 @@ const events = [
     description: "वेळी, संस्कृती आणि दानाचा संगम सुंदर निसर्गात",
     image: shivar,
     icon:Calendar,
-
-
     route: "/KaviSamelanPop",
 
   },
@@ -45,7 +44,6 @@ const events = [
     description: "वेळी, संस्कृती आणि दानाचा संगम सुंदर निसर्गात",
     image: shivar,
     icon:Calendar,
-
     route: "/KaviSamelanPop",
   },
   {
@@ -78,78 +76,10 @@ const events = [
   },
 ];
 
-
-// const Prastavit = () =>{
-
-//   const navigate = useNavigate();
-
-//   const handleRegisterClick = (route) => {
-//     navigate(route);
-//   };
-
-//   return(
-
-//     <div className='Prastavit-Container'>
-// <div className='Prastavit-head'>
-//       <h1 className='Prastavit-heading'>  <span className='prastavit'>प्रस्तावित</span>  कार्यक्रम</h1>
-//      <p className='Prastavit-info'>नवा कार्यक्रम लवकरच येतोय! काहीतरी खास घेऊन… तयार रहा!</p>
-//       </div>
-//       <div className="event-container">
-//       {events.map((event) => (
-//         <div className="event-card-cont" key={event.id}>
-//           <div
-//             className="event-image"
-//             style={{ backgroundImage: `url(${event.image})` }}
-//           >
-//             <div className="event-date"><img src={event.icon} className='Calendar-icon'/><p>{event.date}</p></div>
-
-//             <div className="event-info">
-//             <h3 className="event-title">{event.title}</h3>
-//             <p className="event-desc">{event.description}</p>
-//             <div className="event-icons">
-//               <span className='icon-text' >
-//                 <img src={Clock} className='info-icon'></img> संध्याकाळी ५ वाजत
-//               </span>
-//               <span className='icon-text' >
-//                 <img src={Loc} className='info-icon'></img> जकातवाडी, सातारा 
-//               </span>
-//             </div>
-//             <button
-//                   className="register-btn"
-//                   onClick={() => handleRegisterClick(event.route)}
-//                 >
-//                   Register Now
-//                 </button>
-//           </div>
-//           </div>
-         
-//         </div>
-//       ))}
-//     </div>
-
-
-//     </div>
-//   )
-
-
-// }
-
-
-// Prastavit.jsx
 const Prastavit = ({ onOpenPopup }) => {
-
-
-
-
   return (
     <div className='Prastavit-Container'>
-      <div className='Prastavit-head'>
-        <h1 className='Prastavit-heading'>
-          <span className='prastavit'>प्रस्तावित</span> कार्यक्रम
-        </h1>
-        <p className='Prastavit-info'>नवा कार्यक्रम लवकरच येतोय! काहीतरी खास घेऊन… तयार रहा!</p>
-      </div>
-
+      
       <div className="event-container">
         {events.map((event) => (
           <div className="event-card-cont" key={event.id}>

@@ -279,9 +279,46 @@ const AamchaSahityaSection = () => {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
     ))}
   </div>
 </div>
+=======
+
+      {/* Second Card */}
+      <div className="aamcha-content" id="Diwali">
+        <div className="aamcha-image">
+          <img src={diwali} alt="दिवाळी अंक" />
+        </div>
+        <div className="aamcha-card" id="Diwali">
+          <h3 className="ebook-titlee">दिवाळी अंक</h3>
+          <p className="ebook-desc">
+          प्रत्येक वर्षी प्रकाशित होणारा खास दिवाळी अंक म्हणजे नव्या प्रतिभेला वाव देणारा साहित्यिक उत्सव! जकतवाडी आणि जगभरातील मराठी कवींनी लिहिलेल्या दर्जेदार कविता, लघुकथा, लेख आणि अनुभवांचे संकलन इथे वाचायला मिळेल.          </p>
+          <div className="ebook-buttons">
+           <Link  className="read-button" to="/Diwali">वाचा</Link>
+            <button className="download-button">Download</button>
+          </div>
+        </div>
+      </div>
+
+      {/* Third Card */}
+      <div className="aamcha-content" id="Masik">
+        <div className="aamcha-image">
+          <img src={magazine} alt="मासिक" />
+        </div>
+        <div className="aamcha-card" id="Masik">
+          <h3 className="ebook-titlee">मासिक</h3>
+          <p className="ebook-desc">
+          प्रत्येक महिन्यात प्रकाशित होणारं आमचं खास साहित्यिक मासिक – नवोदित आणि प्रस्थापित कवींना एकत्र आणणारं हृदयस्पर्शी व्यासपीठ. विविध कविता, लेख, संवाद आणि प्रेरणादायी साहित्य यांचा संगम – केवळ "कवितांचं गाव" मासिकात!</p>
+          <div className="ebook-buttons">
+        <Link  className="read-button" to="/Masik">वाचा</Link>
+            <button className="download-button">Download</button>
+          </div>
+        </div>
+      </div>
+    </ul>
+    </div>
+>>>>>>> origin/riya
     </section>
   );
 };

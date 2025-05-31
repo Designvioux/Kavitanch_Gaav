@@ -22,12 +22,7 @@ import Search from '../Images/search-icon.png';
 const Blog = ({ blogs }) => {
 
     const categories = [
-        'प्रेम कविता',
-        'निसर्ग कविता',
-        'बाल कविता',
-        'हास्य कविता',
-        'सामाजिक कविता',
-        'भक्ती कविता',
+
     ];
 
     const [activeCategory, setActiveCategory] = useState('प्रेम कविता');
@@ -55,7 +50,7 @@ const Blog = ({ blogs }) => {
                 </div>
 
                 <div className='category-sec'>
-                    <h3 className='category-title'>Choose Category</h3>
+                    {/* <h3 className='category-title'>Choose Category</h3> */}
                 </div>
 
                 <div className="category-filters">

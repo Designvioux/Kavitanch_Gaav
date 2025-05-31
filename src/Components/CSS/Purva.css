@@ -1,677 +1,953 @@
-/* .purvkaryakram-container {
-  background-color: #fffaf1;
-  padding: 80px 20px;
-  font-family: 'Noto Sans Devanagari', sans-serif;
-margin-top: -80px;
+/* /* @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap'); */
+
+/* 
+
+.Prastavit-Container{
+
+  background-color: white;
+  width: 100%;
+
 }
 
-.purvkaryakram-heading {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.purvkaryakram-heading-main {
- 
-  font-size: 54px;
-  margin-top: -45px;
-
- 
- 
-  
-}
-
-.purvkaryakram-orange {
-  color: #f57c00;
- 
-  font-size: 54px;
- 
-  
-}
-
-.purvkaryakram-black {
-  color: #000;
- 
-  font-size: 54px;
-}
-
-.purvkaryakram-heading-secondd {
-  max-width: 1200px;
-  margin: 0 auto;
-  font-size: 18px;
-   color: var(--Grey, #848484);
-
- 
-}
-
-
-
-.purvkaryakram-event-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-  justify-items: center;
-}
-
-.purvkaryakram-event-card {
-  background-color: #fff3e0;
-  border-radius: 16px;
-  padding: 16px;
-  box-shadow: 0 4px 6px rgba(5, 0, 0, 0.2);
-  width: 90%;
-  border: 2px solid rgb(255, 226, 179);
- 
-}
-.purvkaryakram-event-card:hover {
-  background-color: #fff3e0;
-  border-radius: 16px;
-  padding: 16px;
-  box-shadow: 0 4px 6px rgba(5, 0, 0, 0.7);
-  width: 90%;
-  border: 2px solid rgb(255, 226, 179);
- 
-}
-.purvkaryakram-event-image {
+.Prastavit-head{
   display: flex;
-  width: 230px;
-  margin-left: 27px;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  cursor: pointer;
+}
+
+.Prastavit-head h1{
+  color: var(--Text, #000);
+
  
-}
-
-.purvkaryakram-event-info {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #2c2c2c;
-  font-family: Niramit;
-}
-
-.purvkaryakram-event-title {
-  font-weight: bold;
-  font-size: 1.05rem;
-  margin-bottom: 8px;
-   font-family: Niramit;
-}
-
-.purvkaryakram-event-date {
-  color: #888;
-  font-size: 0.85rem;
-  margin-top: 8px;
-  width: auto 115px;
-  height: auto23px;
-   font-family: Niramit;
-}
-.purvkaryakram-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-}
-
-.purvkaryakram-view-all-button {
-text-align: center;
-margin-top: 80px;
-}
-
-
-
-.purvkaryakram-btn {
-display: inline-block;
-padding: 15px 18px;
-font-size: 16px;
-font-weight: bold;
-text-align: center;
-text-decoration: none;
-border-radius: 6px;
-box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
-border:  1px solid var(--Brand, #EA7F13);
-cursor: pointer;
-transition: all 0.3s ease;
-}
-
-
-.btn_Brand {
-border-radius: 6px;
-border: 1px solid var(--Brand, #EA7F13);
-background: var(--Background, #FFF);
-color: #EA7F13;
-
-box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
-}
-
-
-.btn_Brand:hover{
-  background: var(--Background, #EA7F13);
-  border: 1px solid var(--Brand, #b4620f);
-  color: #FFF;
-}
-.purvkaryakram-container {
-  background-color: #fffaf1;
-  padding: 80px 20px;
-  font-family: 'Noto Sans Devanagari', sans-serif;
-}
-
-.purvkaryakram-heading {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.purvkaryakram-heading-main {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.purvkaryakram-orange {
-  color: #f57c00;
-}
-
-.purvkaryakram-black {
-  color: #000;
-}
-
-.purvkaryakram-heading-second {
-  max-width: 1644px;
-  margin: 0 auto;
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.7;
-}
-
-.purvkaryakram-event-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-  justify-items: center;
-}
-
-
-
-
-
-
-.event-info {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #2c2c2c;
-   font-family: Niramit;
-}
-
-.event-title {
-  font-weight: bold;
-  font-size: 1.05rem;
-  margin-bottom: 8px;
-   font-family: Niramit;
-}
-
-.event-date {
-  color: #888;
-  font-size: 0.85rem;
-  margin-top: 8px;
-  width: auto 115px;
-  height: auto23px;
-   font-family: Niramit;
-}
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-}
-
-.view-all-button {
-text-align: center;
+font-family: Niramit;
+font-size: 54px;
+  
 margin-top: 20px;
 }
-
-.btn {
-display: inline-block;
-padding: 15px 18px;
-font-size: 16px;
-font-weight: bold;
+.prastavit{
+  color: var(--Brand, #EA7F13);
 text-align: center;
-text-decoration: none;
-border-radius: 6px;
-box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
-border:  1px solid var(--Brand, #EA7F13);
-cursor: pointer;
-transition: all 0.3s ease;
+
+ 
+font-family: Niramit;
+font-size: 54px;
+
 }
 
+.Prastavit-info{
+ 
 
-.btn_Brand {
-border-radius: 6px;
-border: 1px solid var(--Brand, #EA7F13);
-background: var(--Background, #FFF);
-color: #EA7F13;
-box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
-}
-.purvkaryakram-container {
-  background-color: #fffaf1;
-  padding: 80px 20px;
-  font-family: 'Noto Sans Devanagari', sans-serif;
-}
-
-.heading {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.heading-main {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.orange {
-  color: #f57c00;
-}
-
-.black {
-  color: #000;
-}
-
-.heading-second {
-  max-width: 1644px;
-  margin: 0 auto;
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.7;
-}
-
-.event-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-  justify-items: center;
-}
-
-
-
-
-.event-info {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #2c2c2c;
-}
-
-.event-title {
-  font-weight: bold;
-  font-size: 1.05rem;
-  margin-bottom: 8px;
-}
-
-.event-date {
-  color: #888;
-  font-size: 0.85rem;
-  margin-top: 8px;
-  width: auto 115px;
-  height: auto23px;
-}
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-}
-
-.view-all-button {
+ 
+  align-self: stretch;
+  
+  margin-top: 10px;
+  color: var(--Grey, #848484);
 text-align: center;
-margin-top: 20px;
 
-}
+font-family: "Niramit";
+ 
+font-size: 18px;
 
+margin-top: -10px;
+ 
 
-.btn {
-display: inline-block;
-padding: 15px 18px;
-font-size: 16px;
-font-weight: bold;
-text-align: center;
-text-decoration: none;
-border-radius: 6px;
-box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
-border:  1px solid var(--Brand, #EA7F13);
-cursor: pointer;
-transition: all 0.3s ease;
-cursor: pointer;
-}
-
-
-.order_now {
-background-color: #ff6b6b; 
-color: white;
-cursor: pointer;
-}
-
-.btn_Brand {
-border-radius: 6px;
-border: 1px solid var(--Brand, #EA7F13);
-background: var(--Background, #FFF);
-color: #EA7F13;
-
-box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
-cursor: pointer;
-} */
-
-
-
-
-
-
-
-.purvkaryakram-container {
-  background-color: #fffaf1;
-  padding: clamp(5vh, 5vw, 8vh) clamp(2vw, 3.5vw, 6vw);
-  font-family: 'Noto Sans Devanagari', sans-serif;
-  margin-top: clamp(-8vh, -5vw, -3vh);
-}
-
-.purvkaryakram-heading {
-  text-align: center;
-  margin-bottom: clamp(3vh, 3vw, 4vh);
-  font-size: clamp(0.75rem, 1.75vw, 1.25rem);
   
 }
 
-.purvkaryakram-heading-main {
-  font-size: clamp(1.6rem, 4vw, 3.5rem);
+.event-container {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.event-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+
+.event-card-cont {
+  min-width: 260px;
+  flex-shrink: 0;
+}
+.event-card-cont {
+  position: relative;
+  width: 400px;
+  min-width: 400px; 
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  flex-shrink: 0; 
+}
+.event-card-cont:hover {
+  transform: translateY(-5px);
+}
+
+.event-image {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.event-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 5px;
   font-weight: bold;
-  margin-top: clamp(-3vh, -2vw, -1vh);
+  font-size: 14px;
 }
 
-.purvkaryakram-orange {
-  color: #f57c00;
+.event-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6); 
+
 }
 
-.purvkaryakram-black {
-  color: #000;
+.event-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6600;
+  color: var(--Brand, #EA7F13);
+
+font-family: Niramit;
+
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: -5px;
 }
 
-.purvkaryakram-heading-second {
-  max-width: 90vw;
-  margin: 0 auto;
-  font-size: clamp(1.5vw, 2.5vw, 2vw);
-  color: #555;
-  line-height: 1.6;
+.event-desc {
+  color: var(--Background, #FFF);
+
+font-family: Niramit;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 0px;
+}
+.event-icons {
+  font-size: 13px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+margin-top: -10px;
 }
 
-/* Horizontal scroll container, flex with nowrap */
-
-/* For WebKit browsers */
-.purvkaryakram-event-grid::-webkit-scrollbar {
-  height: clamp(0.5vh, 1vh, 1vh);
+.register-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -50px;
 }
-.purvkaryakram-event-grid::-webkit-scrollbar-track {
+
+.info-icon{
+  height: 18px;
+  display: flex;
+  margin-bottom: 2px;
+  align-items: center;
+  margin-right: 5px;
+
+  
+ 
+}
+
+.icon-text{
+  display: flex;
+  flex-direction: row;
+  color: var(--Background, #FFF);
+
+font-family: Niramit;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+.event-image{
+  margin-top: 10px;
+
+}
+.Calendar-icon{
   background: transparent;
+  height: 60px;
+  width: 60px;
+  margin-top: -15px;
 }
-.purvkaryakram-event-grid::-webkit-scrollbar-thumb {
-  background-color: rgba(245, 124, 0, 0.5);
-  border-radius: clamp(1vh, 1vw, 2vh);
-}
-
-/* Each event card fixed width with clamp for responsiveness */
-.purvkaryakram-event-grid {
-  display: flex;          /* horizontal row */
-  gap: 24px;
-  overflow-x: auto;       /* scroll if overflow */
-  padding-bottom: 10px;   /* some space below cards */
+.event-date{
+  background: none;
 }
 
-.purvkaryakram-event-card {
-  flex: 0 0 clamp(18vw, 21.5vw, 22vw);  /* width scales with viewport, min 15vw max 25vw */
-  background-color: #fff3e0;
-  border-radius: 16px;
-  padding: 16px;
-  box-shadow: 0 4px 6px rgba(5, 0, 0, 0.2);
-  border: 2px solid rgb(255, 226, 179);
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: box-shadow 0.3s ease;
+
+.event-date p{
+  color: white;
+  font-size: 12px;
+  margin-top: -30px;
+  margin-left: 15px;
+
+}
+  */
+
+
+
+/* 
+  @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+:root {
+  --brand-color: #EA7F13;
+  --text-color: #000;
+  --grey-color: #848484;
+  --background-color: #FFF;
 }
 
-.purvkaryakram-event-card:hover {
-  box-shadow: 0 4px 6px rgba(5, 0, 0, 0.7);
+.Prastavit-Container {
+  background-color: white;
+  width: 100%;
 }
 
-/* Event image */
-.purvkaryakram-event-image {
+
+.Prastavit-head {
   display: flex;
-  width: clamp(15vw, 20vw, 12vw);
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  cursor: pointer;
-  aspect-ratio: 1/1; /* keep square */
+}
+
+.Prastavit-head h1 {
+  color: var(--text-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2vw, 4vw, 8vw);
+  margin-top: 2vh;
+}
+
+.prastavit {
+  color: var(--brand-color);
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2vw, 4vw, 8vw);
+}
+
+.Prastavit-info {
+  align-self: stretch;
+  margin-top: -5vh;
+  color: var(--grey-color);
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.5vw, 1.5vw, 3vw);
+}
+
+
+
+
+
+.event-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  width: 100%;
   
-  object-fit: cover;
+  box-sizing: border-box;
 }
 
-/* Info text */
-.purvkaryakram-event-info {
-    font-size: clamp(0.7rem, 3.5vw, 0.85rem);
-  line-height: 1.5;
-  color: #2c2c2c;
-  font-family: Niramit, sans-serif;
-  margin-top: clamp(1vh, 1vw, 2vh);
-  text-align: center;
+.event-container::-webkit-scrollbar {
+  height: 5px;
 }
 
-/* Event title */
-.purvkaryakram-event-title {
-  font-weight: bold;
-  font-size: clamp(1.2rem, 6.5vw, 1.5rem);
-  margin-bottom: clamp(0.5vh, 1vw, 1vh);
-  font-family: Niramit, sans-serif;
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
 }
 
-/* Event date */
-.purvkaryakram-event-date {
-  color: #888;
-  font-size: clamp(0.9vw, 1.5vw, 1vw);
-  margin-top: clamp(0.5vh, 1vw, 1vh);
-  font-family: Niramit, sans-serif;
+
+.event-card-cont {
+  position: relative;
+
+  width: 30vw; 
+  min-width: 300px; 
+  height: auto; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  padding: 10px 10px;
+  border-radius: 10px;
 }
 
-/* Buttons */
-.purvkaryakram-btn {
-  display: inline-block;
-  padding: clamp(1vh, 1vw, 2vh) clamp(2vw, 2.5vw, 4vw);
-  font-size: clamp(0.8vw, 1vw, 1.5vw);
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  border-radius: clamp(0.5vh, 0.5vw, 1vh);
-  border: clamp(0.1vh, 0.2vw, 0.3vh) solid var(--Brand, #EA7F13);
-  background: var(--Background, #FFF);
-  color: #EA7F13;
-  box-shadow: 0 clamp(0.5vh, 0.7vw, 1vh) rgba(25, 33, 61, 0.08);
+.event-card-cont:hover {
+  transform: translateY(-5px);
+}
+
+
+.event-image {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
   cursor: pointer;
-  transition: all 0.3s ease;
+  width: 100%;
+  border-radius: 10px;
+
+
 }
 
-.purvkaryakram-btn:hover {
-  background: var(--Background, #EA7F13);
-  border-color: #b4620f;
-  color: #FFF;
+
+.Calendar-icon {
+  background: transparent;
+  height: 60px;
+  width: 60px;
+  margin-top: -15px;
 }
 
-/* View all button container */
-.purvkaryakram-view-all-button {
+.event-date {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  background: none;
+}
+
+.event-date p {
+  color: white;
+  font-size: 14px;
+  margin: -30px 10px;
+}
+
+
+.event-info {
+  position: relative;
+  bottom: 0;
+  width: 95%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.event-title {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Niramit', sans-serif;
+  color: var(--brand-color);
+  margin-top: -5px;
+}
+
+.event-desc {
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+
+.event-icons {
+  font-size: 14px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+.info-icon {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.register-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -40px;
+}
+
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+ */
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+:root {
+  --brand-color: #EA7F13;
+  --text-color: #000;
+  --grey-color: #848484;
+  --background-color: #FFF;
+}
+
+/* Container */
+.Prastavit-Container {
+  background-color: white;
+ 
+}
+
+/* Heading */
+.Prastavit-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-top: clamp(4vh, 4vw, 6vh);
 }
 
-@media (min-width: 770px) and (max-width: 1024px) {
-  .purvkaryakram-event-grid {
-    gap: clamp(1vw, 2vw, 2.5vw);       /* moderate gap */
-    padding-bottom: clamp(1vh, 2vh, 3vh);
-    overflow-x: auto;
-    scroll-padding-left: clamp(1vw, 2vw, 3vw);
-  }
+.Prastavit-head h1 {
+  color: var(--text-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-top: clamp(1rem, 2vh, 2rem);
+  line-height: 1.2;
+}
 
-  .purvkaryakram-event-card {
-    flex: 0 0 clamp(30vw, 35vw, 40vw); /* card width between 30-40vw */
-    max-width: clamp(30vw, 35vw, 40vw);
-    padding: clamp(1vh, 1.5vh, 2vh);
-    border-radius: clamp(1vh, 1.5vh, 2vh);
-    box-shadow: 0 clamp(0.3vh, 0.7vw, 1vh) clamp(0.6vh, 1vw, 1.5vh) rgba(5, 0, 0, 0.25);
-  }
+.prastavit {
+  color: var(--brand-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+.Prastavit-buttons{
+  /* display: flex; */
+    /* gap: 15px; */
+    /* margin-bottom: 20px; */
+}
+/* Info */
+.Prastavit-info {
+  color: var(--grey-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.875rem, 1.75vw, 1.25rem);
+  margin-top: clamp(-0.8rem, -1vh, 0rem);
+  padding: 0 clamp(1rem, 5vw, 3rem);
+  line-height: 1.4;
+}
 
-  .purvkaryakram-event-title {
-    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
-  }
+/* Event Card Scroll Container */
+.event-container {
+  display: flex;
+  gap: clamp(0.75rem, 1.5vw, 1.25rem);
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: clamp(0.5rem, 1vw, 1rem);
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: clamp(1.5rem, 3vh, 2.5rem);
+}
 
-  .purvkaryakram-event-info {
-    font-size: clamp(0.75rem, 1.5vw, 1rem);
-  }
+.event-container::-webkit-scrollbar {
+  height: 5px;
+}
 
-  .purvkaryakram-event-date {
-    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
-  }
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
 
-  .purvkaryakram-event-image {
-    width: clamp(25vw, 28vw, 32vw);
-    aspect-ratio: 1 / 1;
-  }
+/* Event Card */
+.event-card-cont {
+  position: relative;
+  width: clamp(18.75rem, 30vw, 25rem);
+  min-width: 18.75rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  padding: 0.625rem;
+}
 
-  .purvkaryakram-btn {
-    padding: clamp(1vh, 1.5vh, 2vh) clamp(3vw, 3.5vw, 4vw);
-    font-size: clamp(0.9rem, 1.2vw, 1.3rem);
+.event-card-cont:hover {
+  transform: translateY(-0.3125rem);
+}
+
+/* Event Image */
+.event-image {
+  height: clamp(15.625rem, 25vw, 17.75rem);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0.625rem;
+}
+
+/* Calendar Icon */
+.Calendar-icon {
+  background: transparent;
+  height: clamp(3.125rem, 5vw, 3.75rem);
+  width: clamp(3.125rem, 5vw, 3.75rem);
+  margin-top:0rem;
+}
+
+/* Event Date */
+.event-date {
+  position: absolute;
+  top: 0.375rem;
+  left: 1.25rem;
+  background: none;
+}
+
+.event-date p {
+  color: white;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  margin: -1.875rem 0.625rem;
+}
+.purva-button{
+  background: var(--brand-color);
+  color: white;
+  border: none;
+  padding: clamp(0.5rem, 1vw, 0.625rem) clamp(0.75rem, 1.5vw, 0.9375rem);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -10vh;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  text-decoration: none;
+}
+.event-info {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 61%;
+  display: flex;
+  flex-direction: column;
+  margin: 7rem auto;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Title */
+.event-title {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 700;
+  font-family: 'Niramit', sans-serif;
+  color: var(--brand-color);
+  margin-top: -0.3125rem;
+}
+
+/* Description */
+.event-desc {
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  font-weight: 400;
+  margin-top: 0;
+}
+
+/* Icons */
+.event-icons {
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.625rem;
+}
+
+.info-icon {
+  height: clamp(1rem, 1.5vw, 1.25rem);
+  display: flex;
+  align-items: center;
+  margin-right: 0.625rem;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  font-weight: 400;
+}
+
+/* Register Button */
+.register-btn {
+  background: var(--brand-color);
+  color: white;
+  border: none;
+  padding: clamp(0.5rem, 1vw, 0.625rem) clamp(0.75rem, 1.5vw, 0.9375rem);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -2.5rem;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+}
+
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .event-card-cont {
+    min-width: clamp(16rem, 80vw, 20rem);
+    width: clamp(16rem, 80vw, 20rem);
+  }
+  
+  .event-image {
+    height: clamp(12rem, 60vw, 15rem);
+  }
+  
+  .event-info {
+    margin: clamp(4rem, 25vw, 6rem) auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .Prastavit-head h1,
+  .prastavit {
+    font-size: clamp(1.5rem, 6.25vw, 2rem);
+  }
+  
+  .Prastavit-info {
+    font-size: clamp(0.75rem, 3.25vw, 1rem);
+    margin-top: clamp(-0.5rem, -1.25vh, -0.25rem);
+  }
+  
+  .event-container {
+    gap: clamp(0.5rem, 2.75vw, 1rem);
+    padding: clamp(0.5rem, 1.85vw, 0.75rem);
+  }
+  
+  .event-card-cont {
+    width: clamp(16rem, 82vw, 18rem);
+    padding: clamp(0.5rem, 2.25vw, 0.75rem);
+  }
+  
+  .event-image {
+    height: clamp(10rem, 50vw, 12rem);
+  }
+  
+  .event-info {
+
+    margin-top: clamp(3rem, 25vw, 5rem);
+    padding: clamp(0.5rem, 2.1vw, 0.75rem);
+  }
+  
+  .event-title {
+    font-size: clamp(0.875rem, 4.15vw, 1rem);
+  }
+  
+  .event-desc {
+    font-size: clamp(0.625rem, 2.85vw, 0.75rem);
+  }
+  
+  .icon-text {
+    font-size: clamp(0.625rem, 2.65vw, 0.75rem);
+  }
+  
+  .info-icon {
+    height: clamp(0.75rem, 2.3vh, 1rem);
+    width: clamp(1rem, 4vw, 1.25rem);
+  }
+  
+  .Calendar-icon {
+    height: clamp(3rem, 12vw, 4rem);
+    width: clamp(3rem, 13vw, 4rem);
+  }
+  
+  .event-date p {
+    font-size: clamp(0.625rem, 3.25vw, 0.75rem);
+  }
+  
+  .register-btn {
+    font-size: clamp(0.625rem, 3.3vw, 0.75rem);
+    padding: clamp(0.5rem, 1.9vw, 0.625rem) clamp(0.75rem, 3.4vw, 1rem);
+    margin-top: clamp(-3rem, -14vw, -2rem);
   }
 }
 
 
-@media (min-width: 501px) and (max-width: 769px) {
-  .purvkaryakram-event-grid {
-    gap: 14px;
-    padding-bottom: 12px;
-    overflow-x: auto;
-    scroll-padding-left: 24px;
-  }
 
-  .purvkaryakram-event-card {
-    flex: 0 0 45vw;     /* about half viewport width minus gaps */
-    max-width: 45vw;
-    padding: 16px;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px rgba(5, 0, 0, 0.2);
-  }
-
-  .purvkaryakram-event-title {
-    font-size: 1.6rem;
-  }
-
-  .purvkaryakram-event-info {
-    font-size: 0.9rem;
-  }
-
-  .purvkaryakram-event-date {
-    font-size: 1rem;
-  }
-
-  .purvkaryakram-event-image {
-    width: 40vw;
-    aspect-ratio: 1 / 1;
-  }
-
-  .purvkaryakram-btn {
-    padding: 12px 20px;
-    font-size: 1.1rem;
-  }
-}
 
 @media (min-width: 321px) and (max-width: 500px) {
-  .purvkaryakram-event-grid {
-    gap: 20px;
-    padding-bottom: 10px;
-    overflow-x: auto;
-    scroll-padding-left: 20px;
+
+  .Prastavit-head h1,
+  .prastavit {
+    font-size: clamp(5.5vw, 6.25vw, 7vw);
+    margin-top: clamp(2vh, 2.5vh, 3vh);
+    line-height: 1.2;
+    
   }
 
-  .purvkaryakram-event-card {
-    flex: 0 0 80vw;       /* slightly smaller than full width */
-    max-width: 80vw;
-    padding: 14px;
-    border-radius: 14px;
-    box-shadow: 0 4px 6px rgba(5, 0, 0, 0.18);
+  .Prastavit-info {
+    font-size: clamp(2.8vw, 3.25vw, 3.5vw); 
+    margin-top: clamp(-1.5vh, -1.25vh, -1vh);
+    padding: 0 clamp(3vw, 3.75vw, 4.5vw);
+    line-height: 1.4;
   }
 
-  .purvkaryakram-event-title {
-    font-size: 1.4rem;
+ 
+  .event-container {
+    gap: clamp(2.25vw, 2.75vw, 3.25vw); 
+    padding: clamp(1.25vw, 1.85vw, 2.25vw);
+    margin-bottom: clamp(3.5vh, 4.25vh, 5vh);
+    scroll-snap-type: x mandatory; 
   }
 
-  .purvkaryakram-event-info {
-    font-size: 0.85rem;
+ 
+  .event-card-cont {
+    width: clamp(76vw, 82vw, 88vw); 
+ 
+    padding: clamp(1.8vw, 2.25vw, 2.7vw);
+    box-shadow: 
+      0 clamp(0.45vw, 0.55vw, 0.65vw) 
+      clamp(1.25vw, 1.5vw, 1.75vw) rgba(0, 0, 0, 0.18);
+    scroll-snap-align: center; 
+    height: auto;
+
   }
 
-  .purvkaryakram-event-date {
-    font-size: 0.9rem;
+ 
+  .event-image {
+    height: clamp(30vh, 36vh, 30vh); 
+    border-radius: clamp(0.6vw, 0.7vw, 0.8vw) clamp(0.6vw, 0.7vw, 0.8vw) 0 0;
+    object-position: center top; 
   }
 
-  .purvkaryakram-event-image {
-    width: 60vw;
-    aspect-ratio: 1 / 1;
+
+
+  .event-card-cont .event-info {
+  
+    min-height: 22vh;
+    height: clamp(18vh, 22vh, 26vh); 
+    padding-top: 4vh; 
+    margin-top: clamp(5vh, 8vh, 9vh);
+    
+   
+    padding: clamp(1.8vw, 2.1vw, 2.4vw);
+ 
+    background: linear-gradient(
+      to top, 
+      rgba(0,0,0,0.82) 15%, 
+      rgba(0,0,0,0.78) 30%,
+      rgba(0,0,0,0.72) 45%,
+      transparent 100%
+    );
+    backdrop-filter: blur(0.4px);
+    border-radius: 0 0 clamp(0.6vw, 0.7vw, 0.8vw) clamp(0.6vw, 0.7vw, 0.8vw);
+    
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
   }
 
-  .purvkaryakram-btn {
-    padding: 10px 18px;
-    font-size: 1rem;
+ 
+   .event-title {
+    font-size: clamp(3.9vw, 4.15vw, 4.4vw);
+    margin-bottom: clamp(0.6vh, 0.7vh, 0.8vh);
+    letter-spacing: 0.05vw;
+  }
+
+  .event-desc {
+    font-size: clamp(1.85vw, 2.85vw, 3vw);
+    line-height: clamp(3.6vw, 3.8vw, 4vw);
+    margin-bottom: clamp(0.8vh, 2.2vh, 3vh);
+  }
+
+
+  .event-icons {
+    gap: clamp(0.4vh, 0.6vh, 0.8vh);
+    margin-top: clamp(-1.2vh, -2vh, -0.8vh);
+  }
+
+  .icon-text {
+    font-size: clamp(2.5vw, 2.65vw, 2.85vw);
+    margin-bottom: clamp(0.2vh, 0.5vh, vh);
+  }
+
+  .event-card-cont .info-icon {
+    height: clamp(2vh, 2.3vh, 2.5vh);
+    width: clamp(3.8vw, 4vw, 4.5vw);
+  }
+
+
+  .Calendar-icon {
+    height: clamp(9.2vw, 12vw, 12vw);
+    width: clamp(9.2vw, 13vw, 15vw);
+    margin-top: clamp(-0.2vh, -2vh, -5vh);
+  }
+
+  .event-card-cont .event-date p {
+    font-size: clamp(3.1vw, 3.25vw, 3.4vw);
+    margin: clamp(-4vh, -8vh, -10vh) clamp(2vw, 3vw, 5vw);
+  } 
+
+
+  .event-image {
+    position: relative; 
+    overflow: visible;
+  }
+  
+ 
+  .event-card-cont {
+    padding-top: clamp(3vh, 4vh, 5vh); 
+  }
+
+  .register-btn {
+    font-size: clamp(3.1vw, 3.3vw, 3.5vw);
+    padding: 
+      clamp(1.7vw, 1.9vw, 2.1vw) 
+      clamp(3.1vw, 3.4vw, 3.7vw);
+    margin-top: clamp(-12vw, -14vw, -16vw);
+    border-radius: clamp(0.6vw, 0.8vw, 1vw);
+    letter-spacing: 0.05vw;
   }
 }
-
 
 
 @media (max-width: 320px) {
-  .purvkaryakram-event-grid {
-    gap: 16px;             /* smaller gap on very small screens */
-    padding-bottom: 8px;
-    overflow-x: auto;
-    scroll-padding-left: 16px;
+  .Prastavit-head h1,
+  .prastavit {
+    font-size: clamp(4vw, 6vw, 8vw);
+    text-align: center;
+    margin-top: 3vh;
   }
 
-  .purvkaryakram-event-card {
-    flex: 0 0 90vw;       /* each card full viewport width */
-    max-width: 90vw;
-    padding: 12px;         /* reduce padding */
-    border-radius: 12px;   /* slightly smaller radius */
-    box-shadow: 0 3px 5px rgba(5, 0, 0, 0.15);
+  .Prastavit-info {
+    font-size: clamp(2.5vw, 3.2vw, 4vw);
+    margin-top: -2vh;
+    padding: 0 3vw;
   }
 
-  .purvkaryakram-event-title {
-    font-size: 1.2rem;     /* reduce title size */
+  .event-container {
+    gap: 3vw;
+    padding: 1.5vw;
+    margin: 0vh 0vw 5vh 0vw;
   }
 
-  .purvkaryakram-event-info {
-    font-size: 0.75rem;    /* smaller info text */
+
+  .event-card-cont {
+    width: 81vw; 
+    min-width: 90vw;
+    padding: 2.5vw;
+    box-shadow: 0 0.6vw 2.5vw rgba(0, 0, 0, 0.2);
+    margin: 2vh 0vw; 
   }
 
-  .purvkaryakram-event-date {
-    font-size: 0.8rem;     /* smaller date text */
+  .event-card-cont  .event-image {
+    height:50vw; 
   }
 
-  .purvkaryakram-event-image {
-    width: 70vw;           /* smaller image inside card */
-    aspect-ratio: 1 / 1;
+  .event-card-cont .event-info {
+    width: 95%;
+    padding: 2.5vw;
+    margin-top:20vw;
+    gap: 1vw;
+    
+  }
+  .event-info .event-title {
+    font-size: clamp(12px, 5vw, 7vw);
+
+  }
+  
+
+  .event-desc{
+     font-size: clamp(1.2vw, 3.5vw, 4.5vw);
+     margin-top: -1vh;
+  }
+  .icon-text {
+    font-size: clamp(1.2vw, 3.2vw, 4.5vw);
   }
 
-  .purvkaryakram-btn {
-    padding: 8px 16px;
-    font-size: 0.9rem;
+  .event-info .event-icons {
+    font-size: clamp(1vw, 1.5vw, 3vw);
+    
+  }
+  .info-icon {
+    height: clamp(12px, 2.5vw, 30px);
+    width: clamp(12px, 2vw, 30px);
+  }
+  
+  .Calendar-icon {
+    height: 13vw;
+    width: 12.5vw;
+    margin-top: -2vh;
+  }
+  .event-date p {
+    font-size: clamp(3vw, 3.75vw, 4.5vw);
+    margin: clamp(-28px, -3vw, -25px) clamp(8px, 1vw, 10px);
+  }
+  
+
+  .register-btn {
+    font-size: clamp(3vw, 3.5vw, 4.5vw);
+    padding: 2.5vw 3.75vw;
+    margin-top: -5vh;
   }
 }

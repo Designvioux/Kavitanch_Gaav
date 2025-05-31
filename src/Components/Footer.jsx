@@ -47,7 +47,7 @@ function Footer(){
             </div>
             <div className="copyright">
                 <p className="copyright-1">@ 2025 Maz Kavitancha Gaav- Rajdhani Satara. All rights reserved.</p>
-                <a className="copyright-2" href="https://designvio.framer.ai/" target="_blank" rel="noopener noreferre">@ 2025 Designed and Developed by Designvio Pvt.ltd</a>
+                <a className="copyright-2" href="https://designvio.in/" target="_blank" rel="noopener noreferre">@ 2025 Designed and Developed by Designvio Pvt.ltd</a>
             </div>
              
         </>

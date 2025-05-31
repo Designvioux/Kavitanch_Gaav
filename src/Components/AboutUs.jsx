@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './CSS/AboutUs.css';
+import "../Components/CSS/Navbar.css";
 import HeroSection from './PageComponents/About/HeroSection';
 import AboutInfo from './PageComponents/About/AboutInfo';
 import Prawas from './PageComponents/About/Prawas';
