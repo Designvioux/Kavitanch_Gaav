@@ -1,11 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './CSS/Prastavit.css';
 import shivar from '../Images/Shivar-Samelan.jpg';
 import kavikatta from '../Images/Kavi-Kattta.jpg';
 import Calendar from '../Icons/Calendar.png';
 import Clock from '../Icons/Clock.png';
 import Loc from '../Icons/Location.png';
-import ContactPop from './PageComponents/ContactUs/KaviSamelanContactPop';
 
 const events = [
   {
@@ -78,9 +77,7 @@ const events = [
 
 const Prastavit = ({ onOpenPopup }) => {
 
-  const [showPopup, setShowPopup] = useState(false);
-const [selectedEvent, setSelectedEvent] = useState(null);
-
+  
   return (
     <div className='Prastavit-Container'>
       
@@ -122,9 +119,6 @@ const [selectedEvent, setSelectedEvent] = useState(null);
           </div>
         ))}
       </div>
-      {showPopup && (
-  <ContactPop selectedEvent={selectedEvent} onClose={() => setShowPopup(false)} />
-)}
     </div>
   );
 };

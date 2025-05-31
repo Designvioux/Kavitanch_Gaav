@@ -5,7 +5,6 @@ import kavikatta from '../Images/Kavi-Kattta.jpg';
 import Calendar from '../Icons/Calendar.png';
 import Clock from '../Icons/Clock.png';
 import Loc from '../Icons/Location.png';
-import ContactPop from './PageComponents/ContactUs/KaviSamelanContactPop';
 
 const events = [
   {
@@ -123,7 +122,7 @@ const [selectedEvent, setSelectedEvent] = useState(null);
         ))}
       </div>
       {showPopup && (
-  <ContactPop selectedEvent={selectedEvent} onClose={() => setShowPopup(false)} />
+  <Conta selectedEvent={selectedEvent} onClose={() => setShowPopup(false)} />
 )}
     </div>
   );
