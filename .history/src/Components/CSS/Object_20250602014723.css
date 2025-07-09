@@ -1,0 +1,433 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+
+
+
+  
+  .aamcha-title {
+ 
+    font-family: "Niramit";
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+
+ 
+    text-align: center;
+
+margin-bottom: clamp(0.5rem, 1.39vw, 1.25rem);
+   
+  
+
+  
+margin-top: clamp(-1.8rem, -2.7vh, -2.5rem);
+  } 
+
+
+
+ .orange-text {
+    color: #f57c00; 
+  }
+  
+  .aamcha-description {
+
+    margin: 0 auto;
+    width: 100%;
+ 
+    max-width: 1200px;
+ 
+    
+  
+    padding: 0 clamp(0.5rem, 1.04vw, 1rem);
+    color: #444;
+   
+   
+    color: var(--Grey, #848484);
+font-family: "Niramit";
+ 
+font-size: clamp(0.875rem, 1.75vw, 1.25rem);
+
+text-align: center;
+
+  } 
+ 
+
+
+.aamcha-section {
+  max-height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  position: relative;
+  padding: 4rem;
+  margin-top: 5vh;
+
+}
+.cards-container {
+  height: 300vh;
+  position: relative;
+}
+
+.cards-wrapper {
+  height: 60vh; 
+  overflow-y: scroll;
+  position: relative;
+  width: 100%;
+  scroll-behavior: smooth;
+  padding-right: 1rem;
+}
+
+.aamcha-content {
+  position: sticky;
+  top:20%;
+  background-color: #fff3e0;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #fff3e0;
+ 
+  height: clamp(20rem, 50vh, 25rem);
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+
+
+.aamcha-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aamcha-content.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  z-index: 1;
+}
+
+.aamcha-description {
+  font-size: 1rem;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+  
+
+  
+  .aamcha-image img {
+    width: clamp(10rem, 17.36vw, 15.625rem);
+    
+    height: clamp(18rem, 50vh, 22.5rem);
+    object-fit: cover;
+    border: 2px solid #fff3e0;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    transform: perspective(800px) rotateX(5deg) rotateY(-5deg);
+    position: absolute;
+    z-index: 1;
+    left: clamp(1rem, 5vw, 3rem);
+  
+margin-top: -35vh;
+
+  }
+  
+
+  
+  .aamcha-image img:hover {
+    transform: perspective(clamp(400px, 3vw, 800px)) rotateX(0deg) rotateY(0deg) scale(clamp(1, 1.03, 1.05));
+
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+     z-index: 1;
+     position: absolute;
+  }
+  
+  .aamcha-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  
+
+    transform: translateX(clamp(-6rem, -5vw, -8rem));
+    transform: translatey(clamp(-2rem, -4vw, -6rem));
+  }
+  
+  
+  .ebook-titlee {
+ 
+    font-size: clamp(1.75rem, 2vw, 1.875rem);
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 clamp(2.5rem, 3.7vh, 3.3125rem);
+    align-self: flex-start;
+    color: var(--Text, #000);
+    font-family:" Niramit";
+ 
+  }
+  
+  .ebook-desc {
+    color: var(--Grey, #848484);
+
+font-family: "Niramit";
+font-size: clamp(1rem, 1.25vw, 1.125rem);
+ 
+
+ 
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  
+margin-left: 0px;
+margin-top: 0px;
+
+  }
+  
+  .ebook-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    position: relative;
+z-index: 2;
+
+
+  }
+  
+  .read-button {
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    padding: clamp(0.5rem, 0.7vh, 0.625rem) clamp(1rem, 1.25vw, 1.125rem);
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0px;
+    text-decoration: none;
+    margin-top: clamp(1rem, 3vh, 1.25rem);
+    position: relative;
+z-index: 2;
+
+  }
+  
+  .download-button {
+    background-color: #fff;
+    color: #f57c00;
+    border: 2px solid #f57c00;
+    padding: clamp(0.6rem, 1vh, 0.625rem) clamp(1rem, 1.25vw, 1.125rem);
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+   margin-top: clamp(1rem, 2.2vh, 1.25rem);
+    position: relative;
+z-index: 2;
+
+  }
+  
+  .read-button:hover,
+  .download-button:hover {
+    opacity: 0.85;
+    position: relative;
+z-index: 2;
+
+  }
+  .aamcha-image{
+margin: 0;
+position: relative;
+width: 100vw;
+
+z-index: 1;
+   
+  }
+
+
+ */
+
+
+
+
+
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+.aamcha-section {
+  max-height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  position: relative;
+  padding: clamp(1rem, 3vw, 4rem);
+  margin-top: clamp(2vh, 5vw, 5vh);
+
+}
+
+.cards-container {
+  height: 500vh;
+  position: relative;
+
+}
+
+.cards-wrapper {
+  height: clamp(40vh, 70vh, 80vh);
+  overflow-y: scroll;
+  position: relative;
+  width: 100%;
+  scroll-behavior: smooth;
+  padding-right: clamp(0.5rem, 3.5vw, 1rem);
+}
+
+.aamcha-title {
+  font-family: "Niramit";
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
+  margin-bottom: clamp(0.5rem, 1.5vw, 1.25rem);
+  margin-top: clamp(-1rem, -2vh, -2.5rem);
+}
+
+.orange-text {
+  color: #f57c00;
+}
+
+.aamcha-description {
+  margin: 0 auto;
+  width: 100%;
+  max-width: clamp(18rem, 90vw, 75rem);
+  padding: 0 clamp(0.5rem, 2vw, 1rem);
+  color: #848484;
+  font-family: "Niramit";
+  font-size: clamp(0.75rem, 1.75vw, 1.25rem);
+  text-align: center;
+}
+
+.aamcha-content {
+  position: sticky;
+  top: clamp(10%, 20%, 25%);
+  background-color: #fff3e0;
+  border-radius: clamp(0.5rem, 1.5vw, 1rem);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.5rem, 2vw, 2rem);
+  padding: clamp(1rem, 2vw, 2rem);
+  box-shadow: 0 clamp(0.1rem, 0.3vw, 0.25rem) clamp(0.3rem, 0.8vw, 0.75rem) rgba(0, 0, 0, 0.05);
+  border: 1px solid #fff3e0;
+  height: clamp(15rem, 50vh, 25rem);
+  opacity: 0;
+  transform: translateY(clamp(1rem, 3vw, 3.125rem));
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.aamcha-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aamcha-content.hidden {
+  opacity: 0;
+  transform: translateY(clamp(1rem, 3vw, 3.125rem));
+  z-index: 1;
+}
+
+.aamcha-image img {
+  width: clamp(8rem, 30vw, 15.625rem);
+  height: clamp(12rem, 50vh, 22.5rem);
+  object-fit: cover;
+  border: clamp(0.1rem, 0.3vw, 0.125rem) solid #fff3e0;
+  border-radius: clamp(0.5rem, 1.5vw, 1.25rem);
+  box-shadow: 0 clamp(0.5rem, 2vw, 1.5625rem) clamp(0.8rem, 3vw, 1.5625rem) rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+  transform: perspective(clamp(20rem, 50vw, 50rem)) rotateX(5deg) rotateY(-5deg);
+  position: absolute;
+  z-index: 1;
+  left: clamp(0.5rem, 5vw, 3rem);
+  margin-top: clamp(-20vh, -35vh, -25vh);
+}
+
+.aamcha-image img:hover {
+  transform: perspective(clamp(20rem, 50vw, 50rem)) rotateX(0deg) rotateY(0deg) scale(1.03);
+  box-shadow: 0 clamp(0.3rem, 1vw, 0.5rem) clamp(0.5rem, 1.5vw, 0.625rem) rgba(0, 0, 0, 0.7);
+}
+
+.aamcha-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: translateX(clamp(-2rem, -5vw, -8rem)) translateY(clamp(-1rem, -4vw, -6rem));
+
+}
+
+.ebook-titlee {
+  font-size: clamp(1.25rem, 2vw, 1.875rem);
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 clamp(1rem, 3.7vh, 3.3125rem);
+  font-family: "Niramit";
+}
+
+.ebook-desc {
+  color: #848484;
+  font-family: "Niramit";
+  font-size: clamp(0.8rem, 1.25vw, 1.125rem);
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.ebook-buttons {
+  display: flex;
+  gap: clamp(0.5rem, 1.5vw, 0.9375rem);
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.read-button {
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  padding: clamp(0.4rem, 1vh, 0.625rem) clamp(0.8rem, 1.25vw, 1.125rem);
+  border-radius: clamp(0.3rem, 0.5vw, 0.375rem);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: clamp(0.5rem, 2vh, 1.25rem);
+  z-index: 2;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+.download-button {
+  background-color: #fff;
+  color: #f57c00;
+  border: clamp(0.1rem, 0.15vw, 0.125rem) solid #f57c00;
+  padding: clamp(0.4rem, 1vh, 0.625rem) clamp(0.8rem, 1.25vw, 1.125rem);
+  border-radius: clamp(0.3rem, 0.5vw, 0.375rem);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: clamp(0.5rem, 2vh, 1.25rem);
+  z-index: 2;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+.read-button:hover,
+.download-button:hover {
+  opacity: 0.85;
+}
+
+.aamcha-image {
+  margin-top: 10vh;
+  position: relative;
+  width: 100vw;
+  z-index: 1;
+  height: 50vh;
+}

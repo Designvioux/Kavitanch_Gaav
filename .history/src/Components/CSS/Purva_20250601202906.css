@@ -1,0 +1,833 @@
+/* /* @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap'); */
+
+/* 
+
+.Prastavit-Container{
+
+  background-color: white;
+  width: 100%;
+
+}
+
+.Prastavit-head{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Prastavit-head h1{
+  color: var(--Text, #000);
+
+ 
+font-family: Niramit;
+font-size: 54px;
+  
+margin-top: 20px;
+}
+.prastavit{
+  color: var(--Brand, #EA7F13);
+text-align: center;
+
+ 
+font-family: Niramit;
+font-size: 54px;
+
+}
+
+.Prastavit-info{
+ 
+
+ 
+  align-self: stretch;
+  
+  margin-top: 10px;
+  color: var(--Grey, #848484);
+text-align: center;
+
+font-family: "Niramit";
+ 
+font-size: 18px;
+
+margin-top: -10px;
+ 
+
+  
+}
+
+.event-container {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.event-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+
+.event-card-cont {
+  min-width: 260px;
+  flex-shrink: 0;
+}
+.event-card-cont {
+  position: relative;
+  width: 400px;
+  min-width: 400px; 
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  flex-shrink: 0; 
+}
+.event-card-cont:hover {
+  transform: translateY(-5px);
+}
+
+.event-image {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.event-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.event-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6); 
+
+}
+
+.event-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6600;
+  color: var(--Brand, #EA7F13);
+
+font-family: Niramit;
+
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: -5px;
+}
+
+.event-desc {
+  color: var(--Background, #FFF);
+
+font-family: Niramit;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 0px;
+}
+.event-icons {
+  font-size: 13px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+margin-top: -10px;
+}
+
+.register-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -50px;
+}
+
+.info-icon{
+  height: 18px;
+  display: flex;
+  margin-bottom: 2px;
+  align-items: center;
+  margin-right: 5px;
+
+  
+ 
+}
+
+.icon-text{
+  display: flex;
+  flex-direction: row;
+  color: var(--Background, #FFF);
+
+font-family: Niramit;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+.event-image{
+  margin-top: 10px;
+
+}
+.Calendar-icon{
+  background: transparent;
+  height: 60px;
+  width: 60px;
+  margin-top: -15px;
+}
+.event-date{
+  background: none;
+}
+
+
+.event-date p{
+  color: white;
+  font-size: 12px;
+  margin-top: -30px;
+  margin-left: 15px;
+
+}
+  */
+
+
+
+/* 
+  @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+:root {
+  --brand-color: #EA7F13;
+  --text-color: #000;
+  --grey-color: #848484;
+  --background-color: #FFF;
+}
+
+.Prastavit-Container {
+  background-color: white;
+  width: 100%;
+}
+
+
+.Prastavit-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Prastavit-head h1 {
+  color: var(--text-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2vw, 4vw, 8vw);
+  margin-top: 2vh;
+}
+
+.prastavit {
+  color: var(--brand-color);
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2vw, 4vw, 8vw);
+}
+
+.Prastavit-info {
+  align-self: stretch;
+  margin-top: -5vh;
+  color: var(--grey-color);
+  text-align: center;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.5vw, 1.5vw, 3vw);
+}
+
+
+
+
+
+.event-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  width: 100%;
+  
+  box-sizing: border-box;
+}
+
+.event-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+
+.event-card-cont {
+  position: relative;
+
+  width: 30vw; 
+  min-width: 300px; 
+  height: auto; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.event-card-cont:hover {
+  transform: translateY(-5px);
+}
+
+
+.event-image {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+
+
+}
+
+
+.Calendar-icon {
+  background: transparent;
+  height: 60px;
+  width: 60px;
+  margin-top: -15px;
+}
+
+.event-date {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  background: none;
+}
+
+.event-date p {
+  color: white;
+  font-size: 14px;
+  margin: -30px 10px;
+}
+
+
+.event-info {
+  position: relative;
+  bottom: 0;
+  width: 95%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.event-title {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Niramit', sans-serif;
+  color: var(--brand-color);
+  margin-top: -5px;
+}
+
+.event-desc {
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+
+.event-icons {
+  font-size: 14px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+.info-icon {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.register-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -40px;
+}
+
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+ */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@400;700&display=swap');
+
+:root {
+  --brand-color: #EA7F13;
+  --text-color: #000;
+  --grey-color: #848484;
+  --background-color: #FFF;
+}
+
+/* Container */
+.Purva-Container {
+  background-color: white;
+ 
+}
+
+/* Heading */
+.Prastavit-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Prastavit-head h1 {
+  color: var(--text-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-top: clamp(1rem, 2vh, 2rem);
+  line-height: 1.2;
+}
+
+.prastavit {
+  color: var(--brand-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+
+.Prastavit-info {
+  color: var(--grey-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.875rem, 1.75vw, 1.25rem);
+  margin-top: clamp(-0.8rem, -1vh, 0rem);
+  padding: 0 clamp(1rem, 5vw, 3rem);
+  line-height: 1.4;
+}
+
+
+.event-container {
+  display: flex;
+  gap: clamp(0.75rem, 1.5vw, 1.25rem);
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: clamp(0.5rem, 1vw, 1rem);
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: clamp(1.5rem, 3vh, 2.5rem);
+}
+
+.event-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.event-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.event-card-cont {
+  position: relative;
+  width: clamp(18.75rem, 30vw, 25rem);
+  min-width: 18.75rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  padding: 0.625rem;
+}
+
+.event-card-cont:hover {
+  transform: translateY(-0.3125rem);
+}
+
+
+.event-image {
+  height: clamp(15.625rem, 25vw, 17.75rem);
+background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 0.625rem;
+
+}
+
+
+.Calendar-icon {
+  background: transparent;
+  height: clamp(3.125rem, 5vw, 3.75rem);
+  width: clamp(3.125rem, 5vw, 3.75rem);
+  margin-top:-0.5vh;
+}
+
+.event-date {
+  position: absolute;
+  top: 0.375vh;
+  left: 1.25vw;
+  background: none;
+}
+
+.event-date p {
+  color: white;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  margin: clamp(-2rem, -4.875vh, -1rem) clamp(0.3rem, 2vw, 1rem);
+}
+
+.purva-button{
+  background: var(--brand-color);
+  color: white;
+  border: none;
+  padding: clamp(0.5rem, 1vw, 0.625rem) clamp(0.75rem, 1.5vw, 0.9375rem);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -10vh;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  text-decoration: none;
+}
+.event-info {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 61%;
+  display: flex;
+  flex-direction: column;
+  margin: 7rem auto;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.event-title {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 700;
+  font-family: 'Niramit', sans-serif;
+  color: var(--brand-color);
+  margin-top: -0.3125rem;
+}
+
+.event-desc {
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.event-descc {
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  font-weight: 400;
+  margin-top: 0;
+}
+
+
+.event-icons {
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.625rem;
+}
+
+.info-icon {
+  height: clamp(1rem, 1.5vw, 1.25rem);
+  display: flex;
+  align-items: center;
+  margin-right: 0.625rem;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  color: var(--background-color);
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  font-weight: 400;
+}
+
+
+.register-btn {
+  background: var(--brand-color);
+  color: white;
+  border: none;
+  padding: clamp(0.5rem, 1vw, 0.625rem) clamp(0.75rem, 1.5vw, 0.9375rem);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+  margin-top: -2.5rem;
+  font-family: 'Niramit', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+}
+
+.register-btn:hover {
+  background: #cc4f00;
+}
+
+
+@media (min-width: 321px) and (max-width: 500px) {
+  .Prastavit-head h1 {
+    font-size: clamp(4vw, 5vw, 6vw); /* fluid heading size */
+    margin-top: clamp(2vh, 3vh, 4vh);
+  }
+
+  .prastavit {
+    font-size: clamp(4vw, 5vw, 6vw);
+  }
+
+  .Prastavit-info {
+    font-size: clamp(3vw, 3.5vw, 4vw);
+    margin-top: clamp(-2vh, -1.5vh, 0vh);
+    padding-left: clamp(4vw, 5vw, 6vw);
+    padding-right: clamp(4vw, 5vw, 6vw);
+  }
+
+  .event-container {
+    gap: clamp(2vw, 3vw, 4vw);
+    padding: clamp(1vh, 2vh, 3vh);
+    margin-bottom: clamp(3vh, 4vh, 5vh);
+  }
+
+  .event-card-cont {
+    width: clamp(40vw, 45vw, 50vw);
+  
+    padding: clamp(1vh, 1.5vh, 2vh);
+  }
+
+  .event-image {
+    height: clamp(25vh, 30vh, 35vh);
+    background-size: cover; /* keep background size responsive */
+  }
+
+  .Calendar-icon {
+    height: clamp(5vw, 8vw, 12vw);
+    width: clamp(5vw, 10vw, 13vw);
+    margin-top: clamp(-1vh, -0.5vh, 0vh);
+    margin-left: 2vw;
+  }
+
+  .event-date p {
+    font-size: clamp(2.5vw, 3vw, 3.5vw);
+    margin: clamp(-6vh, -4vh, -4vh) clamp(2vw, 3.5vw, 4vw);
+  }
+
+  .purva-button,
+  .register-btn {
+    padding: clamp(1.5vh, 1vh, 3vh) clamp(3vw, 4vw, 5vw);
+    font-size: clamp(3vw, 3.5vw, 4vw);
+    margin-top: clamp(-15vh, -10vh, -8vh);
+  }
+
+  .event-info {
+    height: clamp(45vh, 50vh, 55vh);
+    margin: clamp(4vh, 7vh ,10vh) auto;
+    padding: clamp(1vh, 2vh, 3vh);
+    gap: clamp(1vh, 0.5vh, 2vh);
+
+  }
+
+  .event-title {
+    font-size: clamp(2vw, 3.5vw, 4vw);
+    margin-top: clamp(-2vh, -1vh, 0vh);
+  }
+
+  .event-desc {
+    font-size: clamp(2vw, 3vw, 4vw);
+    margin-top: clamp(-2vh, -1vh, 0vh);
+  }
+
+  .event-icons {
+    font-size: clamp(2.5vw, 3.5vw, 4.5vw);
+  }
+
+  .event-descc {
+    font-size: clamp(2vw, 2.5vw, 3vw);
+    margin-top: clamp(-2vh, -1vh, 0vh);
+    color: #FFF;
+  }
+
+  .icon-text {
+    font-size: clamp(2vw, 2.5vw, 4vw);
+    margin-bottom: clamp(0.5vh, 1vh, 2vh);
+  }
+  .info-icon {
+    height: clamp(3vw, 3.5vw, 4vw);
+    margin-right: clamp(3vw, 4vw, 5vw);
+  }
+}
+
+
+
+
+
+@media (max-width: 320px) {
+  .Prastavit-head h1,
+  .prastavit {
+    font-size: clamp(1.25rem, 5vw, 2rem);
+  }
+
+  .Prastavit-info {
+    padding: 0 clamp(3vw, 4vw, 5vw);
+    font-size: clamp(0.625rem, 3.5vw, 0.875rem);
+  }
+
+  .event-container {
+    gap: clamp(1vw, 2.5vw, 3vw);
+    padding: clamp(1vw, 2vw, 2.5vw);
+  }
+
+  .event-card-cont {
+    width: clamp(80vw, 85vw, 90vw);
+    min-width: clamp(80vw, 85vw, 90vw);
+    padding: clamp(1vw, 2vw, 2.5vw);
+  }
+
+  .event-image {
+    height: clamp(35vw, 45vw, 55vw);
+  }
+
+  .Calendar-icon {
+    width: clamp(8vw, 10vw, 12vw);
+    height: clamp(8vw, 10vw, 12vw);
+    margin-left: 5vw;
+    margin-top: -0.5vh;
+  }
+
+  .event-date p {
+    font-size: clamp(2vw, 3vw, 3.5vw);
+    margin-left: 6.5vw;
+    margin-top: -3.5vh;
+  }
+
+  .event-info {
+    margin: clamp(3rem, 5vw, 5rem) auto;
+    height: clamp(60%, 65%, 70%);
+    padding: clamp(1vw, 2vw, 3vw);
+  }
+
+  .event-title {
+    font-size: clamp(3.5vw, 4vw, 5vw);
+    margin: clamp(-5rem, -1vw, 3rem) ;
+  }
+
+  .event-desc {
+    font-size: clamp(3vw, 3.5vw, 4vw);
+margin-top: -1vh;
+  }
+
+  .event-descc{
+    font-size: clamp(3vw, 3.5vw, 4vw);
+  margin-top: -1vh;
+  color: #FFF;
+  }
+
+  .event-icons {
+    font-size: clamp(2.5vw, 3vw, 3.5vw);
+    margin-top: -3vh;
+  }
+
+  .info-icon {
+    height: clamp(1rem, 4vw, 1.5rem);
+    margin-right: clamp(1vw, 2vw, 2.5vw);
+  }
+
+  .icon-text {
+    font-size: clamp(2.5vw, 3vw, 3.5vw);
+  }
+
+  .purva-button{
+    font-size: clamp(3vw, 3.5vw, 4vw);
+    padding: clamp(2vw, 2.5vw, 3vw) clamp(3vw, 4vw, 5vw);
+    margin-top: clamp(-14vh, -10vh, -6vh);
+  }
+}

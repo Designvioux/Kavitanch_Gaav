@@ -1,0 +1,110 @@
+.Niyonit-Container {
+  height: auto;
+  width: 100vw;
+  position: relative;
+ 
+  /* margin-top: 40px; */
+ 
+  margin-top: 10px;
+  
+}
+
+.Niyojit-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 500px;
+  margin: 0 auto;
+  font-family: Niramit;
+ 
+  font-size: 54px;
+ margin-top: -50px;
+ 
+}
+
+.Niyojit-head span {
+  color: orange;
+}
+
+.Niyojit-card {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Niyojit-card h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  color: #fff;
+  font-family: Niramit;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.Niyojit-card p {
+  margin-left: 180px;
+ 
+  width: 65%;
+ 
+  /* width: 50%; */
+  
+  color: #fff;
+  font-family: Niramit;
+  font-size: 14px;
+  font-weight: 500;
+ 
+  line-height: 4px;
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap:wrap ;
+ 
+  line-height: 15px;
+  position: relative;
+  margin-top: 20px;
+  
+}
+
+.Niyojit-card p::before {
+  content: "•";
+  position: absolute;
+  left: -20px;
+  top: -5px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.Niyojit-Cards-1,
+.Niyojit-Cards-2,
+.Niyojit-Cards-3,
+.Niyojit-Cards-4 {
+  width: 40vw;
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-size: 40vw 45vh;
+  color: white;
+}
+
+.Niyojit-Cards-1 {
+  background-image: url("../Images/Card1.png");
+}
+
+.Niyojit-Cards-2 {
+  background-image: url("../Images/Card2.png");
+}
+
+.Niyojit-Cards-3 {
+  background-image: url("../Images/Card3.png");
+}
+
+.Niyojit-Cards-4 {
+  background-image: url("../Images/Card4.png");
+}
+
+
