@@ -13,6 +13,7 @@ import Que from './Answer.jsx';
 import ContactPop from './PageComponents/ContactUs/KaviSamelanContactPop.jsx';
 import SuccessPopup from './PageComponents/ContactUs/SuccesPopUp.jsx';
 import KaryakramContainer from "./Karyakram.jsx";
+import HeroWrapper from './PageComponents/HeroWrapper.jsx';
 const Home = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -30,7 +31,7 @@ const Home = () => {
 
   return (
     <React.Fragment>
-      <Hero />
+      <HeroWrapper/>
      <KaryakramContainer />
 
       {showPopup && (

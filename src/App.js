@@ -23,6 +23,9 @@ import ScrollToTop from "./Components/ScrollToTop.jsx";
 import Prastavit from './Components/Prastavit.jsx';
 import Purvkaryakram from './Components/Purva.jsx';
 // import Hero from './Components/Hero-Section.jsx';
+import HeroTwo from './Components/PageComponents/Home-Two.jsx';
+import HeroWrapper from './Components/PageComponents/HeroWrapper.jsx';
+
 
 function App() {
   return (
@@ -30,12 +33,16 @@ function App() {
    <ScrollToTop />
     <Navbar/>
     <Routes>
-      {/* <Route path="/Hero" element={<Hero/>}/> */}
+
+       {/* <Route path="/" element={<Hero />} /> */}
+  <Route path="/herotwo" element={<HeroTwo />} />
+     
       <Route path="/" element={<Home/>}/>
       <Route path="/Blog" element={<Blog/>} />
       <Route path="/blog-details" element={<BlogDetails />} />
       <Route path="/book" element={<Book/>} />
       <Route path="/about" element={<AboutUs/>}/>
+      <Route path="/HeroWrapper" element={<HeroWrapper />} />
       <Route path="/Kavita" element={<Kavita/>}/>
       <Route path="/Gallery" element={<Gallery/>}/>
       <Route path="/galleryone" element={<Galleryone/>}/>
@@ -53,7 +60,8 @@ function App() {
     </Routes>
     <Footer/>
   </Router>
-
+        
+        
   );
 }
 
